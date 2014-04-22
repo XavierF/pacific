@@ -61,7 +61,7 @@
 
 							<div class="row">
 								<div class="col-sm-4">
-									<div class="logo"></div>
+									<a class="navbar-logo pull-right" href="<?php bloginfo( 'url' ) ?>/" title="<?php bloginfo( 'name' ) ?>" rel="homepage"></a>
 								</div>
 								<div class="col-sm-8">
 									<h1><a class="navbar-brand" href="<?php bloginfo( 'url' ) ?>/" title="<?php bloginfo( 'name' ) ?>" rel="homepage"><?php bloginfo( 'name' ) ?></a></h1>

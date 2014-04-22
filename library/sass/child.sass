@@ -1,0 +1,40 @@
+//BRAND COLORS
+$lightGrey: #666666
+$darkGrey: #3F3C3E
+$white: #FFFFFF
+$yellow: #F6DD38
+
+
+body
+	padding-top: 71px
+	background-color: lighten($lightGrey, 50%)
+	color: $darkGrey
+	font-family: 'Roboto', sans-serif
+	-webkit-font-smoothing: antialiased
+ 
+a
+	color: $white
+// Header
+
+.navbar-inverse
+	background: $lightGrey
+	border-bottom: 1px solid rgba(0, 0, 0, .2)
+	box-shadow: 0px 1px 4px rgba(0, 0, 0, .25)
+
+.site-title
+	a
+		float: right
+		color: $yellow
+
+.navbar-brand
+	a
+		float: right
+		color: $yellow
+
+
+//Media Queries
+
+@media screen and (min-width: 1200px)
+	.container
+		width: 970px
+

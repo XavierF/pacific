@@ -3,11 +3,11 @@ $lightGrey: #666666
 $darkGrey: #3F3C3E
 $white: #FFFFFF
 $yellow: #F6DD38
-$black: 000000
+$black: #000000
 
 
 body
-	padding-top: 71px
+	padding-top: 295px
 	background-color: lighten($lightGrey, 50%)
 	color: $darkGrey
 	font-family: 'Roboto', sans-serif
@@ -38,14 +38,27 @@ body
 	font-weight: 200
 	&hover
 		color: $yellow
+.navbar-collapse
+	text-align: center
+
+.navbar-nav
+	margin-left: 0
+	margin-right: 0
+	float: none
+	display: inline-block
+
 .navbar-inverse .navbar-nav
 	li
+		float: none
+		display: inline
 		a
+			float: none
+			display: inline-block
 			color: $black
 			-webkit-font-smoothing: antialiased
-			padding: 20px 16px
+			padding: 20px 25px
 			font-size: 16px
-			font-weight: 400
+			font-weight: bold
 			&:hover
 				background: rgba(0, 0, 0, .1)
 		&.active
@@ -56,6 +69,7 @@ body
 
 .navbar-inverse
 	background-color: lighten($lightGrey, 50%)
+
 
 
 

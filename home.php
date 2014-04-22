@@ -33,7 +33,7 @@ homepage of your website.
 
 	
 </section>
-<section id="classes">
+<section id="items">
 	<div class="container">
 		<div class="row content">
 			

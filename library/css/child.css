@@ -5,21 +5,50 @@ body {
   font-family: "Roboto", sans-serif;
   -webkit-font-smoothing: antialiased; }
 
-a {
-  color: white; }
+.site-header {
+  background-color: #666666;
+  height: 220px; }
+
+.address {
+  float: right;
+  display: inline-block;
+  color: white;
+  margin-top: 15px; }
+
+.logo {
+  display: inline-block;
+  float: right;
+  width: 150px;
+  height: 150px;
+  background: url("../images/peb-bike-logo.png") center center no-repeat;
+  background-size: cover;
+  text-indent: -9999px; }
+
+.navbar-inverse .navbar-brand {
+  margin-top: 30px;
+  color: #f6dd38;
+  float: left;
+  display: inline-block;
+  font-size: 2em;
+  font-weight: 200; }
+  .navbar-inverse .navbar-brandhover {
+    color: #f6dd38; }
+
+.navbar-inverse .navbar-nav li a {
+  color: 0;
+  -webkit-font-smoothing: antialiased;
+  padding: 20px 16px;
+  font-size: 16px;
+  font-weight: 400; }
+  .navbar-inverse .navbar-nav li a:hover {
+    background: rgba(0, 0, 0, 0.1); }
+.navbar-inverse .navbar-nav li.active a {
+  background: rgba(0, 0, 0, 0.1); }
+  .navbar-inverse .navbar-nav li.active a:hover {
+    background: rgba(0, 0, 0, 0.2); }
 
 .navbar-inverse {
-  background: #666666;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25); }
-
-.site-title a {
-  float: right;
-  color: #f6dd38; }
-
-.navbar-brand a {
-  float: right;
-  color: #f6dd38; }
+  background-color: #e6e6e6; }
 
 @media screen and (min-width: 1200px) {
   .container {

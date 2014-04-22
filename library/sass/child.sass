@@ -3,6 +3,7 @@ $lightGrey: #666666
 $darkGrey: #3F3C3E
 $white: #FFFFFF
 $yellow: #F6DD38
+$black: 000000
 
 
 body
@@ -12,24 +13,59 @@ body
 	font-family: 'Roboto', sans-serif
 	-webkit-font-smoothing: antialiased
  
-a
-	color: $white
 // Header
+.site-header
+	background-color: $lightGrey
+	height: 220px
+
+.address
+	float: right
+	display: inline-block
+	color: $white
+	margin-top: 15px
+
+.logo 
+	display: inline-block
+	float: right
+	width: 150px
+	height: 150px
+	background: url('../images/peb-bike-logo.png') center center no-repeat
+	background-size: cover
+	text-indent: -9999px
+
+.navbar-inverse .navbar-brand
+	margin-top: 30px
+	color: $yellow
+	float: left
+	display: inline-block
+	font-size: 2em
+	font-weight: 200
+	&hover
+		color: $yellow
+.navbar-inverse .navbar-nav
+	li
+		a
+			color: $black
+			-webkit-font-smoothing: antialiased
+			padding: 20px 16px
+			font-size: 16px
+			font-weight: 400
+			&:hover
+				background: rgba(0, 0, 0, .1)
+		&.active
+			a
+				background: rgba(0, 0, 0, .1)
+				&:hover
+					background: rgba(0, 0, 0, .2)
 
 .navbar-inverse
-	background: $lightGrey
-	border-bottom: 1px solid rgba(0, 0, 0, .2)
-	box-shadow: 0px 1px 4px rgba(0, 0, 0, .25)
+	background-color: lighten($lightGrey, 50%)
 
-.site-title
-	a
-		float: right
-		color: $yellow
 
-.navbar-brand
-	a
-		float: right
-		color: $yellow
+
+
+
+
 
 
 //Media Queries

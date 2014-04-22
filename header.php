@@ -31,9 +31,9 @@
 			<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
 
 			<!-- FONTS -->
-			<link href='http://fonts.googleapis.com/css?family=Roboto:300,400,500,700' rel='stylesheet' type='text/css'>
+			<!--<link href='http://fonts.googleapis.com/css?family=Roboto:300,400,500,700' rel='stylesheet' type='text/css'>
 			<link href='http://fonts.googleapis.com/css?family=Niconne' rel='stylesheet' type='text/css'>
-			<link href='http://fonts.googleapis.com/css?family=Ruluko' rel='stylesheet' type='text/css'>
+			<link href='http://fonts.googleapis.com/css?family=Ruluko' rel='stylesheet' type='text/css'>-->
 
 			<!-- wordpress head functions -->
 			<?php wp_head(); ?>
@@ -46,13 +46,31 @@
 
 		<body <?php body_class(); ?>>
 
-
-
 			<div class="wrapper">
 
 				<header class="header" role="banner">
 					<nav role="navigation">
 						<div class="navbar navbar-inverse navbar-fixed-top">
+
+							<section class="site-header">
+							<div class="container">
+								<div class="row">
+								<div id="location" class="col-sm-6 pull-right"><p class="address">843 Carleton St | Berkeley CA &nbsp;&nbsp;<strong>(510) 843 - 2453</strong></p>
+								</div><!-- location -->
+							</div><!-- .row -->
+
+							<div class="row">
+								<div class="col-sm-4">
+									<div class="logo"></div>
+								</div>
+								<div class="col-sm-8">
+									<h1><a class="navbar-brand" href="<?php bloginfo( 'url' ) ?>/" title="<?php bloginfo( 'name' ) ?>" rel="homepage"><?php bloginfo( 'name' ) ?></a></h1>
+								</div>
+							</div><!-- .row -->
+							</div><!-- .container -->
+
+						</section>
+
 							<div class="container">
 								<!-- .navbar-toggle is used as the toggle for collapsed navbar content -->
 								<div class="navbar-header">
@@ -61,16 +79,13 @@
 										<span class="icon-bar"></span>
 										<span class="icon-bar"></span>
 									</button>
-
-									<h1 class="site-title"><a class="navbar-brand" href="<?php bloginfo( 'url' ) ?>/" title="<?php bloginfo( 'name' ) ?>" rel="homepage"><?php bloginfo( 'name' ) ?></a></h1>
-
-								</div>
+								</div><!-- navbar-header -->
 
 								<div class="navbar-collapse collapse navbar-responsive-collapse">
 									<?php bones_main_nav(); ?>
-								</div>
-							</div>
-						</div> 
+								</div><!-- navbar-collapse -->
+							</div><!-- .container -->
+						</div> <!-- navbar-fixed-top -->
 						
 					</nav>
 

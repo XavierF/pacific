@@ -15,7 +15,7 @@
 	<div class="tag">
 		<h1><?php bloginfo('description'); ?></h1>
 	</div>
-	<div id="myCarousel" class="carousel slide">
+	<div id="myCarousel" class="carousel slide" data-ride="carousel">
 		<div class="carousel-inner">
 			<div class="item active" style="background: url('<?php the_field('slide_1_bg');?>') 50% 50% no-repeat; background-size: cover;">
 				<div class="container">

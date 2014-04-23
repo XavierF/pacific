@@ -19,8 +19,8 @@ homepage of your website.
 		<div class="row">
 			<div class="col-sm-12">
 				<div class="tag">
-				<h1><?php $site_description = get_bloginfo( 'description', 'display' ); echo "$site_description";?></h1>
-			</div><!-- tag -->
+					<h1><?php $site_description = get_bloginfo( 'description', 'display' ); echo "$site_description";?></h1>
+				</div><!-- tag -->
 			</div><!-- "col-sm-12" -->
 		</div><!-- row -->
 	</div><!-- .container -->

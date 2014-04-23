@@ -18,21 +18,75 @@ homepage of your website.
 <div class="container">
 		<div class="row">
 			<div class="col-sm-12">
-				<h1 class="tag"><?php $site_description = get_bloginfo( 'description', 'display' ); echo "$site_description";?></h1>
+				<div class="tag">
+				<h1><?php $site_description = get_bloginfo( 'description', 'display' ); echo "$site_description";?></h1>
+			</div><!-- tag -->
 			</div><!-- "col-sm-12" -->
 		</div><!-- row -->
 	</div><!-- .container -->
 </section>
-<section id="hero" role="slider">
-	
-	<!-- dynamic slider starts here -->
-	<?php //if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+<section id="hero" role="slider" class="container-fluid">
+<!-- carousel starts here -->
+	<div id="carousel" class="carousel slide" data-ride="carousel" data-interval="false">
+		<ol class="carousel-indicators">
+    <li data-target="#carousel" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel" data-slide-to="1"></li>
+    <li data-target="#carousel" data-slide-to="2"></li>
+  		</ol>
+			<div class="carousel-inner"><!-- carousel-wrapper -->
+				<?php 
+   $the_query = new WP_Query(array(
+    'category_name' => 'Home', 
+    'posts_per_page' => 1 
+    )); 
+   while ( $the_query->have_posts() ) : 
+   $the_query->the_post();
+  ?>
+  <?php if (has_post_thumbnail( $post->ID ) ): ?>
+	<?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' ); ?>
+				<div class="item active">
+				
+     			<div class="carousel-caption"><h3><?php the_title();?></h3></div>
+     
+  				<div style="background: url('<?php echo $image[0]; ?>') center center no-repeat; background-size: cover; height:700px; text-align:center;"></div>
+     			
+				</div><!--.item active -->
+				<?php 
+   endif; endwhile; 
+   wp_reset_postdata();wp_reset_query();
+  ?>
+				<?php 
+ $the_query = new WP_Query(array(
+  'category_name' => 'Home', 
+  'offset' => 1 
+  ));
+ while ( $the_query->have_posts() ) : 
+ $the_query->the_post();
+   ?>
+  <?php if (has_post_thumbnail( $post->ID ) ): ?>
+<?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' ); ?>
+				<div class="item">
+					<div class="carousel-caption"><h3><?php the_title();?></h3></div>
+     
+  <div style="background: url('<?php echo $image[0]; ?>') center center no-repeat; background-size: cover; height:700px; text-align:center;"></div>
+     			
+				</div><!-- .item -->
+<?php 
+ endif; endwhile; 
+ wp_reset_postdata();wp_reset_query();
+?>
+</div><!-- .carousel-inner -->
+		<a class="left carousel-control" href="#carousel" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+  </a>
+  <a class="right carousel-control" href="#carousel" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+  </a><!-- Controls -->	
+ 
+</div><!-- and carousel ends here-->
 
-	<?php //endwhile; endif; ?>  
-	<!-- and ends here -->
-
 	
-</section>
+</section><!-- end hero -->
 <section id="items">
 	<div class="container">
 		<div class="row content">

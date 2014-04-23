@@ -1,6 +1,5 @@
 body {
-  padding-top: 295px;
-  background-color: #e6e6e6;
+  background-color: white;
   color: #3f3c3e;
   font-family: "Roboto", sans-serif;
   -webkit-font-smoothing: antialiased; }
@@ -58,7 +57,16 @@ body {
       background: rgba(0, 0, 0, 0.2); }
 
 .navbar-inverse {
-  background-color: #e6e6e6; }
+  background-color: white; }
+
+.tag {
+  text-align: center; }
+  .tag h1 {
+    font-size: 3.7em;
+    font-weight: 200; }
+
+.carousel-control.left, .carousel-control.right {
+  background-image: none; }
 
 @media screen and (min-width: 1200px) {
   .container {

@@ -50,7 +50,7 @@
 
 				<header class="header" role="banner">
 					<nav role="navigation">
-						<div class="navbar navbar-inverse navbar-fixed-top">
+						<div class="navbar navbar-inverse">
 
 							<section class="site-header">
 							<div class="container">

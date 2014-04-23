@@ -17,7 +17,7 @@
 	</div>
 	<div id="myCarousel" class="carousel slide" data-ride="carousel">
 		<div class="carousel-inner">
-			<div class="item active" style="background: url('<?php the_field('slide_1_bg');?>') 50% 50% no-repeat; background-size: cover;">
+			<div class="item active" style="background: url('<?php the_field('slide_1_bg');?>') fixed no-repeat; background-size: cover;">
 				<div class="container">
 					<div class="row">
 						<div class="col-lg-12">
@@ -34,7 +34,7 @@
 					</div><!-- end .row-->
 				</div> <!-- end .container-->
 		</div>
-		<div class="item" style="background: url('<?php the_field('slide_2_bg');?>') 50% 50% no-repeat; background-size: cover;">
+		<div class="item" style="background: url('<?php the_field('slide_2_bg');?>') fixed no-repeat; background-size: cover;">
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-12">
@@ -51,7 +51,7 @@
 				</div><!-- end .row-->
 			</div> <!-- end .container-->
 		</div>
-		<div class="item" style="background: url('<?php the_field('slide_3_bg');?>') 10% 50% no-repeat; background-size: cover;">
+		<div class="item" style="background: url('<?php the_field('slide_3_bg');?>') fixed no-repeat; background-size: cover;">
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-12">
@@ -68,7 +68,7 @@
 				</div><!-- end .row-->
 			</div> <!-- end .container-->
 	</div>
-		<div class="item" style="background: url('<?php the_field('slide_4_bg');?>') 10% 50% no-repeat; background-size: cover;">
+		<div class="item" style="background: url('<?php the_field('slide_4_bg');?>') fixed no-repeat; background-size: cover;">
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-12">
@@ -85,7 +85,7 @@
 				</div><!-- end .row-->
 			</div> <!-- end .container-->
 		</div>
-		<div class="item" style="background: url('<?php the_field('slide_5_bg');?>') 10% 50% no-repeat; background-size: cover;">
+		<div class="item" style="background: url('<?php the_field('slide_5_bg');?>') fixed no-repeat; background-size: cover;">
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-12">

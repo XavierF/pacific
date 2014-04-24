@@ -72,11 +72,10 @@ body {
   padding: 0; }
 
 .tag {
-  text-align: center; }
-  .tag h1 {
-    font-size: 2.5em;
-    font-weight: 200;
-    margin: 20px 0; }
+  text-align: center;
+  font-size: 3.8em;
+  font-weight: 300;
+  margin: 20px 0; }
 
 .carousel .item {
   height: 700px; }

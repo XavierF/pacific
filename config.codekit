@@ -290,6 +290,28 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/library\/images\/white-brake.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1.75425e+06,
+		"inputAbbreviatedPath": "\/library\/images\/white-brake.jpg",
+		"outputAbbreviatedPath": "\/library\/images\/white-brake.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/library\/images\/white-display.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1.58996e+06,
+		"inputAbbreviatedPath": "\/library\/images\/white-display.jpg",
+		"outputAbbreviatedPath": "\/library\/images\/white-display.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/library\/images\/white-folder.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -297,6 +319,28 @@
 		"initialSize": 1.97665e+06,
 		"inputAbbreviatedPath": "\/library\/images\/white-folder.jpg",
 		"outputAbbreviatedPath": "\/library\/images\/white-folder.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/library\/images\/white-motor.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1.73533e+06,
+		"inputAbbreviatedPath": "\/library\/images\/white-motor.jpg",
+		"outputAbbreviatedPath": "\/library\/images\/white-motor.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/library\/images\/white-rt.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 2.18397e+06,
+		"inputAbbreviatedPath": "\/library\/images\/white-rt.jpg",
+		"outputAbbreviatedPath": "\/library\/images\/white-rt.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -1297,6 +1341,15 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/page.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/product-page-template.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/product-page-template.php",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0

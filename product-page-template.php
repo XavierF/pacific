@@ -96,9 +96,9 @@
 					</div><!-- end .row -->
 					<hr>
 						<h1><?php the_field('price'); ?></h1>
-						<p>AVAILABLE IN STORE OR ONLINE</p>
+						<h4>AVAILABLE IN STORE OR ONLINE</h4>
 						<p><a href="#" class="btn btn-primary btn-lg btn-block" target="" >BUY NOW</a></p>
-						<small>SAME DAY DELIVERY ON GOOGLE EXPRESS</small>
+						<p class="delivery">SAME DAY DELIVERY ON GOOGLE EXPRESS</p>
 	
 
 				</div><!-- end #sidebar-bike-->

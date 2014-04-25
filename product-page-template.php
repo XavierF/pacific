@@ -60,6 +60,7 @@
 						</div> <!-- end #main -->
 
 				<div class="sidebar-bike col-md-4">
+
 					<div class="row">
 						<div class="specs">
 							<h1><?php the_field('mile-range'); ?></h1>
@@ -69,7 +70,7 @@
 							<h1><?php the_field('watts'); ?></h1>
 							<small>WATTS</small>
 						</div> 
-					</div><!-- row -->
+					</div><!-- end .row -->
 
 					<div class="row">
 						<div class="specs">
@@ -80,7 +81,7 @@
 							<h1><?php the_field('mile-range-2'); ?></h1>
 							<small>MILE RANGE</small>
 						</div>
-					</div><!-- row -->
+					</div><!-- end .row -->
 
 					<div class="row">
 						<div class="specs">
@@ -92,8 +93,13 @@
 							<small><?php the_field('amps'); ?></small>
 						</div>
 						
-					</div><!-- row -->
-						
+					</div><!-- end .row -->
+					<hr>
+						<h1><?php the_field('price'); ?></h1>
+						<p>AVAILABLE IN STORE OR ONLINE</p>
+						<p><a href="#" class="btn btn-primary btn-lg btn-block" target="" >BUY NOW</a></p>
+						<small>SAME DAY DELIVERY ON GOOGLE EXPRESS</small>
+	
 
 				</div><!-- end #sidebar-bike-->
 				<?php get_sidebar(); ?>

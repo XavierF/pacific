@@ -55,8 +55,9 @@
 							<section class="site-header">
 							<div class="container">
 								<div class="row">
-								<div id="location" class="col-sm-6 pull-right"><p class="address">843 Carleton St | Berkeley CA &nbsp;&nbsp;<strong>(510) 843 - 2453</strong></p>
-								</div><!-- location -->
+									<div id="location" class="info col-sm-4"><p>843 Carleton St | Berkeley CA</p></div>
+									<div id="phone" class="info col-sm-4"><p>(510) 843 - 2453</p></div>
+									<div id="email" class="info col-sm-4"><p><a href="mailto:info@pacificebike.com">info@pacificebike.com</a></p></div>
 							</div><!-- .row -->
 
 							<div class="row">

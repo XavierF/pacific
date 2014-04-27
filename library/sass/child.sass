@@ -170,10 +170,12 @@ body
 	text-align: center
 	margin: 20px 0
 	border-bottom: 0
+	padding-bottom: 0
 
 .page-title	
 	font-size: 3.8em
 	font-weight: 300
+	margin-bottom: 0
 
 .entry-content
 	font-size: 1.3em
@@ -182,6 +184,12 @@ body
 
 .sidebar-bike
 	float: right
+	overflow: visible
+.sidebar
+	float: right !important
+	position: relative
+	
+
 .specs 
 	display: inline-block
 	text-align: center
@@ -199,6 +207,8 @@ body
 	border: 0
 	border-radius: 0
 	color: $white 
+	&:hover
+		background-color: rgba(0, 0, 0, .1)
 
 .delivery
 	font-size: .96em
@@ -234,7 +244,7 @@ body
 				text-decoration: none
 				color: $lightGrey
 
-
+@media screen and (max-width: 480px)
 
 
 

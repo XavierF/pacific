@@ -154,11 +154,13 @@ body {
 .page-header {
   text-align: center;
   margin: 20px 0;
-  border-bottom: 0; }
+  border-bottom: 0;
+  padding-bottom: 0; }
 
 .page-title {
   font-size: 3.8em;
-  font-weight: 300; }
+  font-weight: 300;
+  margin-bottom: 0; }
 
 .entry-content {
   font-size: 1.3em;
@@ -166,7 +168,12 @@ body {
   color: #666666; }
 
 .sidebar-bike {
-  float: right; }
+  float: right;
+  overflow: visible; }
+
+.sidebar {
+  float: right !important;
+  position: relative; }
 
 .specs {
   display: inline-block;
@@ -185,6 +192,8 @@ body {
   border: 0;
   border-radius: 0;
   color: white; }
+  .btn-primary:hover {
+    background-color: rgba(0, 0, 0, 0.1); }
 
 .delivery {
   font-size: 0.96em;

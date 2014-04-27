@@ -59,7 +59,7 @@
 
 						</div> <!-- end #main -->
 
-				<div class="sidebar-bike col-md-4">
+				<div class="sidebar-bike col-md-4 clearfix">
 
 					<div class="row">
 						<div class="specs">
@@ -99,10 +99,11 @@
 						<h4>AVAILABLE IN STORE OR ONLINE</h4>
 						<p><a href="#" class="btn btn-primary btn-lg btn-block" target="" >BUY NOW</a></p>
 						<p class="delivery">SAME DAY DELIVERY ON GOOGLE EXPRESS</p>
-	
-
+				
+				<?php get_sidebar(); ?>	
 				</div><!-- end #sidebar-bike-->
-				<?php get_sidebar(); ?>
+				
+				
 
 				</div> <!-- end #inner-content -->
 

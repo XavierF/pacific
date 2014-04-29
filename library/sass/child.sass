@@ -77,12 +77,35 @@ body
 				background: rgba(0, 0, 0, .1)
 				&:hover
 					background: rgba(0, 0, 0, .2)
+		.dropdown-menu
+			margin-top: 21px
+			li
+				float: none
+				a
+					float: left
+					color: $black
+					background: rgba(255, 255, 255, .1)
+					-webkit-font-smoothing: antialiased
+					padding: 10px
+					font-size: 16px
+					font-weight: light !important
+					&:hover
+						background: rgba(255, 255, 255, .1)
+				&.active
+					a
+						background: rgba(255, 255, 255, .1)
+						&:hover
+							background: rgba(255, 255, 255, .1)
+
 
 .navbar-inverse
 	background-color: $white
 	border-left: 0
 	border-right: 0
 	border-bottom: 1px solid $darkGrey
+
+
+
 
 // Home Page Content
 #banner.home-page
@@ -97,7 +120,7 @@ body
 // Carousel
 .carousel
 	.item
-		height: 700px
+		height: 500px
 		blockquote
 			display: inline-block
 			position: relative
@@ -181,6 +204,7 @@ body
 	font-size: 1.3em
 	line-height: 1.2em
 	color: $lightGrey
+	overflow: visible
 
 .sidebar-bike
 	float: right

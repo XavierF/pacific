@@ -81,12 +81,15 @@ body
 			margin-top: 21px
 			li
 				float: none
+				&:hover
+					background: rgba(0, 0, 0, .1)
 				a
 					float: left
 					color: $black
 					background: rgba(255, 255, 255, .1)
 					-webkit-font-smoothing: antialiased
-					padding: 10px
+					padding: 10px 0
+					width: 100%
 					font-size: 16px
 					font-weight: light !important
 					&:hover
@@ -95,7 +98,7 @@ body
 					a
 						background: rgba(255, 255, 255, .1)
 						&:hover
-							background: rgba(255, 255, 255, .1)
+							background: rgba(0, 0, 0, .1)
 
 
 .navbar-inverse
@@ -186,6 +189,18 @@ body
 		left: 0
 		opacity: 1
 		z-index: 1
+//Home page thumbs
+
+a.bike
+	text-align: center
+	color: black
+	margin: 10px auto
+	height: auto
+	width: auto
+	.thumb
+		text-align: center
+		width: 250
+		height: 125
 
 //Product Page Template
 

@@ -172,16 +172,25 @@ body {
     opacity: 1;
     z-index: 1; }
 
+.thumb-area {
+  margin: 20px 0; }
+
 a.bike {
   text-align: center;
   color: black;
-  margin: 10px auto;
+  margin: 10px auto 10px auto;
   height: auto;
   width: auto; }
-  a.bike .thumb {
-    text-align: center;
-    width: 250;
-    height: 125; }
+  a.bike p {
+    margin-top: 4px;
+    text-align: left;
+    border-left: 1px solid darkgray;
+    color: darkgray;
+    font-size: 1.5em;
+    padding: 5px 0 5px 5px; }
+
+.thumb img {
+  text-align: center; }
 
 .page-header {
   text-align: center;

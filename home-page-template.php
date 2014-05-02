@@ -118,45 +118,57 @@
 </div><!-- end of carousel -->
 </div> <!-- end #banner-->
 <!-- page thumbnails start here -->
-<section id="items" role="promo">
+<section id="items" role="promo" class="thumb-area">
 	<div class="container">
 		<div class="row">
 			<div class="col-sm-4">
 				<a href="<?php the_field('page_1_url'); ?>" class="bike">
 					<div class="thumb" style="background: url('<?php the_field('page_1_img');?>') center center no-repeat; background-size: cover; width:290px; height:193px;"></div>
 					<p><?php the_field('page_1_text'); ?></p>
+					<p><?php the_field('page_1_price'); ?></p>
+					<p><?php the_field('page_1_available'); ?></p>
 				</a>
 			</div><!-- end .col-sm-4 -->
 			<div class="col-sm-4">
 				<a href="<?php the_field('page_2_url'); ?>" class="bike">
 					<div class="thumb" style="background: url('<?php the_field('page_2_img');?>') center center no-repeat; background-size: cover; width:290px; height:193px;"></div>
 					<p><?php the_field('page_2_text'); ?></p>
+					<p><?php the_field('page_1_price'); ?></p>
+					<p><?php the_field('page_1_available'); ?></p>
 				</a>
 			</div><!-- end .col-sm-4 -->
 			<div class="col-sm-4">
 				<a href="<?php the_field('page_3_url'); ?>" class="bike">
 					<div class="thumb" style="background: url('<?php the_field('page_3_img');?>') center center no-repeat; background-size: cover; width:290px; height:193px;"></div>
 					<p><?php the_field('page_3_text'); ?></p>
+					<p><?php the_field('page_1_price'); ?></p>
+					<p><?php the_field('page_1_available'); ?></p>
 				</a>
-			</div><!-- end .col-sm-4 -->
-		</div><!-- end .row -->
+			</div><!-- end .col-sm-4-->
+		</div><!-- end .row-->
 		<div class="row">
 			<div class="col-sm-4">
 				<a href="<?php the_field('page_4_url'); ?>" class="bike">
 					<div class="thumb" style="background: url('<?php the_field('page_4_img');?>') center center no-repeat; background-size: cover; width:290px; height:193px;"></div>
 					<p><?php the_field('page_4_text'); ?></p>
+					<p><?php the_field('page_1_price'); ?></p>
+					<p><?php the_field('page_1_available'); ?></p>
 				</a>
 			</div><!-- end .col-sm-4 -->
 			<div class="col-sm-4">
 				<a href="<?php the_field('page_5_url'); ?>" class="bike">
 					<div class="thumb" style="background: url('<?php the_field('page_5_img');?>') center center no-repeat; background-size: cover; width:290px; height:193px;"></div>
 					<p><?php the_field('page_5_text'); ?></p>
+					<p><?php the_field('page_1_price'); ?></p>
+					<p><?php the_field('page_1_available'); ?></p>
 				</a>
 			</div><!-- end .col-sm-4 -->
 			<div class="col-sm-4">
 				<a href="<?php the_field('page_6_url'); ?>" class="bike">
 					<div class="thumb" style="background: url('<?php the_field('page_6_img');?>') center center no-repeat; background-size: cover; width:290px; height:193px;"></div>
 					<p><?php the_field('page_6_text'); ?></p>
+					<p><?php the_field('page_1_price'); ?></p>
+					<p><?php the_field('page_1_available'); ?></p>
 				</a>
 			</div><!-- end .col-sm-4 -->
 		</div><!-- end .row -->

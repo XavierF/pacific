@@ -180,14 +180,18 @@ a.bike {
   color: black;
   margin: 10px auto 10px auto;
   height: auto;
-  width: auto; }
+  width: auto;
+  margin-bottom: 10px; }
   a.bike p {
-    margin-top: 4px;
     text-align: left;
-    border-left: 1px solid darkgray;
     color: darkgray;
     font-size: 1.5em;
-    padding: 5px 0 5px 5px; }
+    padding: 0 0 5px 5px;
+    margin: 0; }
+
+.thumb-info {
+  border-left: 1px solid darkgray;
+  margin: 4px 0 10px 0; }
 
 .thumb img {
   text-align: center; }

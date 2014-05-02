@@ -78,7 +78,8 @@ body
 				&:hover
 					background: rgba(0, 0, 0, .2)
 		.dropdown-menu
-			margin-top: 21px
+			margin-top: 22px
+			padding: 0
 			li
 				float: none
 				&:hover
@@ -88,15 +89,16 @@ body
 					color: $black
 					background: rgba(255, 255, 255, .1)
 					-webkit-font-smoothing: antialiased
-					padding: 10px 0
+					padding: 10px
 					width: 100%
+					text-align: left
 					font-size: 16px
 					font-weight: light !important
 					&:hover
-						background: rgba(255, 255, 255, .1)
+						background: rgba(0, 0, 0, .1)
 				&.active
 					a
-						background: rgba(255, 255, 255, .1)
+						background: rgba(0, 0, 0, .1)
 						&:hover
 							background: rgba(0, 0, 0, .1)
 
@@ -168,7 +170,7 @@ body
 				margin-bottom: 10px
 				color: #ccc
 .carousel-control
-	line-height: 700px
+	line-height: 500px
 	font-size: 7em
 	font-weight: normal
 
@@ -200,15 +202,19 @@ a.bike
 	height: auto
 	width: auto
 	margin-bottom: 10px
+	&:hover
+		text-decoration: none
 	p
 		text-align: left
 		color: darkGrey
 		font-size: 1.5em
+		line-height: 1em
 		padding: 0 0 5px 5px
 		margin: 0
 .thumb-info
 	border-left: 1px solid darkGrey
 	margin: 4px 0 10px 0
+	padding-top: 5px
 
 
 .thumb

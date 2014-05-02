@@ -67,7 +67,8 @@ body {
     .navbar-inverse .navbar-nav li.active a:hover {
       background: rgba(0, 0, 0, 0.2); }
   .navbar-inverse .navbar-nav li .dropdown-menu {
-    margin-top: 21px; }
+    margin-top: 22px;
+    padding: 0; }
     .navbar-inverse .navbar-nav li .dropdown-menu li {
       float: none; }
       .navbar-inverse .navbar-nav li .dropdown-menu li:hover {
@@ -77,14 +78,15 @@ body {
         color: black;
         background: rgba(255, 255, 255, 0.1);
         -webkit-font-smoothing: antialiased;
-        padding: 10px 0;
+        padding: 10px;
         width: 100%;
+        text-align: left;
         font-size: 16px;
         font-weight: light !important; }
         .navbar-inverse .navbar-nav li .dropdown-menu li a:hover {
-          background: rgba(255, 255, 255, 0.1); }
+          background: rgba(0, 0, 0, 0.1); }
       .navbar-inverse .navbar-nav li .dropdown-menu li.active a {
-        background: rgba(255, 255, 255, 0.1); }
+        background: rgba(0, 0, 0, 0.1); }
         .navbar-inverse .navbar-nav li .dropdown-menu li.active a:hover {
           background: rgba(0, 0, 0, 0.1); }
 
@@ -150,7 +152,7 @@ body {
       color: #cccccc; }
 
 .carousel-control {
-  line-height: 700px;
+  line-height: 500px;
   font-size: 7em;
   font-weight: normal; }
 
@@ -182,16 +184,20 @@ a.bike {
   height: auto;
   width: auto;
   margin-bottom: 10px; }
+  a.bike:hover {
+    text-decoration: none; }
   a.bike p {
     text-align: left;
     color: darkgray;
     font-size: 1.5em;
+    line-height: 1em;
     padding: 0 0 5px 5px;
     margin: 0; }
 
 .thumb-info {
   border-left: 1px solid darkgray;
-  margin: 4px 0 10px 0; }
+  margin: 4px 0 10px 0;
+  padding-top: 5px; }
 
 .thumb img {
   text-align: center; }

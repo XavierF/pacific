@@ -99,6 +99,15 @@
 						<h4>AVAILABLE IN STORE OR ONLINE</h4>
 						<p><a href="#" class="btn btn-primary btn-lg btn-block" target="" >BUY NOW</a></p>
 						<p class="delivery">SAME DAY DELIVERY ON GOOGLE EXPRESS</p>
+					<hr>
+					<ul class="social">
+						<li>facebook</li>
+						<li>google+</li>
+						<li>instagram</li>
+						<li>Pinterest</li>
+						<li>rss</li>
+						<li>tweet</li>
+					</ul>
 				
 				<?php get_sidebar(); ?>	
 				</div><!-- end #sidebar-bike-->

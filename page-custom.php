@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: Custom Page Example
+Template Name: Custom Page Template
 */
 ?>
 
@@ -8,36 +8,36 @@ Template Name: Custom Page Example
 
 <div class="container">
 
-			<div id="content">
+			<div id="page-content">
+				<header class="page-header">
+									<h1 class="page-title"><?php the_title(); ?></h1>
+								</header> <!-- end page header -->
 
 				<div id="inner-content" class="wrap clearfix">
 
-						<div id="main" class="clearfix" role="main">
+						
 
 							<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
 							<article id="post-<?php the_ID(); ?>" <?php post_class( 'clearfix' ); ?> role="article" itemscope itemtype="http://schema.org/BlogPosting">
 
-								<header class="article-header">
-
-									<h1 class="page-title"><?php the_title(); ?></h1>
-									<p class="byline vcard"><?php
-										printf( __( 'Posted <time class="updated" datetime="%1$s" pubdate>%2$s</time> by <span class="author">%3$s</span>.', 'bonestheme' ), get_the_time( 'Y-m-j' ), get_the_time( __( 'F jS, Y', 'bonestheme' ) ), bones_get_the_author_posts_link() );
-									?></p>
-
-
-								</header> <!-- end article header -->
+								
 
 								<section class="entry-content clearfix" itemprop="articleBody">
-									<?php the_content(); ?>
+									<div class="row">
+										<div class="col-md-6">
+											<?php the_content(); ?>
+										</div><!-- .col-md-5 -->
+										<div class="col-md-6">
+											<?php the_field('right_column'); ?>
+										</div><!-- .col-md-5 -->
+									</div><!-- .row -->
 								</section> <!-- end article section -->
 
 								<footer class="article-footer">
 									<p class="clearfix"><?php the_tags( '<span class="tags">' . __( 'Tags:', 'bonestheme' ) . '</span> ', ' ', '' ); ?></p>
 
 								</footer> <!-- end article footer -->
-
-								<?php comments_template(); ?>
 
 							</article> <!-- end article -->
 
@@ -57,10 +57,9 @@ Template Name: Custom Page Example
 
 							<?php endif; ?>
 
-						</div> <!-- end #main -->
+						
 
-						<?php get_sidebar(); ?>
-
+						
 				</div> <!-- end #inner-content -->
 
 			</div> <!-- end #content -->

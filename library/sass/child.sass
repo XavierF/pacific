@@ -37,9 +37,10 @@ body
 .navbar-logo
 	display: block
 	width: 150px
-	height: 80px
+	height: 60px
 	background: url('../images/peb-bike-logo.png') center center no-repeat
-	background-size: cover
+	background-size: 80%
+	margin-top: 10px
 
 .navbar-inverse .navbar-brand
 	margin-top: 0
@@ -268,12 +269,23 @@ a.bike
 	border-radius: 0
 	color: $white 
 	&:hover
-		background-color: rgba(0, 0, 0, .1)
+		background: darken($orange, 10%)
 
 .delivery
 	font-size: .96em
 	text-align: center
 
+.social
+	li
+		list-style-type: none
+		display: inline
+
+.icon
+	display: inline-block
+
+// Custom Page
+
+// Footer
 
 .footer 
 	background: $black

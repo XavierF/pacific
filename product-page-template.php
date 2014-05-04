@@ -97,16 +97,41 @@
 					<hr>
 						<h1><?php the_field('price'); ?></h1>
 						<h4>AVAILABLE IN STORE OR ONLINE</h4>
-						<p><a href="#" class="btn btn-primary btn-lg btn-block" target="" >BUY NOW</a></p>
+						<p><a href="<?php the_field('buy_online_link'); ?>" class="btn btn-primary btn-lg btn-block" target="" >BUY NOW</a></p>
 						<p class="delivery">SAME DAY DELIVERY ON GOOGLE EXPRESS</p>
 					<hr>
 					<ul class="social">
-						<li>facebook</li>
-						<li>google+</li>
-						<li>instagram</li>
-						<li>Pinterest</li>
-						<li>rss</li>
-						<li>tweet</li>
+						<li>
+							<div id="facebook" class="icon">
+								<a target=”_blank” href="https://www.facebook.com/sharer/sharer.php?u=<?php the_permalink() ?><?php wp_title(''); ?>">facebook</a>
+							</div>
+						</li>
+						<li>
+							<div id="google" class="icon">
+								<a id="ref_gp" href="https://plus.google.com/share?url=<?php the_permalink() ?>"onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=no,scrollbars=no,height=400,width=600');return false">google+</a>
+							</div>
+						</li>
+						<li>
+							<div id="instagram" class="icon">
+								instagram
+							</div>
+						</li>
+						<li>
+							<div id="pinterst" class="icon">
+								<a id="ref_pr" href="http://pinterest.com/pin/create/bookmarklet/?media=<?php echo urlencode($share_image);?>&amp;url=<?php the_permalink() ?>&amp;is_video=false&amp;description=v"onclick="javascript:window.open(this.href, '_blank', 'menubar=no,toolbar=no,resizable=no,scrollbars=no,height=400,width=600');return false;">Pinterest</a>
+							</div>
+						</li>
+						<li>
+							<div id="rss" class="icon">
+								rss
+							</div>
+						</li>
+						<li>
+							<div id="twitter" class="icon">
+								<a target=”_blank” href="https://twitter.com/share">tweet</a>
+							</div>
+						</li>
+						<li><a id="ref_tw" href="http://twitter.com/home?status=<?php wp_title(''); ?>+<?php the_permalink() ?>"  onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=no,scrollbars=no,height=400,width=600');return false;">Tweet this?</a></li>
 					</ul>
 				
 				<?php get_sidebar(); ?>	
@@ -119,5 +144,53 @@
 			</div> <!-- end #page-content -->
 
 				</div> <!-- end .container -->
+
+<script type="application/javascript">
+  window.fbAsyncInit = function() {
+    // init the FB JS SDK
+    FB.init({
+      appId      : 'APP ID',                            
+      status     : true,                                 
+      xfbml      : true                                  
+    });
+
+  };
+
+  // Load the SDK asynchronously
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/en_US/all.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+
+
+function FBShareOp(){
+	var product_name   = 	'your title name';
+	var description	   =	'description';
+	var share_image	   =	'full image url '; // featured image
+	var share_url	   =	'url to share';	
+        var share_capt     =    'caption';
+    FB.ui({
+        method: 'feed',
+        name: product_name,
+        link: share_url,
+        picture: share_image,
+        caption: share_capt,
+        description: description
+
+    }, function(response) {
+        if(response && response.post_id){}
+        else{}
+    });
+
+}
+
+
+</script>
+
+
+
 
 <?php get_footer(); ?>

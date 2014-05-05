@@ -259,6 +259,20 @@ a.bike {
 .icon {
   display: inline-block; }
 
+.entry-content h3 {
+  margin-top: 0px; }
+.entry-content p {
+  margin-bottom: 20px; }
+
+ul.services {
+  margin: 20px 0 40px -20px; }
+  ul.services li {
+    padding: 15px 0;
+    border-bottom: 1px dotted #666666;
+    color: #f6dd38; }
+  ul.services span {
+    color: #3f3c3e; }
+
 .footer {
   background: black; }
 

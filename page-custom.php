@@ -30,6 +30,9 @@ Template Name: Custom Page Template
 										</div><!-- .col-md-5 -->
 										<div class="col-md-6">
 											<?php the_field('right_column'); ?>
+
+<hr>
+<a href="http://www.yelp.com/biz/pacific-e-bike-berkeley">Yelp</a>
 										</div><!-- .col-md-5 -->
 									</div><!-- .row -->
 								</section> <!-- end article section -->

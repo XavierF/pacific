@@ -653,6 +653,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/library\/images\/shop-photos\/preston.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 35309,
+		"inputAbbreviatedPath": "\/library\/images\/shop-photos\/preston.jpg",
+		"outputAbbreviatedPath": "\/library\/images\/shop-photos\/preston.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/library\/images\/shop-photos\/service.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -836,6 +847,17 @@
 		"initialSize": 8048,
 		"inputAbbreviatedPath": "\/library\/images\/win8-tile-icon.png",
 		"outputAbbreviatedPath": "\/library\/images\/win8-tile-icon.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/library\/images\/yelp-logo.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 109621,
+		"inputAbbreviatedPath": "\/library\/images\/yelp-logo.jpg",
+		"outputAbbreviatedPath": "\/library\/images\/yelp-logo.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0

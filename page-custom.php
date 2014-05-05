@@ -32,7 +32,8 @@ Template Name: Custom Page Template
 											<?php the_field('right_column'); ?>
 
 <hr>
-<a href="http://www.yelp.com/biz/pacific-e-bike-berkeley">Yelp</a>
+<h4>"Best prices and service in town"</h4>
+<a class="yelp" href="http://www.yelp.com/biz/pacific-e-bike-berkeley" title="yelp" target="_blank"></a>
 										</div><!-- .col-md-5 -->
 									</div><!-- .row -->
 								</section> <!-- end article section -->

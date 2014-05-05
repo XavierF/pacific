@@ -102,38 +102,34 @@
 					<hr>
 					<ul class="social">
 						<li>
-							<div id="facebook" class="icon">
-								<a target=”_blank” href="https://www.facebook.com/sharer/sharer.php?u=<?php the_permalink() ?><?php wp_title(''); ?>">facebook</a>
-							</div>
+								<a class="facebook" target=”_blank” href="https://www.facebook.com/sharer/sharer.php?u=<?php the_permalink() ?><?php wp_title(''); ?>"></a>
 						</li>
 						<li>
-							<div id="google" class="icon">
-								<a id="ref_gp" href="https://plus.google.com/share?url=<?php the_permalink() ?>"onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=no,scrollbars=no,height=400,width=600');return false">google+</a>
-							</div>
+							
+								<a class="google" id="ref_gp" href="https://plus.google.com/share?url=<?php the_permalink() ?>"onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=no,scrollbars=no,height=400,width=600');return false"></a>
+							
 						</li>
 						<li>
-							<div id="instagram" class="icon">
-								instagram
-							</div>
+							<a class="instagram" href="#"></a>
+							
 						</li>
 						<li>
-							<div id="pinterst" class="icon">
-								<a id="ref_pr" href="http://pinterest.com/pin/create/bookmarklet/?media=<?php echo urlencode($share_image);?>&amp;url=<?php the_permalink() ?>&amp;is_video=false&amp;description=v"onclick="javascript:window.open(this.href, '_blank', 'menubar=no,toolbar=no,resizable=no,scrollbars=no,height=400,width=600');return false;">Pinterest</a>
-							</div>
+							
+								<a class="pinterest" href="#" id="ref_pr" href="http://pinterest.com/pin/create/bookmarklet/?media=<?php echo urlencode($share_image);?>&amp;url=<?php the_permalink() ?>&amp;is_video=false&amp;description=v"onclick="javascript:window.open(this.href, '_blank', 'menubar=no,toolbar=no,resizable=no,scrollbars=no,height=400,width=600');return false;"></a>
+						
 						</li>
 						<li>
-							<div id="rss" class="icon">
-								rss
-							</div>
+							<a class="rss" href="<?php bloginfo('rss2_url'); ?>"></a>
 						</li>
 						<li>
-							<div id="twitter" class="icon">
-								<a target=”_blank” href="https://twitter.com/share">tweet</a>
-							</div>
+						
+							<a class="twitter" id="ref_tw" href="http://twitter.com/home?status=<?php wp_title(''); ?>+<?php the_permalink() ?>"  onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=no,scrollbars=no,height=400,width=600');return false;"></a>
+		
 						</li>
-						<li><a id="ref_tw" href="http://twitter.com/home?status=<?php wp_title(''); ?>+<?php the_permalink() ?>"  onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=no,scrollbars=no,height=400,width=600');return false;">Tweet this?</a></li>
 					</ul>
-				
+				<hr>
+<h4>"Best prices and service in town"</h4>
+<a class="yelp" href="http://www.yelp.com/biz/pacific-e-bike-berkeley" title="yelp" target="_blank"></a>
 				<?php get_sidebar(); ?>	
 				</div><!-- end #sidebar-bike-->
 				

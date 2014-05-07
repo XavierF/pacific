@@ -116,9 +116,8 @@ body {
     display: inline-block;
     position: relative;
     border-left: none;
-    margin-top: 15%;
     padding: 0;
-    margin: 60px 0 0 40px;
+    margin: 30px 0 0 10px;
     font-size: 3.5em;
     color: white;
     font-family: "Helvetica Neue", sans-serif;
@@ -138,7 +137,7 @@ body {
       font-family: "Times New Roman", Georgia, serif;
       font-weight: bold;
       line-height: 1;
-      margin-left: -50px;
+      margin-left: -52px;
       margin-top: -10px;
       color: #cccccc; }
     .carousel .item blockquote:after {
@@ -151,8 +150,8 @@ body {
       font-family: "Times New Roman", Georgia, serif;
       font-weight: bold;
       line-height: 1;
-      margin-right: -34px;
-      margin-bottom: 10px;
+      margin-right: -38px;
+      margin-bottom: 15px;
       color: #cccccc; }
 
 .carousel-control {
@@ -386,6 +385,36 @@ ul.services {
   .tag {
     font-size: 1em;
     margin: 10px 0; }
+
+  .carousel .item {
+    height: 200px; }
+    .carousel .item blockquote {
+      margin: 10px 0 0 10px;
+      font-size: 1em; }
+      .carousel .item blockquote small {
+        color: rgba(255, 255, 255, 0.75);
+        font-size: 0.9em;
+        font-weight: medium; }
+      .carousel .item blockquote:before {
+        content: "“";
+        font-size: 1.4em;
+        font-family: "Times New Roman", Georgia, serif;
+        font-weight: bold;
+        line-height: 1;
+        margin-left: -11px;
+        margin-top: 0; }
+      .carousel .item blockquote:after {
+        content: "”";
+        display: block;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        font-size: 1.2em;
+        font-family: "Times New Roman", Georgia, serif;
+        font-weight: bold;
+        line-height: 1;
+        margin-right: -9px;
+        margin-bottom: 20px; }
 
   .thumb-info {
     border-left: 0; }

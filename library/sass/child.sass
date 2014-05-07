@@ -131,9 +131,8 @@ body
 			display: inline-block
 			position: relative
 			border-left: none
-			margin-top: 15%
 			padding: 0
-			margin: 60px 0 0 40px
+			margin: 30px 0 0 10px
 			font-size: 3.5em
 			color: white
 			font-family: 'Helvetica Neue', sans-serif
@@ -143,7 +142,6 @@ body
 				color: rgba(255, 255, 255, .75)
 				font-size: .5em
 				font-style: normal
-
 			&:before
 				content: "“"
 				display: block
@@ -154,7 +152,7 @@ body
 				font-family: 'Times New Roman', Georgia, serif
 				font-weight: bold
 				line-height: 1
-				margin-left: -50px
+				margin-left: -52px
 				margin-top: -10px
 				color: #ccc
 			&:after
@@ -167,8 +165,8 @@ body
 				font-family: 'Times New Roman', Georgia, serif
 				font-weight: bold
 				line-height: 1
-				margin-right: -34px
-				margin-bottom: 10px
+				margin-right: -38px
+				margin-bottom: 15px
 				color: #ccc
 .carousel-control
 	line-height: 500px
@@ -396,7 +394,7 @@ ul.services
 	.container
 		width: 970px
 @media screen and (max-width: 480px)
-	
+
 	.navbar-toggle
 		margin: -5px 10px 0 0
 
@@ -424,6 +422,39 @@ ul.services
 	.tag
 		font-size: 1em
 		margin: 10px 0
+
+
+	.carousel
+		.item
+			height: 200px
+			blockquote
+				margin: 10px 0 0 10px
+				font-size: 1em
+				small
+					color: rgba(255, 255, 255, .75)
+					font-size: .9em
+					font-weight: medium
+				&:before
+					content: "“"
+					font-size: 1.4em
+					font-family: 'Times New Roman', Georgia, serif
+					font-weight: bold
+					line-height: 1
+					margin-left: -11px
+					margin-top: 0
+				&:after
+					content: "”"
+					display: block
+					position: absolute
+					right: 0
+					bottom: 0
+					font-size: 1.2em
+					font-family: 'Times New Roman', Georgia, serif
+					font-weight: bold
+					line-height: 1
+					margin-right: -9px
+					margin-bottom: 20px
+			
 
 	.thumb-info
 		border-left: 0

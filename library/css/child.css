@@ -398,4 +398,16 @@ ul.services {
     width: auto;
     margin-bottom: 10px; }
     a.bike p {
-      text-align: center; } }
+      text-align: center; }
+
+  .footer {
+    margin-top: 20px;
+    padding: 15px 0;
+    text-align: center; }
+
+  .footer-nav {
+    float: none;
+    display: block; }
+    .footer-nav li {
+      text-align: center;
+      display: block; } }

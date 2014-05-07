@@ -52,8 +52,8 @@
 					<nav role="navigation">
 						<div class="navbar navbar-inverse">
 
-							<section class="site-header">
-							<div class="container">
+							<section class="site-header clearfix">
+							<div class="container cleatfix">
 								<div class="row">
 									<div id="location" class="info col-sm-4"><p>843 Carleton St | Berkeley CA</p></div>
 									<div id="phone" class="info col-sm-4"><p>(510) 843 - 2453</p></div>
@@ -61,25 +61,25 @@
 							</div><!-- .row -->
 
 							<div class="row">
-								<div class="col-sm-4">
-									<a class="navbar-logo pull-right" href="<?php bloginfo( 'url' ) ?>/" title="<?php bloginfo( 'name' ) ?>" rel="homepage"></a>
-								</div>
-								<div class="col-sm-8">
+							
+									<a class="navbar-logo" href="<?php bloginfo( 'url' ) ?>/" title="<?php bloginfo( 'name' ) ?>" rel="homepage"></a>
+								
+								
 									<h1><a class="navbar-brand" href="<?php bloginfo( 'url' ) ?>/" title="<?php bloginfo( 'name' ) ?>" rel="homepage"><?php bloginfo( 'name' ) ?></a></h1>
-								</div>
+											<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+													<span class="icon-bar"></span>
+													<span class="icon-bar"></span>
+													<span class="icon-bar"></span>
+												</button><!-- .navbar-toggle is used as the toggle for collapsed navbar content -->
 							</div><!-- .row -->
 							</div><!-- .container -->
 
 						</section>
 
 							<div class="container">
-								<!-- .navbar-toggle is used as the toggle for collapsed navbar content -->
+								
 								<div class="navbar-header">
-									<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
-										<span class="icon-bar"></span>
-										<span class="icon-bar"></span>
-										<span class="icon-bar"></span>
-									</button>
+									
 								</div><!-- navbar-header -->
 
 								<div class="navbar-collapse collapse navbar-responsive-collapse">

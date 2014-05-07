@@ -11,7 +11,7 @@
 <section id="description" role="tagline">
 <div class="container">
 		<div class="row">
-			<div class="col-sm-12">
+			<div class="col-sm-12 clearfix">
 					<h1 class="tag"><?php bloginfo('description'); ?></h1>
 			</div><!-- "col-sm-12" -->
 		</div><!-- row -->

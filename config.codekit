@@ -499,6 +499,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/library\/images\/gplus.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 881,
+		"inputAbbreviatedPath": "\/library\/images\/gplus.png",
+		"outputAbbreviatedPath": "\/library\/images\/gplus.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/library\/images\/instagram.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -609,6 +620,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/library\/images\/peb-bike-logo-prv.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 11919,
+		"inputAbbreviatedPath": "\/library\/images\/peb-bike-logo-prv.png",
+		"outputAbbreviatedPath": "\/library\/images\/peb-bike-logo-prv.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/library\/images\/peb-bike-logo.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -616,6 +638,28 @@
 		"initialSize": 11919,
 		"inputAbbreviatedPath": "\/library\/images\/peb-bike-logo.png",
 		"outputAbbreviatedPath": "\/library\/images\/peb-bike-logo.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/library\/images\/pinterest.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 958,
+		"inputAbbreviatedPath": "\/library\/images\/pinterest.png",
+		"outputAbbreviatedPath": "\/library\/images\/pinterest.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/library\/images\/rss.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 855,
+		"inputAbbreviatedPath": "\/library\/images\/rss.png",
+		"outputAbbreviatedPath": "\/library\/images\/rss.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -752,13 +796,13 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/library\/images\/twitter.png": {
+	"\/library\/images\/tweet.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 535,
-		"inputAbbreviatedPath": "\/library\/images\/twitter.png",
-		"outputAbbreviatedPath": "\/library\/images\/twitter.png",
+		"initialSize": 792,
+		"inputAbbreviatedPath": "\/library\/images\/tweet.png",
+		"outputAbbreviatedPath": "\/library\/images\/tweet.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -1791,11 +1835,36 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
+	"\/library\/translation\/child.sass": {
+		"createSourceMap": 0,
+		"debugStyle": 0,
+		"decimalPrecision": 5,
+		"fileType": 2,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/library\/translation\/child.sass",
+		"outputAbbreviatedPath": "\/library\/css\/child.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"useLibsass": 0
+		},
 	"\/library\/translation\/translation.php": {
 		"fileType": 8192,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/library\/translation\/translation.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/page-contact.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/page-contact.php",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
@@ -1916,7 +1985,7 @@
 	},
 "hooks": [
 	],
-"lastSavedByUser": "Xavierf.Biz",
+"lastSavedByUser": "XavierF.Biz",
 "manualImportLinks": {
 	},
 "projectAttributes": {

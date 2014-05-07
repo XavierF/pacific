@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: Custom Page Template
+Template Name: Contact Page Template
 */
 ?>
 
@@ -29,7 +29,7 @@ Template Name: Custom Page Template
 											<?php the_content(); ?>
 										</div><!-- .col-md-5 -->
 										<div class="col-md-6">
-											<?php the_field('right_column'); ?>
+										<?php echo FrmFormsController::show_form(2, $key = '', $title=true, $description=true); ?> 
 
 
 <hr>

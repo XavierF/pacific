@@ -3,6 +3,7 @@ body {
   background-color: white;
   color: #3f3c3e;
   font-family: "Roboto", sans-serif;
+  font-size: 16px;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -265,7 +266,7 @@ a.bike p {
   text-align: left;
   margin: 20px 0;
   border-bottom: 0;
-  padding: 0 0 0 100px;
+  padding: 0 0 0 83px;
 }
 
 .page-title {
@@ -279,6 +280,10 @@ a.bike p {
   line-height: 1.2em;
   color: #666666;
   overflow: visible;
+}
+.entry-content p {
+  line-height: 1.4em;
+  font-size: 16px;
 }
 
 #wpgmza_map {
@@ -299,15 +304,19 @@ a.bike p {
 .specs {
   display: inline-block;
   text-align: center;
-  width: 140px;
-  height: 140px;
+  width: 120px;
+  height: 120px;
   padding-top: 15px;
   margin: 0 0 30px 30px;
-  border: 1px solid #666666;
+  border: 1px solid #cccccc;
 }
 .specs h1 {
-  font-size: 4em;
+  font-size: 3em;
   font-weight: 400;
+  margin-bottom: 0;
+}
+.specs small {
+  margin-bottom: 5px;
 }
 
 hr {
@@ -342,7 +351,7 @@ hr {
 .social li {
   list-style-type: none;
   display: inline;
-  margin-right: 28px;
+  margin-right: 27px;
 }
 
 .facebook {

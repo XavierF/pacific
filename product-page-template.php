@@ -34,6 +34,8 @@
 								
 								<section class="entry-content clearfix" itemprop="articleBody">
 									<?php the_content(); ?>
+									<?php echo do_shortcode('[wpgmza id="2"]'); ?>
+
 							</section> <!-- end article section -->
 
 
@@ -100,7 +102,6 @@
 						<div class="buy-bkgd">
 						<a href="<?php the_field('buy_online_link'); ?>" class="btn btn-primary btn-lg btn-block" target="" >BUY NOW</a>
 						</div><!-- end buy-bkgd-->
-						<p class="delivery">SAME DAY DELIVERY ON GOOGLE EXPRESS</p>
 					<hr>
 					<ul class="social">
 						<li>

@@ -730,6 +730,50 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/library\/images\/slide-1.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 2.1357e+06,
+		"inputAbbreviatedPath": "\/library\/images\/slide-1.jpg",
+		"outputAbbreviatedPath": "\/library\/images\/slide-1.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/library\/images\/slide-2.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 2.27731e+06,
+		"inputAbbreviatedPath": "\/library\/images\/slide-2.jpg",
+		"outputAbbreviatedPath": "\/library\/images\/slide-2.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/library\/images\/slide-3.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 2.12584e+06,
+		"inputAbbreviatedPath": "\/library\/images\/slide-3.jpg",
+		"outputAbbreviatedPath": "\/library\/images\/slide-3.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/library\/images\/slide-4.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1.75046e+06,
+		"inputAbbreviatedPath": "\/library\/images\/slide-4.jpg",
+		"outputAbbreviatedPath": "\/library\/images\/slide-4.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/library\/images\/ter-blk\/ter-blk-battery2.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -1830,7 +1874,7 @@
 		"outputAbbreviatedPath": "\/library\/css\/child.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"outputStyle": 0,
+		"outputStyle": 1,
 		"shouldRunAutoprefixer": 0,
 		"shouldRunBless": 0,
 		"useLibsass": 0
@@ -1991,7 +2035,7 @@
 "projectAttributes": {
 	"bowerAbbreviatedPath": "",
 	"displayValue": "builder",
-	"displayValueWasSetByUser": 0,
+	"displayValueWasSetByUser": 1,
 	"iconImageName": "brackets_orange"
 	},
 "projectSettings": {

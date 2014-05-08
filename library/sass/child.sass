@@ -64,12 +64,14 @@ body
 	li
 		float: none
 		display: inline
+		margin: 0
+		margin-right: -4px
 		a
 			float: none
 			display: inline-block
 			color: $black
 			-webkit-font-smoothing: antialiased
-			padding: 20px 25px
+			padding: 20px 30px
 			font-size: 16px
 			font-weight: bold
 			&:hover
@@ -212,7 +214,7 @@ a.bike
 		margin: 0
 .thumb-info
 	border-left: 1px solid darkGrey
-	margin: 4px 0 10px 0
+	margin: 4px 0 30px 0
 	padding-top: 5px
 
 
@@ -223,6 +225,12 @@ a.bike
 
 
 //Product Page Template
+#main
+	width: 700px
+	padding-left: 100px
+	padding-right: 0px
+.col-md-4
+	width: 400px
 
 .page-header
 	text-align: center
@@ -258,7 +266,7 @@ a.bike
 	width: 140px
 	height: 140px
 	padding-top: 15px
-	margin: 0 0 15px 15px
+	margin: 0 0 30px 30px
 	border: 1px solid $lightGrey
 	h1
 		font-size: 4em 
@@ -332,6 +340,11 @@ a.bike
 	background: url('../images/yelp-logo.jpg') center center no-repeat
 	background-size: cover
 	display: block
+.frm_submit
+	button, html input[type="button"], input[type="reset"], input[type="submit"] 
+		@extend .btn-primary 
+		padding: 10px 20px
+		width: 150px
 
 
 // Custom Page
@@ -382,17 +395,11 @@ ul.services
 				text-decoration: none
 				color: $lightGrey
 
-
-
-
-
-
-
-
 //Media Queries
 @media screen and (min-width: 1200px)
 	.container
-		width: 970px
+		width: 1180px
+
 @media screen and (max-width: 480px)
 
 	.navbar-toggle
@@ -458,6 +465,7 @@ ul.services
 
 	.thumb-info
 		border-left: 0
+		margin-bottom: 10px
 		
 
 	a.bike
@@ -470,6 +478,44 @@ ul.services
 	
 		p
 			text-align: center
+	.page-header
+		margin: 10px 0
+	.page-title
+		font-size: 2.5em
+		margin: 0
+	.specs 
+		display: inline-block
+		text-align: center
+		width: 140px
+		height: 80px
+		padding-top: 0
+		margin: 0 0 15px 15px
+		border: 1px solid $lightGrey
+		h1
+			font-size: 2.5em 
+			font-weight: 300
+			margin: 5px 0 5px 0
+
+	#inner-content
+		margin-left: 0 !important
+		maring-right: 0 !important
+
+	.frm_form_fields
+		width: 290px
+	
+	
+	.frm_form_fields .frm_full 
+		select
+			width: 290px
+		input
+			width: 290px
+		textarea
+			width: 290px
+
+	#wpgmza_map
+		width: 290px
+		height: 300px
+
 	.footer 
 		margin-top: 20px
 		padding: 15px 0

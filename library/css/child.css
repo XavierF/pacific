@@ -142,14 +142,14 @@ body {
 }
 
 .carousel .item {
-  height: 500px;
+  height: 640px;
 }
 .carousel .item blockquote {
   display: inline-block;
   position: relative;
   border-left: none;
   padding: 0;
-  margin: 30px 0 0 10px;
+  margin: 30px 0 0 80px;
   font-size: 3.5em;
   color: white;
   font-family: "Helvetica Neue", sans-serif;
@@ -191,7 +191,7 @@ body {
 }
 
 .carousel-control {
-  line-height: 500px;
+  line-height: 600px;
   font-size: 7em;
   font-weight: normal;
 }
@@ -218,34 +218,37 @@ body {
   z-index: 1;
 }
 
-.thumb-area {
-  margin: 20px 0;
+.thumbs {
+  margin: 30px 0;
 }
-
-a.bike {
-  text-align: center;
+.thumbs .bike a {
   color: black;
   margin: 10px auto 10px auto;
   height: auto;
   width: auto;
+  margin-left: 0;
+  margin-right: 0;
   margin-bottom: 10px;
 }
-a.bike:hover {
+.thumbs .bike:hover {
   text-decoration: none;
 }
-a.bike p {
+.thumbs .bike .thumb-info {
+  text-align: left;
+  border-left: 1px solid darkgray;
+  margin: 4px 0 30px 0;
+  padding: 5px 0 0 10px;
+}
+.thumbs .bike .thumb-info p {
   text-align: left;
   color: darkgray;
   font-size: 1.5em;
   line-height: 1em;
-  padding: 0 0 5px 5px;
+  padding: 0 0 5px 0;
   margin: 0;
 }
-
-.thumb-info {
-  border-left: 1px solid darkgray;
-  margin: 4px 0 30px 0;
-  padding-top: 5px;
+.thumbs .bike .thumb-info:hover {
+  text-decoration: none;
 }
 
 .thumb img {
@@ -256,10 +259,6 @@ a.bike p {
   width: 600px;
   padding-left: 100px;
   padding-right: 0px;
-}
-
-.col-md-4 {
-  width: 400px;
 }
 
 .page-header {

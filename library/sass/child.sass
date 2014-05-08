@@ -129,13 +129,13 @@ body
 // Carousel
 .carousel
 	.item
-		height: 500px
+		height: 640px
 		blockquote
 			display: inline-block
 			position: relative
 			border-left: none
 			padding: 0
-			margin: 30px 0 0 10px
+			margin: 30px 0 0 80px
 			font-size: 3.5em
 			color: white
 			font-family: 'Helvetica Neue', sans-serif
@@ -172,7 +172,7 @@ body
 				margin-bottom: 15px
 				color: #ccc
 .carousel-control
-	line-height: 500px
+	line-height: 600px
 	font-size: 7em
 	font-weight: normal
 
@@ -194,44 +194,47 @@ body
 		opacity: 1
 		z-index: 1
 //Home page thumbs
-.thumb-area
-	margin: 20px 0
+.thumbs
+	margin: 30px 0
 
-a.bike
-	text-align: center
-	color: black
-	margin: 10px auto 10px auto
-	height: auto
-	width: auto
-	margin-bottom: 10px
-	&:hover
-		text-decoration: none
-	p
-		text-align: left
-		color: darkGrey
-		font-size: 1.5em
-		line-height: 1em
-		padding: 0 0 5px 5px
-		margin: 0
-.thumb-info
-	border-left: 1px solid darkGrey
-	margin: 4px 0 30px 0
-	padding-top: 5px
+	.bike
+		a
+			color: black
+			margin: 10px auto 10px auto
+			height: auto
+			width: auto
+			margin-left: 0
+			margin-right: 0
+			margin-bottom: 10px
+		&:hover
+			text-decoration: none
+		.thumb-info
+			text-align: left
+			border-left: 1px solid darkGrey
+			margin: 4px 0 30px 0
+			padding: 5px 0 0 10px
+			p
+				text-align: left
+				color: darkGrey
+				font-size: 1.5em
+				line-height: 1em
+				padding: 0 0 5px 0
+				margin: 0
+			&:hover
+				text-decoration: none
+	
 
 
 .thumb
 	img
 		text-align: center
 	
-
-
 //Product Page Template
 #main
 	width: 600px
 	padding-left: 100px
 	padding-right: 0px
-.col-md-4
-	width: 400px
+
 
 .page-header
 	text-align: left
@@ -312,28 +315,24 @@ hr
 	background: url('../images/facebook.png') center center no-repeat
 	background-size: cover
 	display: inline-block
-
 .google
 	height: 35px
 	width: 35px
 	background: url('../images/gplus.png') center center no-repeat
 	background-size: cover
 	display: inline-block
-
 .instagram
 	height: 35px
 	width: 35px
 	background: url('../images/instagram.png') center center no-repeat
 	background-size: cover
 	display: inline-block
-
 .pinterest
 	height: 35px
 	width: 35px
 	background: url('../images/pinterest.png') center center no-repeat
 	background-size: cover
 	display: inline-block
-
 .rss
 	height: 35px
 	width: 35px
@@ -347,8 +346,6 @@ hr
 	background: url('../images/tweet.png') center center no-repeat
 	background-size: cover
 	display: inline-block
-
-
 .yelp
 	height: 77px
 	width: 170px
@@ -365,6 +362,7 @@ hr
 // Custom Page
 
 .entry-content
+
 	h3
 		margin-top: 0px
 	p

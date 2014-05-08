@@ -221,6 +221,10 @@ body {
 .thumbs {
   margin: 30px 0;
 }
+.thumbs .thumb {
+  width: 360px;
+  height: 240px;
+}
 .thumbs .bike a {
   color: black;
   margin: 10px auto 10px auto;
@@ -542,21 +546,39 @@ ul.services span {
     margin-bottom: 20px;
   }
 
-  .thumb-info {
-    border-left: 0;
-    margin-bottom: 10px;
+  .thumbs {
+    margin: 15px 0;
   }
-
-  a.bike {
-    text-align: center;
+  .thumbs .thumb {
+    width: 290px;
+    height: 190px;
+  }
+  .thumbs .bike a {
+    width: 100%;
     color: black;
     margin: 10px auto 10px auto;
     height: auto;
     width: auto;
+    margin-left: 0;
+    margin-right: 0;
     margin-bottom: 10px;
   }
-  a.bike p {
+  .thumbs .bike:hover {
+    text-decoration: none;
+  }
+  .thumbs .bike .thumb-info {
+    text-align: left;
+    border-left: 0;
+    margin: 4px 0 30px 0;
+    padding: 5px 0 0 10px;
+  }
+  .thumbs .bike .thumb-info p {
     text-align: center;
+    color: darkgray;
+    font-size: 1.5em;
+    line-height: 1em;
+    padding: 0 0 5px 0;
+    margin: 0;
   }
 
   .page-header {

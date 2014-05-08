@@ -226,17 +226,17 @@ a.bike
 
 //Product Page Template
 #main
-	width: 700px
+	width: 600px
 	padding-left: 100px
 	padding-right: 0px
 .col-md-4
 	width: 400px
 
 .page-header
-	text-align: center
+	text-align: left
 	margin: 20px 0
 	border-bottom: 0
-	padding-bottom: 0
+	padding: 0 0 0 100px
 
 .page-title	
 	font-size: 3.8em
@@ -255,6 +255,8 @@ a.bike
 .sidebar-bike
 	float: right
 	overflow: visible
+	padding: 0 90px 0 30px
+
 .sidebar
 	float: right !important
 	position: relative
@@ -271,7 +273,12 @@ a.bike
 	h1
 		font-size: 4em 
 		font-weight: 400
-
+hr
+	margin-top: 0
+.buy-bkgd
+	display: block
+	background: #f2f2f2
+	padding: 20px
 .btn-primary
 	background: $orange
 	border: 0
@@ -281,7 +288,8 @@ a.bike
 		background: darken($orange, 10%)
 
 .delivery
-	font-size: .96em
+	margin-top: 10px
+	font-size: 1.1em
 	text-align: center
 
 .social
@@ -289,7 +297,7 @@ a.bike
 	li
 		list-style-type: none
 		display: inline
-		margin-right: 12.5px
+		margin-right: 28px
 
 .facebook
 	height: 35px
@@ -396,7 +404,7 @@ ul.services
 				color: $lightGrey
 
 //Media Queries
-@media screen and (min-width: 1200px)
+@media screen and (min-width: 900px)
 	.container
 		width: 1180px
 

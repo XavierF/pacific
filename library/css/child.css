@@ -252,7 +252,7 @@ a.bike p {
 }
 
 #main {
-  width: 700px;
+  width: 600px;
   padding-left: 100px;
   padding-right: 0px;
 }
@@ -262,10 +262,10 @@ a.bike p {
 }
 
 .page-header {
-  text-align: center;
+  text-align: left;
   margin: 20px 0;
   border-bottom: 0;
-  padding-bottom: 0;
+  padding: 0 0 0 100px;
 }
 
 .page-title {
@@ -288,6 +288,7 @@ a.bike p {
 .sidebar-bike {
   float: right;
   overflow: visible;
+  padding: 0 90px 0 30px;
 }
 
 .sidebar {
@@ -309,6 +310,16 @@ a.bike p {
   font-weight: 400;
 }
 
+hr {
+  margin-top: 0;
+}
+
+.buy-bkgd {
+  display: block;
+  background: #f2f2f2;
+  padding: 20px;
+}
+
 .btn-primary, .frm_submit button, .frm_submit html input[type="button"], .frm_submit input[type="reset"], .frm_submit input[type="submit"] {
   background: #ef6e31;
   border: 0;
@@ -320,7 +331,8 @@ a.bike p {
 }
 
 .delivery {
-  font-size: 0.96em;
+  margin-top: 10px;
+  font-size: 1.1em;
   text-align: center;
 }
 
@@ -330,7 +342,7 @@ a.bike p {
 .social li {
   list-style-type: none;
   display: inline;
-  margin-right: 12.5px;
+  margin-right: 28px;
 }
 
 .facebook {
@@ -445,7 +457,7 @@ ul.services span {
   color: #666666;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 900px) {
   .container {
     width: 1180px;
   }

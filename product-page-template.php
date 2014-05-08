@@ -59,7 +59,7 @@
 
 						</div> <!-- end #main -->
 
-				<div class="sidebar-bike col-md-4 clearfix">
+				<div class="sidebar-bike col-md-5 clearfix">
 
 					<div class="row">
 						<div class="specs">
@@ -97,7 +97,9 @@
 					<hr>
 						<h1><?php the_field('price'); ?></h1>
 						<h4>AVAILABLE IN STORE OR ONLINE</h4>
-						<p><a href="<?php the_field('buy_online_link'); ?>" class="btn btn-primary btn-lg btn-block" target="" >BUY NOW</a></p>
+						<div class="buy-bkgd">
+						<a href="<?php the_field('buy_online_link'); ?>" class="btn btn-primary btn-lg btn-block" target="" >BUY NOW</a>
+						</div><!-- end buy-bkgd-->
 						<p class="delivery">SAME DAY DELIVERY ON GOOGLE EXPRESS</p>
 					<hr>
 					<ul class="social">

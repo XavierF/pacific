@@ -108,9 +108,6 @@
 								<a class="facebook" target=”_blank” href="https://www.facebook.com/sharer/sharer.php?u=<?php the_permalink() ?><?php wp_title(''); ?>"></a>
 						</li>
 						<li>
-								<a class="google" id="ref_gp" href="https://plus.google.com/share?url=<?php the_permalink() ?>"onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=no,scrollbars=no,height=400,width=600');return false"></a>
-						</li>
-						<li>
 							<a class="instagram" href="#"></a>
 						</li>
 						<li>

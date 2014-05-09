@@ -9,7 +9,7 @@ Template Name: Contact Page Template
 <div class="container">
 
 			<div id="page-content">
-				<header class="page-header">
+				<header class="custom-page-header">
 									<h1 class="page-title"><?php the_title(); ?></h1>
 								</header> <!-- end page header -->
 

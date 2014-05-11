@@ -418,13 +418,15 @@ hr {
   margin: 0 0 10px -20px;
 }
 
-.sub-header h1 {
+.sub-header h2 {
   margin-top: 0;
   color: black;
 }
 
-.entry-content h2 {
+.entry-content h4 {
   color: black;
+  font-size: 0.98em;
+  margin-top: 0;
 }
 .entry-content p {
   margin-bottom: 20px;

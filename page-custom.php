@@ -19,12 +19,13 @@ Template Name: Custom Page Template
 						
 						<div class="row">
 							<div class="sub-header col-md-12">
-								<h1><?php the_field('page_tagline'); ?></h1>
+								
 							</div>
 						</div>
 
 						<div class="row">
 							<div class="col-md-6">
+								<h4><?php the_field('page_tagline'); ?></h4>
 								<?php the_content(); ?>
 							</div><!-- .col-md-6 -->
 							<div class="col-md-6"><!-- right column -->

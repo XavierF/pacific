@@ -161,6 +161,7 @@ function bones_comments( $comment, $args, $depth ) {
 <?php
 } // don't remove this bracket!
 
+
 /************* SEARCH FORM LAYOUT ****************
 This function overrides searchform.php
 

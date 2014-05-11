@@ -6,7 +6,6 @@
  *
  */
 ?>
-
 <?php get_header(); ?>
 
 <div class="container">
@@ -14,88 +13,82 @@
 			<div id="page-content">
 
 				<header class="page-header">
-
-									<h1 class="page-title" itemprop="headline"><?php the_title(); ?></h1>
-									
+									<h1 class="page-title" itemprop="headline"><?php the_title(); ?></h1>			
 				</header> <!-- end page header -->
 
 				<div id="inner-content" class="wrap clearfix">
 
-
-
 						<div id="main" class="clearfix" role="main">
-
 							<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
-					
+								<article id="post-<?php the_ID(); ?>" <?php post_class( 'clearfix' ); ?> role="article" itemscope itemtype="http://schema.org/BlogPosting">
 
-							<article id="post-<?php the_ID(); ?>" <?php post_class( 'clearfix' ); ?> role="article" itemscope itemtype="http://schema.org/BlogPosting">
+									<section class="entry-content clearfix" itemprop="articleBody">
+										<?php the_content(); ?>
 
-								
-								<section class="entry-content clearfix" itemprop="articleBody">
-									<?php the_content(); ?>
-									<?php echo do_shortcode('[wpgmza id="2"]'); ?>
-
-							</section> <!-- end article section -->
-
-
-							
-
-							</article> <!-- end article -->
+											<div class="hidden-xs"><!-- google map starts here -->
+											<h2>Find us in Berkeley</h2>
+											<h2>Find us in Berkeley</h2>
+											<p>(510) 843 - 2453</p>
+											<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3150.1380694641416!2d-122.29379259999999!3d37.8570597!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80857ef2200c0469%3A0xe800db178ed7e187!2s843+Carleton+St!5e0!3m2!1sen!2sus!4v1399783363925" width="100%" height="400" frameborder="0" style="border:0"></iframe>
+										</div><!-- google map ends here -->
+									
+									</section> <!-- end article section -->
+								</article> <!-- end article -->
 
 							<?php endwhile; else : ?>
 
-									<article id="post-not-found" class="hentry clearfix">
-										<header class="article-header">
-											<h1><?php _e( 'Oops, Post Not Found!', 'bonestheme' ); ?></h1>
-										</header>
-										<section class="entry-content">
-											<p><?php _e( 'Uh Oh. Something is missing. Try double checking things.', 'bonestheme' ); ?></p>
-										</section>
-										<footer class="article-footer">
-												<p><?php _e( 'This is the error message in the product-page-template.php template.', 'bonestheme' ); ?></p>
-										</footer>
-									</article>
+								<article id="post-not-found" class="hentry clearfix">
+									<header class="article-header">
+										<h1><?php _e( 'Oops, Post Not Found!', 'bonestheme' ); ?></h1>
+									</header>
+									<section class="entry-content">
+										<p><?php _e( 'Uh Oh. Something is missing. Try double checking things.', 'bonestheme' ); ?></p>
+									</section>
+									<footer class="article-footer">
+											<p><?php _e( 'This is the error message in the product-page-template.php template.', 'bonestheme' ); ?></p>
+									</footer>
+								</article>
 
 							<?php endif; ?>
 
 						</div> <!-- end #main -->
 
-				<div class="sidebar-bike col-md-5 clearfix">
+						<div class="sidebar-bike col-md-5 clearfix">
 
-					<div class="row">
-						<div class="specs">
-							<h1><?php the_field('mile-range'); ?></h1>
-							<small>MILE RANGE</small>
-						</div> 
-						<div class="specs">
-							<h1><?php the_field('watts'); ?></h1>
-							<small>WATTS</small>
-						</div> 
-					</div><!-- end .row -->
+							<div class="row">
+								<div class="specs">
+									<h1><?php the_field('mile-range'); ?></h1>
+									<small>MILE RANGE</small>
+								</div> 
+								<div class="specs">
+									<h1><?php the_field('watts'); ?></h1>
+									<small>WATTS</small>
+								</div> 
+							</div><!-- end .row -->
 
-					<div class="row">
-						<div class="specs">
-							<h1><?php the_field('mph'); ?></h1>
-							<small>MPH</small>
-						</div> 
-						<div class="specs">
-							<h1><?php the_field('mile-range-2'); ?></h1>
-							<small>MILE RANGE</small>
-						</div>
-					</div><!-- end .row -->
+							<div class="row">
+								<div class="specs">
+									<h1><?php the_field('mph'); ?></h1>
+									<small>MPH</small>
+								</div> 
+								<div class="specs">
+									<h1><?php the_field('mile-range-2'); ?></h1>
+									<small>MILE RANGE</small>
+								</div>
+							</div><!-- end .row -->
 
-					<div class="row">
-						<div class="specs">
-							<h1><?php the_field('hrs-charge'); ?></h1>
-							<small>HRS / CHARGE</small>
-						</div>
-						<div class="specs">
-							<h1><?php the_field('battery'); ?></h1>
-							<small><?php the_field('amps'); ?></small>
-						</div>
-						
-					</div><!-- end .row -->
+							<div class="row">
+								<div class="specs">
+									<h1><?php the_field('hrs-charge'); ?></h1>
+									<small>HRS / CHARGE</small>
+								</div>
+								<div class="specs">
+									<h1><?php the_field('battery'); ?></h1>
+									<small><?php the_field('amps'); ?></small>
+								</div>
+								
+							</div><!-- end .row -->
 					<hr>
 						<h1><?php the_field('price'); ?></h1>
 						<h4>AVAILABLE IN STORE OR ONLINE</h4>
@@ -103,27 +96,32 @@
 						<a href="<?php the_field('buy_online_link'); ?>" class="btn btn-primary btn-lg btn-block" target="" >BUY NOW</a>
 						</div><!-- end buy-bkgd-->
 					<hr>
-					<ul class="social">
-						<li>
-								<a class="facebook" target=”_blank” href="https://www.facebook.com/sharer/sharer.php?u=<?php the_permalink() ?><?php wp_title(''); ?>"></a>
-						</li>
-						<li>
-							<a class="instagram" href="#"></a>
-						</li>
-						<li>
-								<a class="pinterest" href="#" id="ref_pr" href="http://pinterest.com/pin/create/bookmarklet/?media=<?php echo urlencode($share_image);?>&amp;url=<?php the_permalink() ?>&amp;is_video=false&amp;description=v"onclick="javascript:window.open(this.href, '_blank', 'menubar=no,toolbar=no,resizable=no,scrollbars=no,height=400,width=600');return false;"></a>
-						</li>
-						<li>
-							<a class="rss" href="<?php bloginfo('rss2_url'); ?>"></a>
-						</li>
-						<li>
-							<a class="twitter" id="ref_tw" href="http://twitter.com/home?status=<?php wp_title(''); ?>+<?php the_permalink() ?>"  onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=no,scrollbars=no,height=400,width=600');return false;"></a>
-						</li>
-					</ul>
+							<ul class="social">
+								<li>
+										<a class="facebook" target=”_blank” href="https://www.facebook.com/sharer/sharer.php?u=<?php the_permalink() ?><?php wp_title(''); ?>"></a>
+								</li>
+								<li>
+									<a class="instagram" href="#"></a>
+								</li>
+								<li>
+										<a class="pinterest" href="#" id="ref_pr" href="http://pinterest.com/pin/create/bookmarklet/?media=<?php echo urlencode($share_image);?>&amp;url=<?php the_permalink() ?>&amp;is_video=false&amp;description=v"onclick="javascript:window.open(this.href, '_blank', 'menubar=no,toolbar=no,resizable=no,scrollbars=no,height=400,width=600');return false;"></a>
+								</li>
+								<li>
+									<a class="rss" href="<?php bloginfo('rss2_url'); ?>"></a>
+								</li>
+								<li>
+									<a class="twitter" id="ref_tw" href="http://twitter.com/home?status=<?php wp_title(''); ?>+<?php the_permalink() ?>"  onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=no,scrollbars=no,height=400,width=600');return false;"></a>
+								</li>
+							</ul>
 				<hr>
-<h4>"Best prices and service in town"</h4>
-<a class="yelp" href="http://www.yelp.com/biz/pacific-e-bike-berkeley" title="yelp" target="_blank"></a>
-				<?php get_sidebar(); ?>	
+					<h4>"Best prices and service in town"</h4>
+					<a class="yelp" href="http://www.yelp.com/biz/pacific-e-bike-berkeley" title="yelp" target="_blank"></a>
+						<div class="visible-xs"><!-- google map starts here -->
+							<h2>Find us in Berkeley</h2>
+							<p>(510) 843 - 2453</p>
+							<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3150.1380694641416!2d-122.29379259999999!3d37.8570597!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80857ef2200c0469%3A0xe800db178ed7e187!2s843+Carleton+St!5e0!3m2!1sen!2sus!4v1399783363925" width="100%" height="200" frameborder="0" style="border:0"></iframe>
+						</div><!-- google map ends here -->
+				
 				</div><!-- end #sidebar-bike-->
 				
 				

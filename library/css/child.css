@@ -276,6 +276,7 @@ body {
   font-size: 3.8em;
   font-weight: 300;
   margin-bottom: 0;
+  color: #666666;
 }
 
 .entry-content {
@@ -368,14 +369,6 @@ hr {
   display: inline-block;
 }
 
-.google {
-  height: 35px;
-  width: 35px;
-  background: url("../images/gplus.png") center center no-repeat;
-  background-size: cover;
-  display: inline-block;
-}
-
 .instagram {
   height: 35px;
   width: 35px;
@@ -422,11 +415,16 @@ hr {
 }
 
 .custom-page-header {
-  margin: 0 0 20px -20px;
+  margin: 0 0 10px -20px;
 }
 
-.entry-content h3 {
-  margin-top: 0px;
+.sub-header h1 {
+  margin-top: 0;
+  color: black;
+}
+
+.entry-content h2 {
+  color: black;
 }
 .entry-content p {
   margin-bottom: 20px;

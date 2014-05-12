@@ -28,7 +28,6 @@
 
 											<div class="hidden-xs"><!-- google map starts here -->
 											<h2>Find us in Berkeley</h2>
-											<h2>Find us in Berkeley</h2>
 											<p>(510) 843 - 2453</p>
 											<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3150.1380694641416!2d-122.29379259999999!3d37.8570597!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80857ef2200c0469%3A0xe800db178ed7e187!2s843+Carleton+St!5e0!3m2!1sen!2sus!4v1399783363925" width="100%" height="400" frameborder="0" style="border:0"></iframe>
 										</div><!-- google map ends here -->

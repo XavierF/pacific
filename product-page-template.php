@@ -52,6 +52,7 @@
 							<?php endif; ?>
 
 						</div> <!-- end #main -->
+						
 
 						<div class="sidebar-bike col-md-5 clearfix">
 
@@ -59,35 +60,51 @@
 								<div class="specs">
 									<h1><?php the_field('mile-range'); ?></h1>
 									<small>MILE RANGE</small>
-								</div> 
+								</div><!-- end .specs -->
+
 								<div class="specs">
 									<h1><?php the_field('watts'); ?></h1>
 									<small>WATTS</small>
-								</div> 
+								</div> <!-- end .specs -->
+
+								<div class="specs visible-sm visible-md"><!-- visible tablets -->
+									<h1><?php the_field('mph'); ?></h1>
+									<small>MPH</small>
+								</div><!-- end .specs -->
+
 							</div><!-- end .row -->
 
-							<div class="row">
+							<div class="row visible-xs visible-lg"><!-- visible phone and desktop -->
 								<div class="specs">
 									<h1><?php the_field('mph'); ?></h1>
 									<small>MPH</small>
-								</div> 
+								</div><!-- end .specs -->
+
 								<div class="specs">
 									<h1><?php the_field('mile-range-2'); ?></h1>
 									<small>MILE RANGE</small>
-								</div>
+								</div><!-- end .specs -->
+
 							</div><!-- end .row -->
 
 							<div class="row">
+								<div class="specs visible-sm visible-md"><!-- visible tablets -->
+									<h1><?php the_field('mile-range-2'); ?></h1>
+									<small>MILE RANGE</small>
+								</div><!-- end .specs -->
+
 								<div class="specs">
 									<h1><?php the_field('hrs-charge'); ?></h1>
 									<small>HRS / CHARGE</small>
-								</div>
+								</div><!-- end .specs -->
+
 								<div class="specs">
 									<h1><?php the_field('battery'); ?></h1>
 									<small><?php the_field('amps'); ?></small>
-								</div>
-								
+								</div><!-- end .specs -->
+
 							</div><!-- end .row -->
+
 					<hr>
 						<h1><?php the_field('price'); ?></h1>
 						<h4>AVAILABLE IN STORE OR ONLINE</h4>

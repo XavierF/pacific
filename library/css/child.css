@@ -488,9 +488,19 @@ hr {
     width: 1180px;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 980px) {
+@media screen and (min-width: 768px) and (max-width: 1024px) {
   .navbar-logo {
     margin-left: 50px;
+  }
+
+  .page-header {
+    padding: 0;
+    text-align: center;
+  }
+
+  #main {
+    padding: 0;
+    margin: 0 auto;
   }
 
   .thumbs {
@@ -528,11 +538,15 @@ hr {
 
   .specs {
     float: left;
-    margin: 30px 30px 0 30px;
+    margin: 30px 6% 0;
   }
 
   .buy-bkgd {
     width: 400px;
+    margin: 0 auto;
+  }
+
+  .yelp {
     margin: 0 auto;
   }
 }

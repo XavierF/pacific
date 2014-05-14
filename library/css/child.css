@@ -310,7 +310,7 @@ body {
   width: 120px;
   height: 120px;
   padding-top: 15px;
-  margin: 0 0 30px 30px;
+  margin: 0 0 30px 7.547%;
   border: 1px solid #cccccc;
 }
 .specs h1 {
@@ -741,14 +741,6 @@ hr {
   #inner-content {
     margin-left: 0 !important;
     margin-right: 0 !important;
-  }
-
-  .left {
-    padding-right: 0;
-  }
-
-  .right {
-    padding-left: 0;
   }
 
   #main {

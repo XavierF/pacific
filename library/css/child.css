@@ -1,8 +1,8 @@
 @charset "UTF-8";
 body {
   background-color: white;
-  color: #3f3c3e;
-  font-family: "Heveltica-Newe", sans-serif;
+  color: #3b3b3b;
+  font-family: "Helvetica Neue", sans-serif;
   font-size: 16px;
   -webkit-font-smoothing: antialiased;
 }
@@ -126,7 +126,7 @@ body {
   background-color: white;
   border-left: 0;
   border-right: 0;
-  border-bottom: 1px solid #3f3c3e;
+  border-bottom: 1px solid #1a1a1a;
 }
 .navbar-inverse .navbar-toggle .icon-bar {
   background-color: #f6dd38;
@@ -276,16 +276,17 @@ body {
 }
 
 .page-title {
-  font-size: 3.8em;
-  font-weight: 300;
+  font-size: 50px;
+  font-family: "Helvetica Neue", sans-serif;
+  font-weight: 100;
   margin-bottom: 0;
-  color: #666666;
+  color: #1a1a1a;
 }
 
 .entry-content {
   font-size: 1.3em;
   line-height: 1.2em;
-  color: #666666;
+  color: #3b3b3b;
   overflow: visible;
 }
 .entry-content p {
@@ -418,8 +419,12 @@ hr {
   width: 150px;
 }
 
+#custom-page-content {
+  padding: 0 55px;
+}
+
 .custom-page-header {
-  margin: 0 0 10px -20px;
+  margin: 0 0 40px -20px;
 }
 
 .sub-header h2 {
@@ -427,37 +432,34 @@ hr {
   color: black;
 }
 
-.entry-content h4 {
-  color: black;
-  font-size: 0.98em;
-  margin-top: 0;
+.entry-content h3 {
+  color: #1a1a1a;
+  font-size: 26px;
+  margin: 0 0 40px 0;
 }
 .entry-content p {
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 
 .left {
-  padding-right: 40px;
-  padding-left: 40px;
-  width: 480px;
+  margin-right: 50px;
+  width: 510px;
 }
 
 .right {
-  padding-left: 40px;
-  padding-right: 40px;
-  width: 480px;
+  width: 510px;
 }
 
-.services ul {
+ul.services {
   margin: 20px 0 40px -20px;
 }
-.services li {
+ul.services li {
   padding: 15px 0;
-  border-bottom: 1px dotted #666666;
+  border-bottom: 1px dotted #3b3b3b;
   color: #f6dd38;
 }
-.services span {
-  color: #3f3c3e;
+ul.services span {
+  color: #1a1a1a;
 }
 
 .footer {
@@ -466,7 +468,7 @@ hr {
 
 .source-org {
   display: inline-block;
-  color: #666666;
+  color: #3b3b3b;
   margin: 10px 0 0 0;
 }
 
@@ -484,12 +486,12 @@ hr {
 
 .footer-nav li a {
   padding-left: 15px;
-  color: #666666;
+  color: #3b3b3b;
   -webkit-font-smoothing: antialiased;
 }
 .footer-nav li a:hover {
   text-decoration: none;
-  color: #666666;
+  color: #3b3b3b;
 }
 
 @media screen and (min-width: 900px) {
@@ -773,7 +775,7 @@ hr {
     height: 80px;
     padding-top: 0;
     margin: 0 0 15px 15px;
-    border: 1px solid #666666;
+    border: 1px solid #3b3b3b;
   }
   .specs h1 {
     font-size: 2.5em;

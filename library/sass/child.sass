@@ -1,6 +1,6 @@
 //BRAND COLORS
-$lightGrey: #666666
-$darkGrey: #3F3C3E
+$lightGrey: #3B3B3B
+$darkGrey: #1A1A1A
 $white: #FFFFFF
 $yellow: #F6DD38
 $black: #000000
@@ -10,8 +10,8 @@ $orange: #EF6E31
 body
 	//padding-top: 295px
 	background-color: $white
-	color: $darkGrey
-	font-family: 'Heveltica-Newe', sans-serif
+	color: $lightGrey
+	font-family: 'Helvetica Neue', sans-serif
 	font-size: 16px
 	-webkit-font-smoothing: antialiased
  
@@ -243,10 +243,11 @@ body
 	padding: 0 0 0 83px
 
 .page-title	
-	font-size: 3.8em
-	font-weight: 300
+	font-size: 50px
+	font-family: 'Helvetica Neue', sans-serif
+	font-weight: 100
 	margin-bottom: 0
-	color: $lightGrey
+	color: $darkGrey
 
 .entry-content
 	font-size: 1.3em
@@ -361,8 +362,11 @@ hr
 
 // Custom Page & Contact Page
 
+#custom-page-content
+	padding: 0 55px
+
 .custom-page-header
-	margin: 0 0 10px -20px
+	margin: 0 0 40px -20px
 
 .sub-header
 	h2
@@ -370,25 +374,22 @@ hr
 		color: $black
 
 .entry-content
-	h4
-		color: $black
-		font-size: .98em
-		margin-top: 0
+	h3
+		color: $darkGrey
+		font-size: 26px
+		margin: 0 0 40px 0
 	p
-		margin-bottom: 20px
+		margin-bottom: 40px
 .left 
-	padding-right: 40px
-	padding-left: 40px
-	width: 480px
+	margin-right: 50px
+	width: 510px
 
 .right 
-	padding-left: 40px
-	padding-right: 40px
-	width: 480px
+	width: 510px
 
-.services
-	ul
-		margin: 20px 0 40px -20px
+ul.services
+
+	margin: 20px 0 40px -20px
 	li
 		padding: 15px 0
 		border-bottom: 1px dotted $lightGrey

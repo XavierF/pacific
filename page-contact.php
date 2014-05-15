@@ -7,7 +7,7 @@ Template Name: Contact Page Template
 <?php get_header(); ?>
 
 <div class="container">
-	<div id="page-content">
+	<div id="custom-page-content">
 			<header class="custom-page-header">
 				<h1 class="page-title"><?php the_title(); ?></h1>
 			</header> <!-- end page header -->
@@ -17,10 +17,15 @@ Template Name: Contact Page Template
 				<article id="post-<?php the_ID(); ?>" <?php post_class( 'clearfix' ); ?> role="article" itemscope itemtype="http://schema.org/BlogPosting">
 
 					<section class="entry-content clearfix" itemprop="articleBody">
+						<div class="sub-head row">
+								<div class="left col-md-5">
+										<h3><?php the_field('page_tagline'); ?></h3>
+								</div><!-- end .left col-md-5 <--></-->
+						</div><!-- end .row -->
+
 
 						<div class="row">
 							<div class="left col-md-6">
-								<h4><?php the_field('page_tagline'); ?></h4>
 								<?php the_content(); ?>
 									<div class="visible-md visible-lg"><!-- google map starts here-->
 										<h2>Find us in Berkeley</h2>

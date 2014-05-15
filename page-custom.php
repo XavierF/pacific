@@ -6,7 +6,7 @@ Template Name: Custom Page Template
 <?php get_header(); ?>
 
 <div class="container">
-	<div id="page-content">
+	<div id="custom-page-content">
 			<header class="custom-page-header">
 				<h1 class="page-title"><?php the_title(); ?></h1>
 			</header> <!-- end page header -->
@@ -14,18 +14,23 @@ Template Name: Custom Page Template
 			<div id="inner-content" class="wrap clearfix">
 				<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 				<article id="post-<?php the_ID(); ?>" <?php post_class( 'clearfix' ); ?> role="article" itemscope itemtype="http://schema.org/BlogPosting">
+					
 
 					<section class="entry-content clearfix" itemprop="articleBody">
+						<div class="sub-head row">
+								<div class="left col-md-5">
+										<h3><?php the_field('page_tagline'); ?></h3>
+								</div><!-- end .left col-md-5 <--></-->
+						</div><!-- end .row -->
 
 						<div class="row">
 
-							<div class="left col-md-5"><!-- 480 px width--><!-- margin left: 40px-->
-								<h4><?php the_field('page_tagline'); ?></h4>
-
+							<div class="left col-md-5"><!-- 480 px width -->
+								
 								<?php the_content(); ?>
 
 									<div class="visible-md visible-lg"><!-- google map starts here-->
-										<h2>Find us in Berkeley</h2>
+										<h3>Find us in Berkeley</h3>
 										<p>(510) 843 - 2453</p>
 										<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3150.1380694641416!2d-122.29379259999999!3d37.8570597!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80857ef2200c0469%3A0xe800db178ed7e187!2s843+Carleton+St!5e0!3m2!1sen!2sus!4v1399783363925" width="100%" height="400" frameborder="0" style="border:0"></iframe>
 									</div><!-- google map ends here -->
@@ -36,11 +41,11 @@ Template Name: Custom Page Template
 							<div class="right col-md-5"><!-- right column --><!-- 480 px width -->
 								<?php the_field('right_column'); ?>
 								<hr>
-								<h4>"Best prices and service in town"</h4>
+								<h3>"Best prices and service in town"</h3>
 								<a class="yelp" href="http://www.yelp.com/biz/pacific-e-bike-berkeley" title="yelp" target="_blank"></a>
 
 									<div class="visible-xs visible-sm"><!-- google map starts here -->
-										<h2>Find us in Berkeley</h2>
+										<h3>Find us in Berkeley</h3>
 										<p>(510) 843 - 2453</p>
 										<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3150.1380694641416!2d-122.29379259999999!3d37.8570597!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80857ef2200c0469%3A0xe800db178ed7e187!2s843+Carleton+St!5e0!3m2!1sen!2sus!4v1399783363925" width="100%" height="300" frameborder="0" style="border:0"></iframe>
 									</div><!-- google map ends here -->

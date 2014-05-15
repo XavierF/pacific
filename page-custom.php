@@ -18,7 +18,8 @@ Template Name: Custom Page Template
 					<section class="entry-content clearfix" itemprop="articleBody">
 
 						<div class="row">
-							<div class="left col-md-6">
+
+							<div class="left col-md-5"><!-- 480 px width--><!-- margin left: 40px-->
 								<h4><?php the_field('page_tagline'); ?></h4>
 
 								<?php the_content(); ?>
@@ -30,8 +31,9 @@ Template Name: Custom Page Template
 									</div><!-- google map ends here -->
 
 							</div><!-- .col-md-6 -->
+							<!-- margin: 80px-->
 
-							<div class="right col-md-6"><!-- right column -->
+							<div class="right col-md-5"><!-- right column --><!-- 480 px width -->
 								<?php the_field('right_column'); ?>
 								<hr>
 								<h4>"Best prices and service in town"</h4>
@@ -43,6 +45,7 @@ Template Name: Custom Page Template
 										<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3150.1380694641416!2d-122.29379259999999!3d37.8570597!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80857ef2200c0469%3A0xe800db178ed7e187!2s843+Carleton+St!5e0!3m2!1sen!2sus!4v1399783363925" width="100%" height="300" frameborder="0" style="border:0"></iframe>
 									</div><!-- google map ends here -->
 							</div><!-- .col-md-6 -->
+							<!-- margin-right: 40px-->
 						</div><!-- .row -->
 					</section> <!-- end article section -->
 

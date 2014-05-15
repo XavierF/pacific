@@ -8,15 +8,7 @@
 ?>
 
 <?php get_header(); ?>
-<section id="description" role="tagline">
-<div class="container">
-		<div class="row">
-			<div class="col-sm-12">
-					<h1 class="tag"><?php bloginfo('description'); ?></h1>
-			</div><!-- "col-sm-12" -->
-		</div><!-- row -->
-	</div><!-- .container -->
-</section>
+
 
 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 <div class="container">
@@ -84,6 +76,17 @@
 	<a class="right carousel-control" href="#myCarousel" data-slide="next">›</a>
 </div><!-- end of carousel -->
 </div><!-- end .container -->
+
+<section id="description" role="tagline">
+<div class="container">
+		<div class="row">
+			<div class="col-sm-12">
+					<h1 class="tag"><?php bloginfo('description'); ?></h1>
+			</div><!-- "col-sm-12" -->
+		</div><!-- row -->
+	</div><!-- .container -->
+</section>
+
 <!-- page thumbnails start here -->
 <section id="items" role="promo" class="thumbs">
 	<div class="container">

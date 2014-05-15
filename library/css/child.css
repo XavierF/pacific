@@ -2,7 +2,7 @@
 body {
   background-color: white;
   color: #3f3c3e;
-  font-family: "Roboto", sans-serif;
+  font-family: "Heveltica-Newe", sans-serif;
   font-size: 16px;
   -webkit-font-smoothing: antialiased;
 }
@@ -139,9 +139,9 @@ body {
 
 .tag {
   text-align: center;
-  font-size: 1.9em;
+  font-size: 2em;
   font-weight: 500;
-  margin: 15px 0;
+  margin: 40px 0 15px 0;
 }
 
 .carousel .item {
@@ -437,11 +437,15 @@ hr {
 }
 
 .left {
-  padding-right: 30px;
+  padding-right: 40px;
+  padding-left: 40px;
+  width: 480px;
 }
 
 .right {
-  padding-left: 30px;
+  padding-left: 40px;
+  padding-right: 40px;
+  width: 480px;
 }
 
 .services ul {

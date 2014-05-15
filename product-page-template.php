@@ -108,6 +108,7 @@
 					<hr>
 						<h1><?php the_field('price'); ?></h1>
 						<h4>AVAILABLE IN STORE OR ONLINE</h4>
+
 						<div class="buy-bkgd">
 						<a href="<?php the_field('buy_online_link'); ?>" class="btn btn-primary btn-lg btn-block" target="" >BUY NOW</a>
 						</div><!-- end buy-bkgd-->
@@ -140,7 +141,7 @@
 						</div><!-- google map ends here -->
 				
 				</div><!-- end #sidebar-bike-->
-				
+
 
 				</div> <!-- end #inner-content -->
 

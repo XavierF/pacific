@@ -27,6 +27,10 @@ body {
   color: white;
 }
 
+.info.col-sm-4.phone a:hover {
+  text-decoration: underline;
+}
+
 .navbar {
   border-radius: 0;
   margin-bottom: 0;
@@ -259,8 +263,8 @@ body {
 }
 
 #main {
-  width: 600px;
-  padding-left: 100px;
+  max-width: 600px;
+  padding-left: 8.556%;
   padding-right: 0px;
 }
 
@@ -306,6 +310,7 @@ body {
 
 .specs {
   display: inline-block;
+  float: left;
   text-align: center;
   width: 120px;
   height: 120px;
@@ -485,7 +490,41 @@ hr {
 
 @media screen and (min-width: 900px) {
   .container {
-    width: 1180px;
+    max-width: 1180px;
+  }
+}
+@media screen and (min-width: 1025px) and (max-width: 1199px) {
+  #main {
+    padding: 0;
+    margin: 0;
+    margin-right: 0 !important;
+    width: 500px;
+  }
+
+  .sidebar-bike {
+    float: right;
+    overflow: visible;
+    width: 500px;
+  }
+
+  .specs.visible-sm.visible-md {
+    visibility: hidden;
+    display: none;
+    width: 0;
+    height: 0;
+    margin: 0;
+    border: 0;
+  }
+  .specs.visible-sm.visible-md h1 {
+    display: none;
+  }
+  .specs.visible-sm.visible-md small {
+    display: none;
+  }
+
+  .row.visible-xs.visible-lg {
+    display: block !important;
+    visibility: visible;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1024px) {

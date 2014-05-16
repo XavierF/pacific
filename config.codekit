@@ -400,17 +400,6 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/library\/images\/facebook.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 332,
-		"inputAbbreviatedPath": "\/library\/images\/facebook.png",
-		"outputAbbreviatedPath": "\/library\/images\/facebook.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
 	"\/library\/images\/flat.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -506,17 +495,6 @@
 		"initialSize": 881,
 		"inputAbbreviatedPath": "\/library\/images\/gplus.png",
 		"outputAbbreviatedPath": "\/library\/images\/gplus.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/library\/images\/instagram.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 542,
-		"inputAbbreviatedPath": "\/library\/images\/instagram.png",
-		"outputAbbreviatedPath": "\/library\/images\/instagram.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -638,17 +616,6 @@
 		"initialSize": 11919,
 		"inputAbbreviatedPath": "\/library\/images\/peb-bike-logo.png",
 		"outputAbbreviatedPath": "\/library\/images\/peb-bike-logo.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/library\/images\/pinterest.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 958,
-		"inputAbbreviatedPath": "\/library\/images\/pinterest.png",
-		"outputAbbreviatedPath": "\/library\/images\/pinterest.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -836,17 +803,6 @@
 		"initialSize": 138406,
 		"inputAbbreviatedPath": "\/library\/images\/ter-blk\/ter-blk-wideright2.jpg",
 		"outputAbbreviatedPath": "\/library\/images\/ter-blk\/ter-blk-wideright2.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/library\/images\/tweet.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 792,
-		"inputAbbreviatedPath": "\/library\/images\/tweet.png",
-		"outputAbbreviatedPath": "\/library\/images\/tweet.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0

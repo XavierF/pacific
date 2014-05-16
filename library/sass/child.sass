@@ -85,6 +85,9 @@ body
 				background: rgba(0, 0, 0, .1)
 				&:hover
 					background: rgba(0, 0, 0, .2)
+		.dropdown-toggle
+			@:extend .disabled
+
 		.dropdown-menu
 			margin-top: 22px
 			padding: 0
@@ -242,6 +245,9 @@ body
 	border-bottom: 0
 	padding: 0 0 0 83px
 
+.full-width-header
+	margin-bottom: 40px
+
 .page-title	
 	font-size: 50px
 	font-family: 'Helvetica Neue', sans-serif
@@ -311,9 +317,16 @@ hr
 	li
 		list-style-type: none
 		display: inline
-		margin-right: 27px
+		margin-right: 45px
 		&:last-child
 			margin-right: 0
+
+.mail
+	height: 35px
+	width: 35px
+	background: url('../images/mail.png') center center no-repeat
+	background-size: cover
+	display: inline-block
 
 .facebook
 	height: 35px
@@ -333,12 +346,6 @@ hr
 	background: url('../images/pinterest.png') center center no-repeat
 	background-size: cover
 	display: inline-block
-.rss
-	height: 35px
-	width: 35px
-	background: url('../images/rss.png') center center no-repeat
-	background-size: cover
-	display: inline-block
 
 .twitter
 	height: 35px
@@ -353,11 +360,6 @@ hr
 	background-size: cover
 	display: block
 
-.frm_submit
-	button, html input[type="button"], input[type="reset"], input[type="submit"] 
-		@extend .btn-primary 
-		padding: 10px 20px
-		width: 150px
 
 
 // Custom Page & Contact Page
@@ -396,6 +398,11 @@ ul.services
 		color: $yellow
 	span
 		color: $darkGrey
+.frm_submit
+	button, html input[type="button"], input[type="reset"], input[type="submit"] 
+		@extend .btn-primary 
+		padding: 10px 20px
+		width: 150px
 
 // Footer
 

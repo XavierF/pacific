@@ -91,6 +91,9 @@ body {
 .navbar-inverse .navbar-nav li.active a:hover {
   background: rgba(0, 0, 0, 0.2);
 }
+.navbar-inverse .navbar-nav li .dropdown-toggle {
+  @:extend .disabled;
+}
 .navbar-inverse .navbar-nav li .dropdown-menu {
   margin-top: 22px;
   padding: 0;
@@ -275,6 +278,10 @@ body {
   padding: 0 0 0 83px;
 }
 
+.full-width-header {
+  margin-bottom: 40px;
+}
+
 .page-title {
   font-size: 50px;
   font-family: "Helvetica Neue", sans-serif;
@@ -360,10 +367,18 @@ hr {
 .social li {
   list-style-type: none;
   display: inline;
-  margin-right: 27px;
+  margin-right: 45px;
 }
 .social li:last-child {
   margin-right: 0;
+}
+
+.mail {
+  height: 35px;
+  width: 35px;
+  background: url("../images/mail.png") center center no-repeat;
+  background-size: cover;
+  display: inline-block;
 }
 
 .facebook {
@@ -390,14 +405,6 @@ hr {
   display: inline-block;
 }
 
-.rss {
-  height: 35px;
-  width: 35px;
-  background: url("../images/rss.png") center center no-repeat;
-  background-size: cover;
-  display: inline-block;
-}
-
 .twitter {
   height: 35px;
   width: 35px;
@@ -412,11 +419,6 @@ hr {
   background: url("../images/yelp-logo.jpg") center center no-repeat;
   background-size: cover;
   display: block;
-}
-
-.frm_submit button, .frm_submit html input[type="button"], .frm_submit input[type="reset"], .frm_submit input[type="submit"] {
-  padding: 10px 20px;
-  width: 150px;
 }
 
 #custom-page-content {
@@ -460,6 +462,11 @@ ul.services li {
 }
 ul.services span {
   color: #1a1a1a;
+}
+
+.frm_submit button, .frm_submit html input[type="button"], .frm_submit input[type="reset"], .frm_submit input[type="submit"] {
+  padding: 10px 20px;
+  width: 150px;
 }
 
 .footer {

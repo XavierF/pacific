@@ -115,6 +115,9 @@
 					<hr>
 							<ul class="social">
 								<li>
+										<a class="mail" target=”_blank” href="#"></a>
+								</li>
+								<li>
 										<a class="facebook" target=”_blank” href="https://www.facebook.com/sharer/sharer.php?u=<?php the_permalink() ?><?php wp_title(''); ?>"></a>
 								</li>
 								<li>
@@ -122,9 +125,6 @@
 								</li>
 								<li>
 										<a class="pinterest" href="#" id="ref_pr" href="http://pinterest.com/pin/create/bookmarklet/?media=<?php echo urlencode($share_image);?>&amp;url=<?php the_permalink() ?>&amp;is_video=false&amp;description=v"onclick="javascript:window.open(this.href, '_blank', 'menubar=no,toolbar=no,resizable=no,scrollbars=no,height=400,width=600');return false;"></a>
-								</li>
-								<li>
-									<a class="rss" href="<?php bloginfo('rss2_url'); ?>"></a>
 								</li>
 								<li>
 									<a class="twitter" id="ref_tw" href="http://twitter.com/home?status=<?php wp_title(''); ?>+<?php the_permalink() ?>"  onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=no,scrollbars=no,height=400,width=600');return false;"></a>

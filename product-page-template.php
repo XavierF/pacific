@@ -115,7 +115,7 @@
 					<hr>
 							<ul class="social">
 								<li>
-										<a class="mail" target=”_blank” href="#"></a>
+										<a class="mail" target=”_blank” href="mailto:?subject=Pacific E-Bike <?php the_title(); ?> &body=<?php the_permalink() ?> "></a>
 								</li>
 								<li>
 										<a class="facebook" target=”_blank” href="https://www.facebook.com/sharer/sharer.php?u=<?php the_permalink() ?><?php wp_title(''); ?>"></a>

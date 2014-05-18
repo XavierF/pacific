@@ -20,7 +20,7 @@ Template Name: Custom Page Template
 						<div class="sub-head row">
 								<div class="left col-md-5">
 										<h3><?php the_field('page_tagline'); ?></h3>
-								</div><!-- end .left col-md-5 <--></-->
+								</div><!-- end .left col-md-5 -->
 						</div><!-- end .row -->
 
 						<div class="row">

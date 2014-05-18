@@ -26,8 +26,8 @@
 									<section class="entry-content clearfix" itemprop="articleBody">
 										<?php the_content(); ?>
 
-											<div class="visible-lg"><!-- google map starts here-->
-											<h2>Find us in Berkeley</h2>
+											<div class="map visible-lg"><!-- google map starts here-->
+											<h3>Find us in Berkeley</h3>
 											<p>(510) 843 - 2453</p>
 											<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3150.1380694641416!2d-122.29379259999999!3d37.8570597!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80857ef2200c0469%3A0xe800db178ed7e187!2s843+Carleton+St!5e0!3m2!1sen!2sus!4v1399783363925" width="100%" height="400" frameborder="0" style="border:0"></iframe>
 										</div><!-- google map ends here -->
@@ -53,7 +53,6 @@
 
 						</div> <!-- end #main -->
 						
-
 						<div class="sidebar-bike col-md-5 clearfix">
 
 							<div class="row">
@@ -107,7 +106,7 @@
 
 					<hr>
 						<h1><?php the_field('price'); ?></h1>
-						<h4>AVAILABLE IN STORE OR ONLINE</h4>
+						<h3>AVAILABLE IN STORE OR ONLINE</h3>
 
 						<div class="buy-bkgd">
 						<a href="<?php the_field('buy_online_link'); ?>" class="btn btn-primary btn-lg btn-block" target="" >BUY NOW</a>
@@ -134,8 +133,8 @@
 					<h4>"Best prices and service in town"</h4>
 					<a class="yelp" href="http://www.yelp.com/biz/pacific-e-bike-berkeley" title="yelp" target="_blank"></a>
 
-						<div class="visible-xs visible-sm visible-md"><!-- google map starts here -->
-							<h2>Find us in Berkeley</h2>
+						<div class="map visible-xs visible-sm visible-md"><!-- google map starts here -->
+							<h3>Find us in Berkeley</h3>
 							<p>(510) 843 - 2453</p>
 							<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3150.1380694641416!2d-122.29379259999999!3d37.8570597!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80857ef2200c0469%3A0xe800db178ed7e187!2s843+Carleton+St!5e0!3m2!1sen!2sus!4v1399783363925" width="100%" height="300" frameborder="0" style="border:0"></iframe>
 						</div><!-- google map ends here -->

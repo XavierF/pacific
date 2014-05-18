@@ -4,6 +4,7 @@ body {
   color: #3b3b3b;
   font-family: "Helvetica Neue", sans-serif;
   font-size: 16px;
+  font-weight: normal;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -91,9 +92,6 @@ body {
 .navbar-inverse .navbar-nav li.active a:hover {
   background: rgba(0, 0, 0, 0.2);
 }
-.navbar-inverse .navbar-nav li .dropdown-toggle {
-  @:extend .disabled;
-}
 .navbar-inverse .navbar-nav li .dropdown-menu {
   margin-top: 22px;
   padding: 0;
@@ -147,6 +145,10 @@ body {
   margin: 40px 0 15px 0;
 }
 
+.slideshow {
+  background: #3b3b3b;
+}
+
 .carousel .item {
   height: 640px;
 }
@@ -163,7 +165,7 @@ body {
   font-style: italic;
 }
 .carousel .item blockquote small {
-  color: rgba(255, 255, 255, 0.75);
+  color: rgba(255, 255, 255, 0.95);
   font-size: 0.5em;
   font-style: normal;
 }
@@ -291,14 +293,32 @@ body {
 }
 
 .entry-content {
-  font-size: 1.3em;
-  line-height: 1.2em;
-  color: #3b3b3b;
   overflow: visible;
 }
 .entry-content p {
   line-height: 1.4em;
   font-size: 16px;
+  font-family: "Helvetica Neue", sans-serif;
+  font-weight: regulat;
+  margin-bottom: 40px;
+}
+.entry-content h3 {
+  color: #1a1a1a;
+  font-size: 26px;
+  font-weight: medium !important;
+  margin: 0 0 40px 0;
+}
+
+.map h3 {
+  font-size: 26px;
+  font-family: "Helvetica Neue", sans-serif;
+  font-weight: medium !important;
+  margin-bottom: 20px !important;
+}
+.map p {
+  font-size: 16px;
+  font-family: "Helvetica Neue", sans-serif;
+  margin-bottom: 20px !important;
 }
 
 #wpgmza_map {
@@ -309,6 +329,12 @@ body {
   float: right;
   overflow: visible;
   padding: 0 90px 0 30px;
+}
+.sidebar-bike h3 {
+  font-size: 23px;
+  font-family: "Helvetica Neue", sans-serif;
+  font-weight: medium !important;
+  margin-bottom: 10px !important;
 }
 
 .sidebar {
@@ -432,15 +458,6 @@ hr {
 .sub-header h2 {
   margin-top: 0;
   color: black;
-}
-
-.entry-content h3 {
-  color: #1a1a1a;
-  font-size: 26px;
-  margin: 0 0 40px 0;
-}
-.entry-content p {
-  margin-bottom: 40px;
 }
 
 .left {

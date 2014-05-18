@@ -13,6 +13,7 @@ body
 	color: $lightGrey
 	font-family: 'Helvetica Neue', sans-serif
 	font-size: 16px
+	font-weight: normal
 	-webkit-font-smoothing: antialiased
  
 // Header
@@ -85,8 +86,6 @@ body
 				background: rgba(0, 0, 0, .1)
 				&:hover
 					background: rgba(0, 0, 0, .2)
-		.dropdown-toggle
-			@:extend .disabled
 
 		.dropdown-menu
 			margin-top: 22px
@@ -133,6 +132,8 @@ body
 	font-weight: 500
 	margin: 40px 0 15px 0
 // Carousel
+.slideshow
+	background: $lightGrey
 
 .carousel
 	.item
@@ -149,7 +150,7 @@ body
 			font-weight: 200
 			font-style: italic
 			small
-				color: rgba(255, 255, 255, .75)
+				color: rgba(255, 255, 255, .95)
 				font-size: .5em
 				font-style: normal
 			&:before
@@ -178,6 +179,9 @@ body
 				margin-right: -38px
 				margin-bottom: 15px
 				color: #ccc
+
+   
+
 .carousel-control
 	line-height: 600px
 	font-size: 7em
@@ -235,7 +239,7 @@ body
 	img
 		text-align: center
 	
-//Product Page Template
+//Product Page Template, Custom page, contact page
 #main
 	max-width: 600px
 	padding-left: 8.556%
@@ -257,13 +261,33 @@ body
 	color: $darkGrey
 
 .entry-content
-	font-size: 1.3em
-	line-height: 1.2em
-	color: $lightGrey
+
 	overflow: visible
 	p
 		line-height: 1.4em
 		font-size: 16px
+		font-family: 'Helvetica Neue', sans-serif
+		font-weight: regulat
+		margin-bottom: 40px
+	h3
+		color: $darkGrey
+		font-size: 26px
+		font-weight: medium !important
+		margin: 0 0 40px 0
+
+
+.map
+	h3
+		font-size: 26px
+		font-family: 'Helvetica Neue', sans-serif
+		font-weight: medium !important
+		margin-bottom: 20px !important
+	p
+		font-size: 16px
+		font-family: 'Helvetica Neue', sans-serif
+		margin-bottom: 20px !important
+
+
 
 #wpgmza_map
 	margin-bottom: 1em
@@ -272,6 +296,12 @@ body
 	float: right
 	overflow: visible
 	padding: 0 90px 0 30px
+	h3
+		font-size: 23px
+		font-family: 'Helvetica Neue', sans-serif
+		font-weight: medium !important
+		margin-bottom: 10px !important
+		
 
 .sidebar
 	float: right !important
@@ -362,9 +392,6 @@ hr
 	display: block
 
 
-
-// Custom Page & Contact Page
-
 #custom-page-content
 	padding: 0 55px
 
@@ -376,13 +403,7 @@ hr
 		margin-top: 0
 		color: $black
 
-.entry-content
-	h3
-		color: $darkGrey
-		font-size: 26px
-		margin: 0 0 40px 0
-	p
-		margin-bottom: 40px
+
 .left 
 	margin-right: 50px
 	width: 510px

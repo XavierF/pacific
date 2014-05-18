@@ -11,63 +11,72 @@
 
 
 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+<section class="slideshow">
 <div class="container">
 	<div id="myCarousel" class="carousel slide" data-ride="carousel">
 		<div class="carousel-inner">
 
-			<div class="item active" style="background: url('<?php the_field('slide_1_bg');?>') 45% center no-repeat; background-size: cover;">
+			<div class="item active" style="background: url('<?php the_field('slide_1_bg');?>') 45% center no-repeat; background-size: cover; background-color: rgba(0,0,0,0.9);">
 				
 					<div class="row">
 						<div class="col-lg-12">
+							<div class="overlay">
 							<blockquote>
 								<?php the_field('slide_1_caption'); ?>
 								<small>
 									<?php the_field('slide_1_name'); ?>
 								</small>
 							</blockquote>
+						</div><!-- end .overlay -->
 						</div><!-- end .col-lg-12-->
 					</div><!-- end .row-->
 			
 		  </div><!-- end .item active -->
 
-		<div class="item" style="background: url('<?php the_field('slide_2_bg');?>') 45% center no-repeat; background-size: cover;">
+		<div class="item" style="background: url('<?php the_field('slide_2_bg');?>') 45% center no-repeat; background-size: cover; background-color: rgba(0,0,0,0.9);">
 			
 				<div class="row">
 					<div class="col-lg-12">
+						<div class="overlay">
 						<blockquote>
 							<?php the_field('slide_2_caption'); ?>
 							<small>
 								<?php the_field('slide_2_name'); ?>
 							</small>
 						</blockquote>
+					</div><!-- end .overlay -->
 					</div><!-- end .col-lg-12-->
 				</div><!-- end .row-->
 		</div><!-- end .item -->
 
-		<div class="item" style="background: url('<?php the_field('slide_3_bg');?>') 45% center no-repeat; background-size: cover;">
+		<div class="item" style="background: url('<?php the_field('slide_3_bg');?>') 45% center no-repeat; background-size: cover; background-color: rgba(0,0,0,0.9);">
 			
 				<div class="row">
 					<div class="col-lg-12">
+						<div class="overlay">
 						<blockquote>
 							<?php the_field('slide_3_caption'); ?>
 							<small>
 								<?php the_field('slide_3_name'); ?>
 							</small>
 						</blockquote>
+					</div><!-- end .overlay -->
 					</div><!-- end .col-lg-12-->
 				</div><!-- end .row-->
 		</div><!-- end .item -->
 
-		<div class="item" style="background: url('<?php the_field('slide_4_bg');?>') 45% center no-repeat; background-size: cover;">
+		<div class="item" style="background: url('<?php the_field('slide_4_bg');?>') 45% center no-repeat; background-size: cover; background-color: rgba(0,0,0,0.9);">
 			
 				<div class="row">
 					<div class="col-lg-12">
+						<div class="overlay">
 						<blockquote>
 							<?php the_field('slide_4_caption'); ?>
 							<small>
 								<?php the_field('slide_4_name'); ?>
 							</small>
 						</blockquote>
+					</div><!-- end .overlay -->
 					</div><!-- end .col-lg-12-->
 				</div><!-- end .row-->
 		</div><!-- end .item -->
@@ -76,6 +85,7 @@
 	<a class="right carousel-control" href="#myCarousel" data-slide="next">›</a>
 </div><!-- end of carousel -->
 </div><!-- end .container -->
+</section>
 
 <section id="description" role="tagline">
 <div class="container">

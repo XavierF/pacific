@@ -88,7 +88,7 @@ body
 					background: rgba(0, 0, 0, .2)
 
 		.dropdown-menu
-			margin-top: 22px
+			margin-top: 20px
 			padding: 0
 			li
 				float: none
@@ -111,6 +111,12 @@ body
 						background: rgba(0, 0, 0, .1)
 						&:hover
 							background: rgba(0, 0, 0, .1)
+	.dropdown
+		&:hover
+			.dropdown-menu
+				display: block
+
+
 
 
 .navbar-inverse
@@ -137,10 +143,11 @@ body
 
 .carousel
 	.item
-		height: 640px
+		height: 640px 
+		background-color: rgba(0,0,0, 0.6) 
 		blockquote
 			display: inline-block
-			position: relative
+			position: absolute
 			border-left: none
 			padding: 0
 			margin: 30px 0 0 80px
@@ -189,6 +196,12 @@ body
 
 .carousel-control.left, .carousel-control.right
 	background-image: none
+
+.carousel-control.left
+	width: 80px
+.carousel-control.right
+	width: 80px
+
 
 .carousel .item 
 	-webkit-transition: opacity 1s ease-in-out

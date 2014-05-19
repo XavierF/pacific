@@ -122,9 +122,6 @@ body {
 .navbar-inverse .navbar-nav li .dropdown-menu li.active a:hover {
   background: rgba(0, 0, 0, 0.1);
 }
-.navbar-inverse .navbar-nav .dropdown:hover .dropdown-menu {
-  display: block;
-}
 
 .navbar-inverse {
   background-color: white;
@@ -537,16 +534,21 @@ ul.services span {
 }
 @media screen and (min-width: 1025px) and (max-width: 1199px) {
   #main {
-    padding: 0;
-    margin: 0;
     margin-right: 0 !important;
     width: 500px;
+    display: inline-block;
+  }
+
+  .map.visible-md.visible-lg {
+    visibility: visible;
+    display: block;
   }
 
   .sidebar-bike {
     float: right;
     overflow: visible;
     width: 500px;
+    padding: 0 40px 0 20px;
   }
 
   .specs.visible-sm.visible-md {
@@ -567,6 +569,15 @@ ul.services span {
   .row.visible-xs.visible-lg {
     display: block !important;
     visibility: visible;
+  }
+
+  .map.visible-xs.visible-sm {
+    visbility: hidden;
+    display: none;
+  }
+
+  .left, .right {
+    width: 41.66667%;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1024px) {
@@ -684,7 +695,7 @@ ul.services span {
     background: rgba(0, 0, 0, 0.2);
   }
   .navbar-inverse .navbar-nav li .dropdown-menu {
-    margin-top: 22px;
+    margin-top: 0px;
     padding: 0;
   }
   .navbar-inverse .navbar-nav li .dropdown-menu li {
@@ -699,7 +710,6 @@ ul.services span {
     background: rgba(255, 255, 255, 0.1);
     -webkit-font-smoothing: antialiased;
     padding: 10px;
-    width: 100%;
     text-align: left;
     font-size: 16px;
     font-weight: light !important;
@@ -791,6 +801,10 @@ ul.services span {
     line-height: 1em;
     padding: 0 0 5px 0;
     margin: 0;
+  }
+
+  #full-width {
+    padding: 0;
   }
 
   .page-header, .custom-page-header {

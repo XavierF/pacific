@@ -22,19 +22,8 @@
 		<!-- all js scripts are loaded in library/bones.php -->
 		<?php wp_footer(); ?>
 		<!-- CUSTOM JS  -->
-		<script>
 
-
-    	$( function()
-    	{
-    		$( '#nav li:has(ul)' ).doubleTapToGo();
-
-</script>
-		<script>
-			
-				jQuery('li.trigger-contact a').attr('id', 'contact-us');
-			
-		</script>
+		
 	</body>
 
 </html> <!-- end page. what a ride! -->

@@ -87,7 +87,6 @@ body
 				&:hover
 					a
 						background: rgba(0, 0, 0, .2)
-
 		.dropdown-menu
 			margin-top: 20px
 			padding: 0
@@ -112,9 +111,6 @@ body
 						background: rgba(0, 0, 0, .1)
 						&:hover
 							background: rgba(0, 0, 0, .1)
-
-
-
 
 .navbar-inverse
 	background-color: $white
@@ -401,7 +397,6 @@ hr
 	background-size: cover
 	display: block
 
-
 #custom-page-content
 	padding: 0 55px
 
@@ -413,7 +408,6 @@ hr
 		margin-top: 0
 		color: $black
 
-
 .left 
 	margin-right: 50px
 	width: 510px
@@ -422,7 +416,6 @@ hr
 	width: 510px
 
 ul.services
-
 	margin: 20px 0 40px -20px
 	li
 		padding: 15px 0
@@ -618,32 +611,136 @@ ul.services
 		display: inline-block
 		padding-left: 0
 		padding-right: 30px
+
 @media screen and (min-width: 481px) and  (max-width: 767px)
 	.site-header
-		height: 100px
+		height: 90px
+		.row
+			max-height: 30px
+			overflow: visible
 	.info
 		display: inline-block
 		font-size: .7em
-		padding: 0 0 0 8%
-		&:last-child
-			padding: 0 .5% 0 8%
-	.navbar-logo
+		zoom: 1
+	
+	#location
 		float: left
+		padding: 0 0 0 7%
+		width: 41%
+		text-align: left
+	#phone
+		float: none
+		margin-left: auto !important
+		margin-right: auto !important
+		padding: 0
+		text-align: center
+		width: 29%
+	
+	#email
+		float: right
+		padding: 0 7% 0 0
+		width: 29%
+		text-align: right
+		position: relative
+
+	.brand-container
+		width: 100%
+		height: 50px
+		margin: 0 auto
+		padding: 0
+		postion: relative
+		h1
+			width: 100%
+			margin: 5px auto 0 
+			text-align: center
+			display: block
+
+	.navbar-logo
+		position: absolute
+		top: 30px
+		left: 40px
 		width: 70px
 		height: 50px
 		background-size: 90%
 		margin: 0
-	.navbar-inverse .navbar-brand
-		font-size: .8em
-		font-weight: 200
-		float: left
-		padding-top: 0
 
-@media screen and (max-width: 480px)
+	.navbar-inverse .navbar-brand
+		display: inline-block
+		font-size: .7em
+		font-weight: 200
+		text-align: center
+		float: none
 
 	.navbar-toggle
-		margin: -5px 10px 0 0
+		position: absolute
+		top: 30px
+		right: 35px
 
+	.navbar-nav
+		margin: 0
+
+	.navbar-collapse
+		overflow-y: visible
+
+	.navbar-inverse .navbar-nav
+		.container
+			overflow: visible
+		li
+			float: none
+			display: inline
+			margin: 0
+			margin-right: -4px
+			position: relative
+			a
+				float: none
+				display: inline-block
+				color: $black
+				-webkit-font-smoothing: antialiased
+				padding: 10px 6.6%
+				font-size: .9em
+				font-weight: 300
+				&:hover
+					background: rgba(0, 0, 0, .1)
+			&.active
+				a
+					color: black
+					background: rgba(0, 0, 0, .1)
+					&:hover
+						a
+							background: rgba(0, 0, 0, .1)
+			.dropdown-menu
+				position: absolute
+				top: 100%
+				left: 0
+				background-clip: padding-box
+				li
+					display: block
+					float: left
+					&:hover
+						background: rgba(0, 0, 0, .1)
+					a
+						float: left
+						display: block
+						color: $black
+						background: rgba(255, 255, 255, .1)
+						-webkit-font-smoothing: antialiased
+						padding: 10px
+						min-width: 160px
+						text-align: left
+						font-size: 16px
+						font-weight: light !important
+						&:hover
+							background: rgba(0, 0, 0, .1)
+					&.active
+						a
+							background: rgba(0, 0, 0, .1)
+							&:hover
+								background: rgba(0, 0, 0, .1)
+	.page-title
+		font-size: 2em
+		margin: 10px 0 0 0
+
+@media screen and (max-width: 480px)
 	.site-header
 		height: 150px
 
@@ -651,26 +748,37 @@ ul.services
 		margin-top: 5px
 
 	.brand-container
-		width: 320px
+		width: 100%
 		height: 50px
-		margin: 0 auto
-		padding: 0 5px 0 0
-		
+		margin: 0
+		padding: 0
+		position: relative
+		h1
+			width: 57%
+			margin: 5px auto 0 auto
+			text-align: center
+
 	.navbar-logo
-		float: left
-		display: inline-block
+		position: absolute
+		top: 5px
+		left: -8px
 		width: 70px
 		height: 40px
 		background-size: 90%
-		margin: 5px 0 0 0
+		margin: 0
+		display: inline-block
+		
 
 	.navbar-inverse .navbar-brand
 		display: inline-block
-		font-size: .8em
+		font-size: .7em
 		font-weight: 200
-		float: left
-		padding-top: 0
-		margin-right: 0
+		text-align: center
+		float: none
+	.navbar-toggle
+		position: absolute
+		top: 5px
+		right: -10px
 
 	.navbar-inverse .navbar-nav
 		li
@@ -796,7 +904,7 @@ ul.services
 		text-align: center
 	.page-title
 		font-size: 2em
-		margin: 0
+		margin: 10px 0
 	.specs 
 		display: inline-block
 		text-align: center

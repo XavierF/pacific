@@ -58,6 +58,7 @@
 									<div id="location" class="info col-sm-4"><p>843 Carleton St | Berkeley CA</p></div>
 									<div id="phone" class="info col-sm-4 phone"><a href="tel:+15108432453">(510) 843 - 2453</a></div>
 									<div id="email" class="info col-sm-4"><p><a href="mailto:info@pacificebike.com">info@pacificebike.com</a></p></div>
+
 							</div><!-- .row -->
 
 							<div class="brand-container clearfix">

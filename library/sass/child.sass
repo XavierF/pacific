@@ -247,7 +247,7 @@ body
 	
 //Product Page Template, Custom page, contact page
 #main
-	max-width: 600px
+	width: 600px
 	padding-left: 8.556%
 	padding-right: 0px
 .page-header
@@ -621,7 +621,6 @@ ul.services
 	.info
 		display: inline-block
 		font-size: .7em
-		zoom: 1
 	
 	#location
 		float: left
@@ -736,9 +735,139 @@ ul.services
 							background: rgba(0, 0, 0, .1)
 							&:hover
 								background: rgba(0, 0, 0, .1)
+	.slideshow
+		.container
+			padding-left: 0 !important
+			padding-right: 0 !important
+
+	.carousel
+		.item
+			min-width: 100%
+			height: 400px
+			blockquote
+				margin: 10px 0 0 10px
+				font-size: 1em
+				small
+					color: rgba(255, 255, 255, .75)
+					font-size: .9em
+					font-weight: medium
+				&:before
+					content: "“"
+					font-size: 1.4em
+					font-family: 'Times New Roman', Georgia, serif
+					font-weight: bold
+					line-height: 1
+					margin-left: -11px
+					margin-top: 0
+				&:after
+					content: "”"
+					display: block
+					position: absolute
+					right: 0
+					bottom: 0
+					font-size: 1.2em
+					font-family: 'Times New Roman', Georgia, serif
+					font-weight: bold
+					line-height: 1
+					margin-right: -9px
+					margin-bottom: 20px
+	.thumbs
+		margin: 25px 0 
+		.thumb
+			width: 100%
+			height: 300px
+		.bike
+			a
+				width: 100% 
+				height: auto
+				margin-left: 0
+				margin-right: 0
+				margin-bottom: 10px
+			&:hover
+				text-decoration: none
+			.thumb-info
+				text-align: left
+				border-left: 0
+				margin: 4px 0 20px 0
+				padding: 5px 0 0 10px
+				p
+					text-align: center
+					font-size: 1em
+					line-height: 1em
+					padding: 0 0 5px 0
+					margin: 0
+
 	.page-title
 		font-size: 2em
 		margin: 10px 0 0 0
+
+	.custom-page-header
+		margin: 0 0 15px -15px
+
+	#custom-page-content
+		padding: 0 15px
+
+	.entry-content
+		overflow: visible
+		p
+			font-size: 16px
+			margin-bottom: 15px
+		h3
+			font-size: 1.5em
+			margin: 0 0 10px 0
+
+	.left, .right
+		width: 100%
+		padding: 0 15px
+		margin: 0
+
+	#main
+		Width: 100% !important
+		padding: 0 15px
+		overflow: hidden
+
+	.sidebar-bike
+		padding: 0 10px
+		width: 100%
+		float: none
+		text-align: center
+		margin: 0 auto
+		.row
+			text-align: center
+			padding: 0 5%
+			.visible-sm 
+				display: inline-block !important
+				visibility: visible !important
+				float: left
+			.visible-md
+				display: inline-block !important
+				visibility: visible !important
+				float: left
+
+	.visible-xs
+		display: none !important
+		visibility: hidden
+		width: 0
+		height: 0
+		margin: 0
+		.specs
+			width: 0
+			height: 0
+			border: 0
+
+	.specs 
+		display: inline-block
+		text-align: center
+		width: 27%
+		height: 80px
+		padding-top: 0
+		margin: 30px 0 0 5%
+		border: 1px solid $lightGrey
+		h1
+			font-size: 2.5em 
+			font-weight: 300
+			margin: 5px 0 5px 0
+
 
 @media screen and (max-width: 480px)
 	.site-header
@@ -789,7 +918,6 @@ ul.services
 			a
 				float: none
 				display: block
-				color: $black
 				-webkit-font-smoothing: antialiased
 				padding: 20px 30px
 				font-size: 16px
@@ -812,7 +940,6 @@ ul.services
 					a
 						float: none
 						display: block
-						color: $black
 						background: rgba(255, 255, 255, .1)
 						-webkit-font-smoothing: antialiased
 						padding: 10px
@@ -833,10 +960,15 @@ ul.services
 		font-size: 1em
 		margin: 10px 0
 
+	.slideshow
+		.container
+			padding-left: 0 !important
+			padding-right: 0 !important
 
 	.carousel
 		.item
-			height: 200px
+			height: 250px
+			min-width: 100%
 			blockquote
 				margin: 10px 0 0 10px
 				font-size: 1em
@@ -869,15 +1001,11 @@ ul.services
 	.thumbs
 		margin: 25px 0 
 		.thumb
-			width: 290px
-			height: 190px
+			width: 100%
 		.bike
 			a
 				width: 100% 
-				color: black
-				margin: 10px auto 10px auto
 				height: auto
-				width: auto
 				margin-left: 0
 				margin-right: 0
 				margin-bottom: 10px
@@ -890,7 +1018,6 @@ ul.services
 				padding: 5px 0 0 10px
 				p
 					text-align: center
-					color: darkGrey
 					font-size: 1em
 					line-height: 1em
 					padding: 0 0 5px 0
@@ -905,6 +1032,25 @@ ul.services
 	.page-title
 		font-size: 2em
 		margin: 10px 0
+
+	#custom-page-content
+		padding: 0 15px
+
+	.entry-content
+		overflow: visible
+		p
+			font-size: 16px
+			margin-bottom: 15px
+		h3
+			font-size: 1.5em
+			margin: 0 0 10px 0
+
+
+	.left, .right
+		width: 100%
+		padding: 0
+		margin: 0
+
 	.specs 
 		display: inline-block
 		text-align: center

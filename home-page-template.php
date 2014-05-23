@@ -16,7 +16,7 @@
 	<div id="myCarousel" class="carousel slide" data-ride="carousel">
 		<div class="carousel-inner">
 
-			<div class="item active" style="background: url('<?php the_field('slide_1_bg');?>') 45% center no-repeat; background-size: cover;">
+			<div class="item active" style="background: url('<?php the_field('slide_1_bg');?>') 50% 50% no-repeat; background-size: cover;">
 				
 					<div class="row">
 						<div class="col-lg-12">
@@ -33,7 +33,7 @@
 			
 		  </div><!-- end .item active -->
 
-		<div class="item" style="background: url('<?php the_field('slide_2_bg');?>') 45% center no-repeat; background-size: cover;">
+		<div class="item" style="background: url('<?php the_field('slide_2_bg');?>') 50% 50% no-repeat; background-size: cover;">
 			
 				<div class="row">
 					<div class="col-lg-12">
@@ -49,7 +49,7 @@
 				</div><!-- end .row-->
 		</div><!-- end .item -->
 
-		<div class="item" style="background: url('<?php the_field('slide_3_bg');?>') 45% center no-repeat; background-size: cover;">
+		<div class="item" style="background: url('<?php the_field('slide_3_bg');?>') 50% 50% no-repeat; background-size: cover;">
 			
 				<div class="row">
 					<div class="col-lg-12">
@@ -65,7 +65,7 @@
 				</div><!-- end .row-->
 		</div><!-- end .item -->
 
-		<div class="item" style="background: url('<?php the_field('slide_4_bg');?>') 45% center no-repeat; background-size: cover;">
+		<div class="item" style="background: url('<?php the_field('slide_4_bg');?>') 50% 50% no-repeat; background-size: cover;">
 			
 				<div class="row">
 					<div class="col-lg-12">

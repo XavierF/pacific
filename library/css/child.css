@@ -742,6 +742,14 @@ ul.services span {
   .right .visible-xs.visible-sm {
     display: none !important;
   }
+  .right .with_frm_style fieldset {
+    width: 60% !important;
+    display: inline-block;
+  }
+  .right .with_frm_style .form-field, .right .with_frm_style .frm_form_field {
+    width: 70% !important;
+    display: inline-block;
+  }
 }
 @media screen and (min-width: 481px) and (max-width: 767px) {
   .site-header {

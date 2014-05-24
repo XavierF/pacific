@@ -279,7 +279,7 @@ body {
 #main {
   width: 600px;
   padding-left: 8.556%;
-  padding-right: 0px;
+  padding-right: 60px;
 }
 
 .page-header {
@@ -330,14 +330,10 @@ body {
   margin-bottom: 20px !important;
 }
 
-#wpgmza_map {
-  margin-bottom: 1em;
-}
-
 .sidebar-bike {
   float: right;
   overflow: visible;
-  padding: 0 90px 0 30px;
+  padding: 0 90px 0 0;
 }
 .sidebar-bike h3 {
   font-size: 23px;
@@ -534,22 +530,27 @@ ul.services span {
 }
 @media screen and (min-width: 1025px) and (max-width: 1199px) {
   #main {
-    margin-right: 0 !important;
-    width: 500px;
-    display: inline-block;
+    float: left;
+    width: 600px;
+    display: inline-block !important;
   }
 
-  .map.visible-md.visible-lg {
-    visibility: visible;
-    display: block;
+  .entry-content .visible-lg {
+    visibility: visible !important;
+    display: block !important;
+  }
+
+  .sidebar-bike .visible-md {
+    visibility: hidden !important;
+    display: none !important;
   }
 
   .sidebar-bike {
     float: right;
     overflow: visible;
-    width: 500px;
+    width: 41%;
     padding: 0 40px 0 20px;
-    display: inline-block;
+    display: inline-block !important;
   }
 
   .specs.visible-sm.visible-md {
@@ -577,8 +578,21 @@ ul.services span {
     display: none;
   }
 
-  .left, .right {
-    width: 41.66667%;
+  #custom-page-content {
+    padding: 0 5% !important;
+  }
+
+  .left {
+    float: left;
+    display: inline-block;
+    width: 42.5%;
+    margin-right: 50px;
+  }
+
+  .right {
+    float: none;
+    display: inline-block;
+    width: 42.5%;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1024px) {
@@ -632,7 +646,7 @@ ul.services span {
   }
 
   #custom-page-content {
-    padding: 0 10px;
+    padding: 0 5%;
   }
 
   .page-header {
@@ -679,13 +693,13 @@ ul.services span {
     margin: 0 auto;
     display: block;
   }
-  .sidebar-bike .row .visible-sm .visible-md {
+  .sidebar-bike .row .visible-sm.visible-md {
     display: inline-block;
   }
 
   .specs {
     float: left;
-    margin: 30px 6% 0;
+    margin: 0 6% 30px;
   }
 
   .buy-bkgd {
@@ -697,20 +711,36 @@ ul.services span {
     margin: 0 auto;
   }
 
+  .page-title {
+    font-size: 2em;
+    margin: 10px 0 0 0;
+  }
+
+  .custom-page-header {
+    margin: 0 0 15px -17px;
+  }
+
   .left {
-    width: 41.66667%;
-    margin-right: 4.17%;
+    width: 46%;
+    margin-right: 50px;
     display: inline-block;
-    padding-left: 30px;
     padding-right: 0;
+    float: left;
+  }
+  .left .visible-lg {
+    display: inline-block !important;
+    visibility: visible;
   }
 
   .right {
-    float: right;
-    width: 41.66667%;
+    float: none;
+    width: 46%;
     display: inline-block;
     padding-left: 0;
     padding-right: 30px;
+  }
+  .right .visible-xs.visible-sm {
+    display: none !important;
   }
 }
 @media screen and (min-width: 481px) and (max-width: 767px) {
@@ -982,34 +1012,32 @@ ul.services span {
     margin: 0 auto;
   }
   .sidebar-bike .row {
-    text-align: center;
     padding: 0 5%;
+    width: 100%;
+    height: 110px;
   }
   .sidebar-bike .row .visible-sm.visible-md {
     display: inline-block !important;
   }
-
-  .visible-xs {
+  .sidebar-bike .row.visible-xs {
     display: none !important;
     visibility: hidden;
     width: 0;
     height: 0;
     margin: 0;
   }
-  .visible-xs .specs {
+  .sidebar-bike .row.visible-xs .specs {
     width: 0;
     height: 0;
     border: 0;
   }
 
   .specs {
-    display: inline-block;
-    text-align: center;
+    float: left;
     width: 27%;
     height: 80px;
     padding-top: 0;
-    margin: 30px 2.3% 0 2.3%;
-    border: 1px solid #3b3b3b;
+    margin: 0 2.3% 30px 2.3%;
   }
   .specs h1 {
     font-size: 2.5em;
@@ -1239,14 +1267,19 @@ ul.services span {
     margin: 0;
   }
 
+  .sidebar-bike {
+    float: none;
+  }
+  .sidebar-bike .row {
+    text-align: center;
+  }
+
   .specs {
     display: inline-block;
-    text-align: center;
-    width: 130px;
+    width: 40%;
     height: 80px;
     padding-top: 0;
-    margin: 0 0 15px 5%;
-    border: 1px solid #3b3b3b;
+    margin: 0 0 15px 6%;
   }
   .specs h1 {
     font-size: 2.5em;

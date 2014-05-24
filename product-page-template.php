@@ -55,7 +55,7 @@
 						
 						<div class="sidebar-bike col-md-5 clearfix">
 
-							<div class="row">
+							<div class="row clearfix">
 								<div class="specs">
 									<h1><?php the_field('mile-range'); ?></h1>
 									<small>MILE RANGE</small>
@@ -73,7 +73,7 @@
 
 							</div><!-- end .row -->
 
-							<div class="row visible-xs visible-lg"><!-- visible phone and desktop -->
+							<div class="row visible-xs visible-lg clearfix"><!-- visible phone and desktop -->
 								<div class="specs">
 									<h1><?php the_field('mph'); ?></h1>
 									<small>MPH</small>
@@ -86,7 +86,7 @@
 
 							</div><!-- end .row -->
 
-							<div class="row">
+							<div class="row clearfix">
 								<div class="specs visible-sm visible-md"><!-- visible tablets -->
 									<h1><?php the_field('mile-range-2'); ?></h1>
 									<small>MILE RANGE</small>

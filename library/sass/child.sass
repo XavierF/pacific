@@ -6,7 +6,6 @@ $yellow: #F6DD38
 $black: #000000
 $orange: #EF6E31
 
-
 body
 	//padding-top: 295px
 	background-color: $white
@@ -193,7 +192,6 @@ body
 .carousel-control.right
 	width: 80px
 
-
 .carousel .item 
 	-webkit-transition: opacity 1s ease-in-out
 	-moz-transition: opacity 1s ease-in-out
@@ -247,7 +245,7 @@ body
 #main
 	width: 600px
 	padding-left: 8.556%
-	padding-right: 0px
+	padding-right: 60px
 .page-header
 	text-align: left
 	margin: 20px 0
@@ -289,27 +287,20 @@ body
 		font-family: 'Helvetica Neue', sans-serif
 		margin-bottom: 20px !important
 
-
-
-#wpgmza_map
-	margin-bottom: 1em
-
 .sidebar-bike
 	float: right
 	overflow: visible
-	padding: 0 90px 0 30px
+	padding: 0 90px 0 0
 	h3
 		font-size: 23px
 		font-family: 'Helvetica Neue', sans-serif
 		font-weight: medium !important
 		margin-bottom: 10px !important
 		
-
 .sidebar
 	float: right !important
 	position: relative
 	
-
 .specs 
 	display: inline-block
 	float: left
@@ -359,7 +350,6 @@ hr
 	background: url('../images/mail.png') center center no-repeat
 	background-size: cover
 	display: inline-block
-
 .facebook
 	height: 35px
 	width: 35px
@@ -378,7 +368,6 @@ hr
 	background: url('../images/pinterest.png') center center no-repeat
 	background-size: cover
 	display: inline-block
-
 .twitter
 	height: 35px
 	width: 35px
@@ -462,20 +451,26 @@ ul.services
 
 @media screen and (min-width: 1025px) and  (max-width: 1199px)
 	#main
-		margin-right: 0 !important
-		width: 500px
-		display: inline-block
+		float: left
+		width: 600px
+		display: inline-block !important
 
-	.map.visible-md.visible-lg
-		visibility: visible
-		display: block
+	.entry-content
+		.visible-lg
+			visibility: visible !important
+			display: block !important
+
+	.sidebar-bike
+		.visible-md
+			visibility: hidden !important
+			display: none !important
 
 	.sidebar-bike
 		float: right
 		overflow: visible
-		width: 500px
+		width: 41%
 		padding: 0 40px 0 20px
-		display: inline-block
+		display: inline-block !important
 
 	.specs.visible-sm.visible-md
 		visibility: hidden
@@ -496,9 +491,17 @@ ul.services
 	.map.visible-xs.visible-sm
 		visbility: hidden
 		display: none
-
-	.left, .right
-		width: 41.66666666666667%
+	#custom-page-content
+		padding: 0 5% !important
+	.left
+		float: left
+		display: inline-block
+		width: 42.5%
+		margin-right: 50px
+	.right
+		float: none
+		display: inline-block
+		width: 42.5%
 
 @media screen and (min-width: 768px) and  (max-width: 1024px)
 
@@ -543,7 +546,7 @@ ul.services
 								background: rgba(0, 0, 0, .1)
 	
 	#custom-page-content
-		padding: 0 10px
+		padding: 0 5%
 	.page-header 
 		padding: 0
 		text-align: center
@@ -581,12 +584,12 @@ ul.services
 		margin: 0 auto
 		display: block
 		.row
-			.visible-sm .visible-md
+			.visible-sm.visible-md
 				display: inline-block
 
 	.specs
 		float: left
-		margin: 30px 6% 0
+		margin: 0 6% 30px
 
 	.buy-bkgd
 		width: 400px
@@ -595,19 +598,31 @@ ul.services
 	.yelp
 		margin: 0 auto
 
+	.page-title
+		font-size: 2em
+		margin: 10px 0 0 0
+
+	.custom-page-header
+		margin: 0 0 15px -17px
+
 	.left
-		width: 41.66666666666667%
-		margin-right: 4.17%
+		width: 46%
+		margin-right: 50px
 		display: inline-block
-		padding-left: 30px
 		padding-right: 0
+		float: left
+		.visible-lg
+			display: inline-block !important
+			visibility: visible
 
 	.right
-		float: right
-		width: 41.66666666666667%
+		float: none
+		width: 46%
 		display: inline-block
 		padding-left: 0
 		padding-right: 30px
+		.visible-xs.visible-sm
+			display: none !important
 
 @media screen and (min-width: 481px) and  (max-width: 767px)
 	.site-header
@@ -833,29 +848,28 @@ ul.services
 		text-align: center
 		margin: 0 auto
 		.row
-			text-align: center
 			padding: 0 5%
+			width: 100%
+			height: 110px
 			.visible-sm.visible-md
 				display: inline-block !important
-	.visible-xs
-		display: none !important
-		visibility: hidden
-		width: 0
-		height: 0
-		margin: 0
-		.specs
+		.row.visible-xs
+			display: none !important
+			visibility: hidden
 			width: 0
 			height: 0
-			border: 0
+			margin: 0
+			.specs
+				width: 0
+				height: 0
+				border: 0
 
 	.specs 
-		display: inline-block
-		text-align: center
+		float: left
 		width: 27%
 		height: 80px
 		padding-top: 0
-		margin: 30px 2.3% 0 2.3%
-		border: 1px solid $lightGrey
+		margin: 0 2.3% 30px 2.3%
 		h1
 			font-size: 2.5em 
 			font-weight: 300
@@ -892,7 +906,6 @@ ul.services
 		margin: 0
 		display: inline-block
 		
-
 	.navbar-inverse .navbar-brand
 		display: inline-block
 		font-size: .7em
@@ -991,8 +1004,6 @@ ul.services
 					line-height: 1
 					margin-right: -9px
 					margin-bottom: 20px
-
-
 	.thumbs
 		margin: 25px 0 
 		.thumb
@@ -1045,14 +1056,17 @@ ul.services
 		padding: 0
 		margin: 0
 
+	.sidebar-bike
+		float: none
+		.row
+			text-align: center
+
 	.specs 
 		display: inline-block
-		text-align: center
-		width: 130px
+		width: 40%
 		height: 80px
 		padding-top: 0
-		margin: 0 0 15px 5%
-		border: 1px solid $lightGrey
+		margin: 0 0 15px 6%
 		h1
 			font-size: 2.5em 
 			font-weight: 300
@@ -1085,7 +1099,6 @@ ul.services
 			width: 290px
 		textarea
 			width: 290px
-
 
 	.footer 
 		margin-top: 20px

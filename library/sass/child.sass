@@ -180,8 +180,6 @@ body
 				margin-bottom: 15px
 				color: #ccc
 
-   
-
 .carousel-control
 	line-height: 600px
 	font-size: 7em
@@ -267,7 +265,6 @@ body
 	color: $darkGrey
 
 .entry-content
-
 	overflow: visible
 	p
 		line-height: 1.4em
@@ -280,7 +277,6 @@ body
 		font-size: 26px
 		font-weight: medium !important
 		margin: 0 0 40px 0
-
 
 .map
 	h3
@@ -357,7 +353,6 @@ hr
 		margin-right: 45px
 		&:last-child
 			margin-right: 0
-
 .mail
 	height: 35px
 	width: 35px
@@ -480,6 +475,7 @@ ul.services
 		overflow: visible
 		width: 500px
 		padding: 0 40px 0 20px
+		display: inline-block
 
 	.specs.visible-sm.visible-md
 		visibility: hidden
@@ -578,11 +574,12 @@ ul.services
 					margin: 0
 
 	.sidebar-bike
-		padding: 0 10px
+		padding: 0
 		width: 600px
 		float: none
 		text-align: center
 		margin: 0 auto
+		display: block
 		.row
 			.visible-sm .visible-md
 				display: inline-block
@@ -617,16 +614,17 @@ ul.services
 		height: 90px
 		.row
 			max-height: 30px
-			overflow: visible
+			position: relative
 	.info
-		display: inline-block
 		font-size: .7em
 	
 	#location
-		float: left
-		padding: 0 0 0 7%
+		position: absolute
+		top: 0
+		left: 20px
 		width: 41%
 		text-align: left
+
 	#phone
 		float: none
 		margin-left: auto !important
@@ -636,11 +634,11 @@ ul.services
 		width: 29%
 	
 	#email
-		float: right
-		padding: 0 7% 0 0
+		position: absolute
+		top: 0
+		right: 20px
 		width: 29%
 		text-align: right
-		position: relative
 
 	.brand-container
 		width: 100%
@@ -803,6 +801,8 @@ ul.services
 
 	.custom-page-header
 		margin: 0 0 15px -15px
+	.page-header
+		padding: 0
 
 	#custom-page-content
 		padding: 0 15px
@@ -835,15 +835,8 @@ ul.services
 		.row
 			text-align: center
 			padding: 0 5%
-			.visible-sm 
+			.visible-sm.visible-md
 				display: inline-block !important
-				visibility: visible !important
-				float: left
-			.visible-md
-				display: inline-block !important
-				visibility: visible !important
-				float: left
-
 	.visible-xs
 		display: none !important
 		visibility: hidden
@@ -861,12 +854,14 @@ ul.services
 		width: 27%
 		height: 80px
 		padding-top: 0
-		margin: 30px 0 0 5%
+		margin: 30px 2.3% 0 2.3%
 		border: 1px solid $lightGrey
 		h1
 			font-size: 2.5em 
 			font-weight: 300
 			margin: 5px 0 5px 0
+	.yelp
+		margin: 0 auto
 
 
 @media screen and (max-width: 480px)
@@ -1045,7 +1040,6 @@ ul.services
 			font-size: 1.5em
 			margin: 0 0 10px 0
 
-
 	.left, .right
 		width: 100%
 		padding: 0
@@ -1057,7 +1051,7 @@ ul.services
 		width: 130px
 		height: 80px
 		padding-top: 0
-		margin: 0 0 15px 15px
+		margin: 0 0 15px 5%
 		border: 1px solid $lightGrey
 		h1
 			font-size: 2.5em 

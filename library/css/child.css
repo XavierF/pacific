@@ -549,6 +549,7 @@ ul.services span {
     overflow: visible;
     width: 500px;
     padding: 0 40px 0 20px;
+    display: inline-block;
   }
 
   .specs.visible-sm.visible-md {
@@ -671,11 +672,12 @@ ul.services span {
   }
 
   .sidebar-bike {
-    padding: 0 10px;
+    padding: 0;
     width: 600px;
     float: none;
     text-align: center;
     margin: 0 auto;
+    display: block;
   }
   .sidebar-bike .row .visible-sm .visible-md {
     display: inline-block;
@@ -717,17 +719,17 @@ ul.services span {
   }
   .site-header .row {
     max-height: 30px;
-    overflow: visible;
+    position: relative;
   }
 
   .info {
-    display: inline-block;
     font-size: 0.7em;
   }
 
   #location {
-    float: left;
-    padding: 0 0 0 7%;
+    position: absolute;
+    top: 0;
+    left: 20px;
     width: 41%;
     text-align: left;
   }
@@ -742,11 +744,11 @@ ul.services span {
   }
 
   #email {
-    float: right;
-    padding: 0 7% 0 0;
+    position: absolute;
+    top: 0;
+    right: 20px;
     width: 29%;
     text-align: right;
-    position: relative;
   }
 
   .brand-container {
@@ -940,6 +942,10 @@ ul.services span {
     margin: 0 0 15px -15px;
   }
 
+  .page-header {
+    padding: 0;
+  }
+
   #custom-page-content {
     padding: 0 15px;
   }
@@ -979,15 +985,8 @@ ul.services span {
     text-align: center;
     padding: 0 5%;
   }
-  .sidebar-bike .row .visible-sm {
+  .sidebar-bike .row .visible-sm.visible-md {
     display: inline-block !important;
-    visibility: visible !important;
-    float: left;
-  }
-  .sidebar-bike .row .visible-md {
-    display: inline-block !important;
-    visibility: visible !important;
-    float: left;
   }
 
   .visible-xs {
@@ -1009,13 +1008,17 @@ ul.services span {
     width: 27%;
     height: 80px;
     padding-top: 0;
-    margin: 30px 0 0 5%;
+    margin: 30px 2.3% 0 2.3%;
     border: 1px solid #3b3b3b;
   }
   .specs h1 {
     font-size: 2.5em;
     font-weight: 300;
     margin: 5px 0 5px 0;
+  }
+
+  .yelp {
+    margin: 0 auto;
   }
 }
 @media screen and (max-width: 480px) {
@@ -1242,7 +1245,7 @@ ul.services span {
     width: 130px;
     height: 80px;
     padding-top: 0;
-    margin: 0 0 15px 15px;
+    margin: 0 0 15px 5%;
     border: 1px solid #3b3b3b;
   }
   .specs h1 {

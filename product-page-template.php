@@ -112,7 +112,7 @@
 						<a href="<?php the_field('buy_online_link'); ?>" class="btn btn-primary btn-lg btn-block" target="" >BUY NOW</a>
 						</div><!-- end buy-bkgd-->
 					<hr>
-							<ul class="social">
+							<ul class="social clearfix">
 								<li>
 										<a class="mail" target=”_blank” href="mailto:?subject=Pacific E-Bike <?php the_title(); ?> &body=<?php the_permalink() ?> "></a>
 								</li>

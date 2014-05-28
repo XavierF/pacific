@@ -87,9 +87,15 @@ body {
   background: rgba(0, 0, 0, 0.1);
 }
 .navbar-inverse .navbar-nav li.active a {
+  color: black;
   background: rgba(0, 0, 0, 0.1);
 }
-.navbar-inverse .navbar-nav li.active a:hover a {
+.navbar-inverse .navbar-nav li.active:hover a {
+  color: black;
+  background: rgba(0, 0, 0, 0.2);
+}
+.navbar-inverse .navbar-nav li:hover a {
+  color: black;
   background: rgba(0, 0, 0, 0.2);
 }
 .navbar-inverse .navbar-nav li .dropdown-menu {
@@ -115,12 +121,27 @@ body {
 }
 .navbar-inverse .navbar-nav li .dropdown-menu li a:hover {
   background: rgba(0, 0, 0, 0.1);
+  color: black;
 }
-.navbar-inverse .navbar-nav li .dropdown-menu li.active a {
+.navbar-inverse .navbar-nav li .dropdown-menu li a.active {
   background: rgba(0, 0, 0, 0.1);
+  color: black;
 }
-.navbar-inverse .navbar-nav li .dropdown-menu li.active a:hover {
+.navbar-inverse .navbar-nav li .dropdown-menu li a:hover {
   background: rgba(0, 0, 0, 0.1);
+  color: black;
+}
+.navbar-inverse .navbar-nav li .dropdown-menu li a:focus {
+  background: rgba(0, 0, 0, 0.1);
+  color: black;
+}
+.navbar-inverse .navbar-nav .open a:focus {
+  background: rgba(0, 0, 0, 0.1);
+  color: black;
+}
+.navbar-inverse .navbar-nav .open a:hover {
+  background: rgba(0, 0, 0, 0.1);
+  color: black;
 }
 
 .navbar-inverse {
@@ -627,6 +648,9 @@ ul.services span {
   .navbar-inverse .navbar-nav li a:focus {
     background: rgba(0, 0, 0, 0.1);
   }
+  .navbar-inverse .navbar-nav li .dropdown-menu {
+    height: auto;
+  }
   .navbar-inverse .navbar-nav li .dropdown-menu li {
     float: none;
   }
@@ -636,11 +660,8 @@ ul.services span {
   .navbar-inverse .navbar-nav li .dropdown-menu li a {
     float: none;
     display: block;
-    color: black;
-    background: rgba(255, 255, 255, 0.1);
-    -webkit-font-smoothing: antialiased;
     padding: 10px;
-    text-align: center;
+    text-align: left;
     font-size: 16px;
     font-weight: light !important;
   }
@@ -847,7 +868,7 @@ ul.services span {
   }
 
   .navbar-collapse {
-    overflow-y: visible;
+    overflow-y: visible !important;
   }
 
   .navbar-inverse .navbar-nav .container {
@@ -869,49 +890,30 @@ ul.services span {
     font-size: 0.9em;
     font-weight: 300;
   }
-  .navbar-inverse .navbar-nav li a:hover {
-    background: rgba(0, 0, 0, 0.1);
-  }
-  .navbar-inverse .navbar-nav li.active a {
-    color: black;
-    background: rgba(0, 0, 0, 0.1);
-  }
-  .navbar-inverse .navbar-nav li.active a:hover a {
-    background: rgba(0, 0, 0, 0.1);
-  }
   .navbar-inverse .navbar-nav li .dropdown-menu {
     position: absolute;
-    top: 100%;
+    top: 50%;
     left: 0;
-    background-clip: padding-box;
+    background: white;
+    border: 1px solid rgba(0, 0, 0, 0.15);
   }
   .navbar-inverse .navbar-nav li .dropdown-menu li {
     display: block;
-    float: left;
+    float: none;
   }
   .navbar-inverse .navbar-nav li .dropdown-menu li:hover {
     background: rgba(0, 0, 0, 0.1);
   }
   .navbar-inverse .navbar-nav li .dropdown-menu li a {
-    float: left;
-    display: block;
-    color: black;
+    float: none;
     background: rgba(255, 255, 255, 0.1);
     -webkit-font-smoothing: antialiased;
     padding: 10px;
     min-width: 160px;
     text-align: left;
     font-size: 16px;
-    font-weight: light !important;
-  }
-  .navbar-inverse .navbar-nav li .dropdown-menu li a:hover {
-    background: rgba(0, 0, 0, 0.1);
-  }
-  .navbar-inverse .navbar-nav li .dropdown-menu li.active a {
-    background: rgba(0, 0, 0, 0.1);
-  }
-  .navbar-inverse .navbar-nav li .dropdown-menu li.active a:hover {
-    background: rgba(0, 0, 0, 0.1);
+    color: black !important;
+    font-weight: 300 !important;
   }
 
   .slideshow .container {
@@ -1159,9 +1161,6 @@ ul.services span {
     float: none;
     display: block;
   }
-  .navbar-inverse .navbar-nav li .dropdown-menu li:hover {
-    background: rgba(0, 0, 0, 0.1);
-  }
   .navbar-inverse .navbar-nav li .dropdown-menu li a {
     float: none;
     display: block;
@@ -1178,8 +1177,8 @@ ul.services span {
   .navbar-inverse .navbar-nav li .dropdown-menu li.active a {
     background: rgba(0, 0, 0, 0.1);
   }
-  .navbar-inverse .navbar-nav li .dropdown-menu li.active a:hover {
-    background: rgba(0, 0, 0, 0.1);
+  .navbar-inverse .navbar-nav li .dropdown-menu li.active .dropdown-toggle:hover {
+    background: white;
   }
 
   .col-sm-12 {

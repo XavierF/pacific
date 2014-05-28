@@ -82,10 +82,16 @@ body
 				background: rgba(0, 0, 0, .1)
 		&.active
 			a
+				color: $black
 				background: rgba(0, 0, 0, .1)
-				&:hover
-					a
-						background: rgba(0, 0, 0, .2)
+			&:hover
+				a
+					color: $black
+					background: rgba(0, 0, 0, .2)
+		&:hover
+			a
+				color: $black
+				background: rgba(0, 0, 0, .2)
 		.dropdown-menu
 			margin-top: 20px
 			padding: 0
@@ -105,11 +111,24 @@ body
 					font-weight: light !important
 					&:hover
 						background: rgba(0, 0, 0, .1)
-				&.active
-					a
+						color: $black
+					&.active
 						background: rgba(0, 0, 0, .1)
-						&:hover
-							background: rgba(0, 0, 0, .1)
+						color: $black
+					&:hover
+						background: rgba(0, 0, 0, .1)
+						color: $black
+					&:focus
+						background: rgba(0, 0, 0, .1)
+						color: $black
+	.open
+		a
+			&:focus
+				background: rgba(0, 0, 0, .1)
+				color: $black
+			&:hover
+				background: rgba(0, 0, 0, .1)
+				color: $black
 
 .navbar-inverse
 	background-color: $white
@@ -530,6 +549,7 @@ ul.services
 				&:focus
 					background: rgba(0, 0, 0, .1)
 			.dropdown-menu
+				height: auto
 				li
 					float: none
 					&:hover
@@ -537,11 +557,8 @@ ul.services
 					a
 						float: none
 						display: block
-						color: $black
-						background: rgba(255, 255, 255, .1)
-						-webkit-font-smoothing: antialiased
 						padding: 10px
-						text-align: center
+						text-align: left
 						font-size: 16px
 						font-weight: light !important
 						&:hover
@@ -709,7 +726,7 @@ ul.services
 		margin: 0
 
 	.navbar-collapse
-		overflow-y: visible
+		overflow-y: visible !important
 
 	.navbar-inverse .navbar-nav
 		.container
@@ -728,43 +745,28 @@ ul.services
 				padding: 10px 6.6%
 				font-size: .9em
 				font-weight: 300
-				&:hover
-					background: rgba(0, 0, 0, .1)
-			&.active
-				a
-					color: black
-					background: rgba(0, 0, 0, .1)
-					&:hover
-						a
-							background: rgba(0, 0, 0, .1)
 			.dropdown-menu
 				position: absolute
-				top: 100%
+				top: 50%
 				left: 0
-				background-clip: padding-box
+				background: $white
+				border: 1px solid rgba(0, 0, 0, 0.15)
 				li
 					display: block
-					float: left
+					float: none
 					&:hover
 						background: rgba(0, 0, 0, .1)
 					a
-						float: left
-						display: block
-						color: $black
+						float: none
 						background: rgba(255, 255, 255, .1)
 						-webkit-font-smoothing: antialiased
 						padding: 10px
 						min-width: 160px
 						text-align: left
 						font-size: 16px
-						font-weight: light !important
-						&:hover
-							background: rgba(0, 0, 0, .1)
-					&.active
-						a
-							background: rgba(0, 0, 0, .1)
-							&:hover
-								background: rgba(0, 0, 0, .1)
+						color: $black !important
+						font-weight: 300 !important
+
 	.slideshow
 		.container
 			padding-left: 0 !important
@@ -970,8 +972,6 @@ ul.services
 				li
 					float: none
 					display: block
-					&:hover
-						background: rgba(0, 0, 0, .1)
 					a
 						float: none
 						display: block
@@ -986,8 +986,10 @@ ul.services
 					&.active
 						a
 							background: rgba(0, 0, 0, .1)
+						.dropdown-toggle
+							a
 							&:hover
-								background: rgba(0, 0, 0, .1)
+								background: white
 
 	.col-sm-12
 		padding: 0

@@ -109,7 +109,7 @@
 						<h3>AVAILABLE IN STORE OR ONLINE</h3>
 
 						<div class="buy-bkgd">
-						<a href="<?php the_field('buy_online_link'); ?>" class="btn btn-primary btn-lg btn-block" target="" >BUY NOW</a>
+						<a href="<?php the_field('buy_online_link'); ?>" class="btn btn-primary btn-lg btn-block" target="_blank" >BUY NOW</a>
 						</div><!-- end buy-bkgd-->
 					<hr>
 							<ul class="social clearfix">

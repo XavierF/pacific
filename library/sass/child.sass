@@ -1,10 +1,12 @@
 //BRAND COLORS
 $lightGrey: #3B3B3B
 $darkGrey: #1A1A1A
+$grey: #353535
 $white: #FFFFFF
 $yellow: #F6DD38
 $black: #000000
 $orange: #EF6E31
+
 
 body
 	//padding-top: 295px
@@ -75,63 +77,64 @@ body
 			display: inline-block
 			color: $black
 			-webkit-font-smoothing: antialiased
-			padding: 20px 30px
+			padding: 20px 40px
 			font-size: 16px
 			font-weight: bold
 			&:hover
 				background: rgba(0, 0, 0, .1)
-		&.active
-			a
-				color: $black
+			&:focus
+				color: black
 				background: rgba(0, 0, 0, .1)
-			&:hover
-				a
-					color: $black
-					background: rgba(0, 0, 0, .1)
-		&:hover
-			a
-				color: $black
-				background: rgba(0, 0, 0, .1)
-			.drop-down-menu
-				a
-					background: $white
-		.dropdown-menu
-			margin-top: 20px
-			padding: 0
-			li
-				float: none
-				&:hover
-					background: rgba(0, 0, 0, .1)
-				a
-					float: left
-					color: $black
-					background: rgba(255, 255, 255, .1)
-					-webkit-font-smoothing: antialiased
-					padding: 10px
-					width: 100%
-					text-align: left
-					font-size: 16px
-					font-weight: light !important
+			.dropdown-menu
+				margin-top: 20px
+				padding: 0
+				li
+					float: none
 					&:hover
 						background: rgba(0, 0, 0, .1)
-						color: $black
-					&.active
-						background: rgba(0, 0, 0, .1)
-						color: $black
-					&:hover
-						background: rgba(0, 0, 0, .1)
-						color: $black
-					&:focus
-						background: rgba(0, 0, 0, .1)
-						color: $black
-	.open
+					a
+						float: left
+						color: $black !important
+						background: rgba(255, 255, 255, .1) 
+						-webkit-font-smoothing: antialiased
+						padding: 10px
+						.active
+							background: rgba(0, 0, 0, .1)
+	.active, .open
 		a
+			background: rgba(0, 0, 0, .1)
+			&:hover
+				background: rgba(0, 0, 0, .1)
 			&:focus
 				background: rgba(0, 0, 0, .1)
-				color: $black
+	.dropdown-menu
+		margin-top: 20px
+		padding: 0
+		li
+			float: none
 			&:hover
 				background: rgba(0, 0, 0, .1)
+			&:active
+				background: rgba(0, 0, 0, .1)
+			a
+				float: left
 				color: $black
+				background: rgba(255, 255, 255, .1)
+				-webkit-font-smoothing: antialiased
+				padding: 10px
+				width: 100%
+				text-align: left
+				font-size: 16px
+				font-weight: light !important
+				&:hover
+					background: rgba(0, 0, 0, .1)
+					color: $black
+				&.active
+					background: rgba(0, 0, 0, .1) !important
+					color: $black
+				&:focus
+					background: rgba(0, 0, 0, .1)
+					color: $black
 
 .navbar-inverse
 	background-color: $white
@@ -148,8 +151,8 @@ body
 	padding: 0
 .tag 
 	text-align: center
-	font-size: 2em
-	font-weight: 500
+	font-size: 2.5em
+	font-weight: 100
 	margin: 40px 0 15px 0
 // Carousel
 .slideshow
@@ -259,6 +262,9 @@ body
 				margin: 0
 			&:hover
 				text-decoration: none
+		.sub-text
+			font-size: 1em !important 
+			color: grey !important
 .thumb
 	img
 		text-align: center
@@ -270,7 +276,7 @@ body
 	padding-right: 60px
 .page-header
 	text-align: left
-	margin: 20px 0
+	margin: 0
 	border-bottom: 0
 	padding: 0 0 0 83px
 
@@ -281,7 +287,7 @@ body
 	font-size: 50px
 	font-family: 'Helvetica Neue', sans-serif
 	font-weight: 100
-	margin-bottom: 0
+	margin: 20px 0
 	color: $darkGrey
 
 .entry-content
@@ -297,6 +303,13 @@ body
 		font-size: 26px
 		font-weight: medium !important
 		margin: 0 0 40px 0
+a.phone
+	color: black
+	margin-bottom: 20px !important
+	display: block
+	&:hover
+		color: black
+		text-decoration: none
 
 .map
 	h3
@@ -337,7 +350,12 @@ body
 		font-weight: 400
 		margin: 10px 0 0 0 
 	small
-		margin-bottom: 5px
+		margin-bottom: 0
+		line-height: 1px
+		font-size: 88%
+	a
+		color: $black
+		text-decoration: underline
 hr
 	margin-top: 10px
 
@@ -403,6 +421,12 @@ hr
 	background-size: cover
 	display: block
 
+.slideshow-wrapper
+	margin-bottom: 20px !important
+
+//.slideshow-slideright, .slideshow-slideleft
+//	background: $lightGrey !important
+
 #custom-page-content
 	padding: 0 55px
 
@@ -442,7 +466,7 @@ ul.services
 
 .source-org
 	display: inline-block
-	color: $lightGrey
+	color: grey
 	margin: 10px 0 0 0
 
 .footer-nav
@@ -460,11 +484,11 @@ ul.services
 	li
 		a
 			padding-left: 15px
-			color: $lightGrey
+			color: grey
 			-webkit-font-smoothing: antialiased
 			&:hover
-				text-decoration: none
-				color: $lightGrey
+				text-decoration: underline
+				color: white
 
 //Media Queries
 @media screen and (min-width: 900px)
@@ -559,41 +583,6 @@ ul.services
 
 	.navbar-logo
 		margin-left: 50px
-
-	.navbar-inverse .navbar-nav
-		li
-			float: none
-			display: inline
-			margin-right: -4px
-			a
-				float: none
-				display: inline-block
-				&:focus
-					background: rgba(0, 0, 0, .1)
-			.dropdown-menu
-				height: auto
-				li
-					float: none
-					&:hover
-						background: rgba(0, 0, 0, .1)
-					a
-						float: none
-						display: block
-						padding: 10px
-						text-align: left
-						font-size: 16px
-						font-weight: light !important
-						&:hover
-							background: rgba(0, 0, 0, .1)
-						&:focus
-							background: rgba(0, 0, 0, .1)
-					&.active
-						a
-							background: rgba(0, 0, 0, .1)
-							&:hover
-								background: rgba(0, 0, 0, .1)
-							&:focus
-								background: rgba(0, 0, 0, .1)
 	
 	#custom-page-content
 		padding: 0 5%
@@ -771,23 +760,28 @@ ul.services
 				position: absolute
 				top: 50%
 				left: 0
-				background: $white
-				border: 1px solid rgba(0, 0, 0, 0.15)
+				background: $white !important
 				li
 					display: block
-					float: none
-					&:hover
-						background: rgba(0, 0, 0, .1)
+					background: $white !important
 					a
-						float: none
-						background: rgba(255, 255, 255, .1)
-						-webkit-font-smoothing: antialiased
-						padding: 10px
-						min-width: 160px
-						text-align: left
-						font-size: 16px
-						color: $black !important
-						font-weight: 300 !important
+						&.active
+							background: rgba(255, 255, 255, .1) !important
+							color: $black
+						&.focus
+							background: rgba(0, 0, 0, .1) !important
+							color: $black
+						&.hover
+							background: rgba(255, 255, 255, .1) !important
+							color: $black
+		.active, .open
+			a
+				background: rgba(0, 0, 0, .1)
+				&:hover
+					background: rgba(0, 0, 0, .1)
+				&:focus
+					background: rgba(0, 0, 0, .1)
+				
 	.tag
 		font-size: 1.5em
 		margin: 10px 0

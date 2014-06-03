@@ -106,8 +106,8 @@
 					<div class="thumb" style="background: url('<?php the_field('page_1_img');?>') center center no-repeat; background-size: contain;"></div>
 					<div class="thumb-info">
 						<p><?php the_field('page_1_text'); ?></p>
-						<p><?php the_field('page_1_price'); ?></p>
-						<p><?php the_field('page_1_available'); ?></p>
+						<p class="sub-text"><?php the_field('page_1_price'); ?></p>
+						<p class="sub-text"><?php the_field('page_1_available'); ?></p>
 					</div>
 				</a>
 			</div><!-- end .col-sm-4 -->
@@ -116,8 +116,8 @@
 					<div class="thumb" style="background: url('<?php the_field('page_2_img');?>') center center no-repeat; background-size: contain;"></div>
 					<div class="thumb-info">
 						<p><?php the_field('page_2_text'); ?></p>
-						<p><?php the_field('page_2_price'); ?></p>
-						<p><?php the_field('page_2_available'); ?></p>
+						<p class="sub-text"><?php the_field('page_2_price'); ?></p>
+						<p class="sub-text"><?php the_field('page_2_available'); ?></p>
 					</div>
 				</a>
 			</div><!-- end .col-sm-4 -->
@@ -126,8 +126,8 @@
 					<div class="thumb" style="background: url('<?php the_field('page_3_img');?>') center center no-repeat; background-size: contain;"></div>
 					<div class="thumb-info">
 						<p><?php the_field('page_3_text'); ?></p>
-						<p><?php the_field('page_3_price'); ?></p>
-						<p><?php the_field('page_3_available'); ?></p>
+						<p class="sub-text"><?php the_field('page_3_price'); ?></p>
+						<p class="sub-text"><?php the_field('page_3_available'); ?></p>
 					</div>
 				</a>
 			</div><!-- end .col-sm-4-->
@@ -138,8 +138,8 @@
 					<div class="thumb" style="background: url('<?php the_field('page_4_img');?>') center center no-repeat; background-size: contain;"></div>
 					<div class="thumb-info">
 						<p><?php the_field('page_4_text'); ?></p>
-						<p><?php the_field('page_4_price'); ?></p>
-						<p><?php the_field('page_4_available'); ?></p>
+						<p class="sub-text"><?php the_field('page_4_price'); ?></p>
+						<p class="sub-text"><?php the_field('page_4_available'); ?></p>
 					</div>
 				</a>
 			</div><!-- end .col-sm-4 -->
@@ -148,8 +148,8 @@
 					<div class="thumb" style="background: url('<?php the_field('page_5_img');?>') center center no-repeat; background-size: contain;"></div>
 					<div class="thumb-info">
 						<p><?php the_field('page_5_text'); ?></p>
-						<p><?php the_field('page_5_price'); ?></p>
-						<p><?php the_field('page_5_available'); ?></p>
+						<p class="sub-text"><?php the_field('page_5_price'); ?></p>
+						<p class="sub-text"><?php the_field('page_5_available'); ?></p>
 					</div>
 				</a>
 			</div><!-- end .col-sm-4 -->
@@ -158,8 +158,8 @@
 					<div class="thumb" style="background: url('<?php the_field('page_6_img');?>') center center no-repeat; background-size: contain;"></div>
 					<div class="thumb-info">
 						<p><?php the_field('page_6_text'); ?></p>
-						<p><?php the_field('page_6_price'); ?></p>
-						<p><?php the_field('page_6_available'); ?></p>
+						<p class="sub-text"><?php the_field('page_6_price'); ?></p>
+						<p class="sub-text"><?php the_field('page_6_available'); ?></p>
 					</div>
 				</a>
 			</div><!-- end .col-sm-4 -->

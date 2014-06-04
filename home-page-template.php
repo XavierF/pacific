@@ -12,7 +12,7 @@
 
 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 <section class="slideshow">
-<div class="container">
+
 	<div id="myCarousel" class="carousel slide" data-ride="carousel">
 		<div class="carousel-inner">
 
@@ -84,7 +84,7 @@
 	<a class="left carousel-control" href="#myCarousel" data-slide="prev">‹</a>
 	<a class="right carousel-control" href="#myCarousel" data-slide="next">›</a>
 </div><!-- end of carousel -->
-</div><!-- end .container -->
+
 </section>
 
 <section id="description" role="tagline">

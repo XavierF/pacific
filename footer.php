@@ -5,11 +5,11 @@
 				<div id="inner-footer" class="wrap clearfix">
 
 					<nav role="navigation">
-						<p class="source-org copyright">&copy; <?php echo date('Y'); ?> <?php bloginfo( 'name' ); ?>.</p>
+						<p class="source-org copyright">&copy; <?php echo date('Y'); ?> <?php bloginfo( 'name' ); ?></p>
+						<p>843 Carleton St, Berkeley CA </p>
+						<p><a href="tel:+15108432453">(510) 843 - 2453</a></p>
 					  <?php bones_footer_links(); ?>
 					</nav>
-
-					
 
 				</div> <!-- end #inner-footer -->
 

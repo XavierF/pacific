@@ -178,10 +178,6 @@ body {
   margin: 40px 0 15px 0;
 }
 
-.slideshow {
-  background: #3b3b3b;
-}
-
 .carousel .item {
   height: 640px;
   background-color: rgba(0, 0, 0, 0.6);
@@ -552,10 +548,18 @@ ul.services span {
   background: black;
 }
 
-.source-org {
+.source-org, p {
   display: inline-block;
   color: gray;
   margin: 10px 0 0 0;
+  padding: 0 20px;
+}
+.source-org a, p a {
+  color: gray;
+}
+.source-org a:hover, p a:hover {
+  color: gray;
+  text-decoration: none;
 }
 
 .footer-nav {
@@ -583,6 +587,11 @@ ul.services span {
 @media screen and (min-width: 900px) {
   .container {
     max-width: 1180px;
+  }
+}
+@media screen and (max-width: 899px) {
+  footer {
+    text-align: center;
   }
 }
 @media screen and (min-width: 1025px) and (max-width: 1199px) {
@@ -687,6 +696,10 @@ ul.services span {
     float: none;
     display: inline-block;
     width: 42.5%;
+  }
+
+  .footer-nav {
+    float: right;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1024px) {
@@ -798,6 +811,12 @@ ul.services span {
   .right .with_frm_style .form-field, .right .with_frm_style .frm_form_field {
     width: 70% !important;
     display: inline-block;
+  }
+
+  .footer-nav {
+    display: block;
+    float: none !important;
+    margin: 10px auto;
   }
 }
 @media screen and (min-width: 481px) and (max-width: 767px) {
@@ -1112,6 +1131,25 @@ ul.services span {
     width: 400px;
     margin: 0 auto;
   }
+
+  .footer {
+    margin-top: 20px;
+    padding: 15px 0;
+    text-align: center;
+  }
+  .footer p {
+    margin: 0 auto;
+    display: block;
+  }
+
+  .footer-nav {
+    float: none;
+    display: block;
+  }
+  .footer-nav li {
+    text-align: center;
+    display: block;
+  }
 }
 @media screen and (max-width: 480px) {
   .site-header {
@@ -1411,6 +1449,10 @@ ul.services span {
     margin-top: 20px;
     padding: 15px 0;
     text-align: center;
+  }
+  .footer p {
+    margin: 0 auto;
+    display: block;
   }
 
   .footer-nav {

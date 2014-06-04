@@ -155,8 +155,6 @@ body
 	font-weight: 100
 	margin: 40px 0 15px 0
 // Carousel
-.slideshow
-	background: $lightGrey
 
 .carousel
 	.item
@@ -464,10 +462,18 @@ ul.services
 .footer 
 	background: $black
 
-.source-org
+.source-org, p
 	display: inline-block
 	color: grey
 	margin: 10px 0 0 0
+	padding: 0 20px
+	a
+		color: grey
+		&:hover
+			color: grey
+			text-decoration: none
+
+
 
 .footer-nav
 	display: inline-block
@@ -494,6 +500,10 @@ ul.services
 @media screen and (min-width: 900px)
 	.container
 		max-width: 1180px
+
+@media screen and (max-width: 899px)
+	footer
+		text-align: center
 
 @media screen and (min-width: 1025px) and  (max-width: 1199px)
 	#main
@@ -578,6 +588,9 @@ ul.services
 		float: none
 		display: inline-block
 		width: 42.5%
+
+	.footer-nav
+		float: right
 
 @media screen and (min-width: 768px) and  (max-width: 1024px)
 
@@ -668,6 +681,11 @@ ul.services
 		.with_frm_style .form-field, .with_frm_style .frm_form_field
 			width: 70% !important
 			display: inline-block
+
+	.footer-nav
+		display: block
+		float: none !important
+		margin: 10px auto
 
 @media screen and (min-width: 481px) and  (max-width: 767px)
 	.site-header
@@ -931,6 +949,21 @@ ul.services
 		width: 400px
 		margin: 0 auto
 
+	.footer 
+		margin-top: 20px
+		padding: 15px 0
+		text-align: center
+		p
+			margin: 0 auto
+			display: block
+
+	.footer-nav
+		float: none
+		display: block
+		li
+			text-align: center
+			display: block
+
 @media screen and (max-width: 480px)
 	.site-header
 		height: 150px
@@ -1173,6 +1206,9 @@ ul.services
 		margin-top: 20px
 		padding: 15px 0
 		text-align: center
+		p
+			margin: 0 auto
+			display: block
 
 	.footer-nav
 		float: none

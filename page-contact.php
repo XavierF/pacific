@@ -37,7 +37,7 @@ Template Name: Contact Page Template
 							<div class="right col-md-6"><!-- right column -->
 								<?php echo FrmFormsController::show_form(2, $key = '', $title=true, $description=true); ?> 
 								<hr>
-								<h4>"Best prices and service in town"</h4>
+								<em><?php the_field('testimonial'); ?></em>
 									<a class="yelp" href="http://www.yelp.com/biz/pacific-e-bike-berkeley" title="yelp" target="_blank"></a>
 
 									<div class="map visible-xs visible-sm "><!-- google map starts here -->

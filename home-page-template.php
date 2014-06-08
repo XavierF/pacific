@@ -13,77 +13,55 @@
 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 <section class="slideshow">
 
-	<div id="myCarousel" class="carousel slide" data-ride="carousel">
-		<div class="carousel-inner">
+	
+		<div class="slides">
 
-			<div class="item active" style="background: url('<?php the_field('slide_1_bg');?>') 50% 50% no-repeat; background-size: cover;">
+			<div class="item" style="background: url('<?php the_field('slide_1_bg');?>') 50% 50% no-repeat; background-size: cover;">
 				
-					<div class="row">
-						<div class="col-lg-12">
-							<div class="overlay">
+
+
 							<blockquote>
 								<?php the_field('slide_1_caption'); ?>
 								<small>
 									<?php the_field('slide_1_name'); ?>
 								</small>
 							</blockquote>
-						</div><!-- end .overlay -->
-						</div><!-- end .col-lg-12-->
-					</div><!-- end .row-->
 			
-		  </div><!-- end .item active -->
+		  </div><!-- end .item -->
 
 		<div class="item" style="background: url('<?php the_field('slide_2_bg');?>') 50% 50% no-repeat; background-size: cover;">
 			
-				<div class="row">
-					<div class="col-lg-12">
-						<div class="overlay">
+		
 						<blockquote>
 							<?php the_field('slide_2_caption'); ?>
 							<small>
 								<?php the_field('slide_2_name'); ?>
 							</small>
 						</blockquote>
-					</div><!-- end .overlay -->
-					</div><!-- end .col-lg-12-->
-				</div><!-- end .row-->
+				
 		</div><!-- end .item -->
-
 		<div class="item" style="background: url('<?php the_field('slide_3_bg');?>') 50% 50% no-repeat; background-size: cover;">
-			
-				<div class="row">
-					<div class="col-lg-12">
-						<div class="overlay">
+		
 						<blockquote>
 							<?php the_field('slide_3_caption'); ?>
 							<small>
 								<?php the_field('slide_3_name'); ?>
 							</small>
 						</blockquote>
-					</div><!-- end .overlay -->
-					</div><!-- end .col-lg-12-->
-				</div><!-- end .row-->
+				
 		</div><!-- end .item -->
-
 		<div class="item" style="background: url('<?php the_field('slide_4_bg');?>') 50% 50% no-repeat; background-size: cover;">
 			
-				<div class="row">
-					<div class="col-lg-12">
-						<div class="overlay">
 						<blockquote>
 							<?php the_field('slide_4_caption'); ?>
 							<small>
 								<?php the_field('slide_4_name'); ?>
 							</small>
 						</blockquote>
-					</div><!-- end .overlay -->
-					</div><!-- end .col-lg-12-->
-				</div><!-- end .row-->
+			
 		</div><!-- end .item -->
-	</div><!-- end .carousel-inner -->
-	<a class="left carousel-control" href="#myCarousel" data-slide="prev">‹</a>
-	<a class="right carousel-control" href="#myCarousel" data-slide="next">›</a>
-</div><!-- end of carousel -->
+
+</div><!-- end .single-item -->
 
 </section>
 
@@ -170,10 +148,5 @@
 
 <?php endwhile; endif; ?>
 
-<script>
-	//jQuery(document).ready(function($){
-	//	$('#myCarousel').carousel();
-//	});
-</script>
 
 <?php get_footer(); ?>

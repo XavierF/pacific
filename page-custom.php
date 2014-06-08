@@ -41,7 +41,7 @@ Template Name: Custom Page Template
 							<div class="right col-md-5"><!-- right column --><!-- 480 px width -->
 								<?php the_field('right_column'); ?>
 								<hr>
-								<h3>"Best prices and service in town"</h3>
+								<p><?php the_field('testimonial'); ?></p>
 								<a class="yelp" href="http://www.yelp.com/biz/pacific-e-bike-berkeley" title="yelp" target="_blank"></a>
 
 									<div class="map visible-xs visible-sm"><!-- google map starts here -->

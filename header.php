@@ -17,6 +17,7 @@
 	<meta name="HandheldFriendly" content="True">
 	<meta name="MobileOptimized" content="320">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<meta name="developer" content="Xavier F @xavierf.info">
 
 	<!-- icons & favicons (for more: http://www.jonathantneal.com/blog/understand-the-favicon/) -->
 	<link rel="apple-touch-icon" href="<?php echo get_template_directory_uri(); ?>/library/images/apple-icon-touch.png">
@@ -27,6 +28,7 @@
 			<!-- or, set /favicon.ico for IE10 win -->
 			<meta name="msapplication-TileColor" content="#f01d4f">
 			<meta name="msapplication-TileImage" content="<?php echo get_template_directory_uri(); ?>/library/images/win8-tile-icon.png">
+			<meta property="fb:app_id" content="1432168570385075">
 
 			<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
 
@@ -40,8 +42,15 @@
 			<!-- end of wordpress head -->
 
 			<!-- drop Google Analytics Here -->
+			<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-45289339-1', 'pacificebike.com');
+  ga('send', 'pageview');
+</script>
 			<!-- end analytics -->
-			<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/library/css/child.css">
 		</head>
 
 		<body <?php body_class(); ?>>

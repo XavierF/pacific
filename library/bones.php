@@ -130,6 +130,10 @@ function bones_scripts_and_styles() {
 
     // register main stylesheet
     wp_register_style( 'bones-stylesheet', get_stylesheet_directory_uri() . '/library/css/style.css', array(), '', 'all' );
+   
+   	// register child stylesheet
+
+   	wp_register_style( 'child-stylesheet', get_stylesheet_directory_uri() . '/library/css/child.css', array(), '', 'all' );
 
     // ie-only style sheet
     wp_register_style( 'bones-ie-only', get_stylesheet_directory_uri() . '/library/css/ie.css', array(), '' );
@@ -145,10 +149,12 @@ function bones_scripts_and_styles() {
 
     // Bootstrap JS
     wp_register_script( 'bones-bootstrap', get_stylesheet_directory_uri() . '/library/js/libs/bootstrap.min.js', array(), '3.0.0', true );
+    wp_register_script( 'slick', get_stylesheet_directory_uri() . '/library/js/libs/slick.min.js', array(), '3.0.0', true );
 
     // enqueue styles and scripts
     wp_enqueue_script( 'bones-modernizr' );
     wp_enqueue_style( 'bones-stylesheet' );
+    wp_enqueue_style( 'child-stylesheet');
     wp_enqueue_style( 'bones-ie-only' );
 
 
@@ -163,6 +169,7 @@ function bones_scripts_and_styles() {
     wp_enqueue_script( 'bones-js' );
     wp_enqueue_script( 'bones-bootstrap' );
     wp_enqueue_script('googlemaps');
+    wp_enqueue_script('slick');
 
   }
 }

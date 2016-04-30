@@ -11,72 +11,60 @@
 
 
 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-<div class="container">
-	<div id="myCarousel" class="carousel slide" data-ride="carousel">
-		<div class="carousel-inner">
+<section class="slideshow">
 
-			<div class="item active" style="background: url('<?php the_field('slide_1_bg');?>') 45% center no-repeat; background-size: cover;">
+	
+		<div class="slides">
+
+			<div class="item" style="background: url('<?php the_field('slide_1_bg');?>') 50% 50% no-repeat; background-size: cover;">
 				
-					<div class="row">
-						<div class="col-lg-12">
+
+
 							<blockquote>
 								<?php the_field('slide_1_caption'); ?>
 								<small>
 									<?php the_field('slide_1_name'); ?>
 								</small>
 							</blockquote>
-						</div><!-- end .col-lg-12-->
-					</div><!-- end .row-->
 			
-		  </div><!-- end .item active -->
+		  </div><!-- end .item -->
 
-		<div class="item" style="background: url('<?php the_field('slide_2_bg');?>') 45% center no-repeat; background-size: cover;">
+		<div class="item" style="background: url('<?php the_field('slide_2_bg');?>') 50% 50% no-repeat; background-size: cover;">
 			
-				<div class="row">
-					<div class="col-lg-12">
+		
 						<blockquote>
 							<?php the_field('slide_2_caption'); ?>
 							<small>
 								<?php the_field('slide_2_name'); ?>
 							</small>
 						</blockquote>
-					</div><!-- end .col-lg-12-->
-				</div><!-- end .row-->
+				
 		</div><!-- end .item -->
-
-		<div class="item" style="background: url('<?php the_field('slide_3_bg');?>') 45% center no-repeat; background-size: cover;">
-			
-				<div class="row">
-					<div class="col-lg-12">
+		<div class="item" style="background: url('<?php the_field('slide_3_bg');?>') 50% 50% no-repeat; background-size: cover;">
+		
 						<blockquote>
 							<?php the_field('slide_3_caption'); ?>
 							<small>
 								<?php the_field('slide_3_name'); ?>
 							</small>
 						</blockquote>
-					</div><!-- end .col-lg-12-->
-				</div><!-- end .row-->
+				
 		</div><!-- end .item -->
-
-		<div class="item" style="background: url('<?php the_field('slide_4_bg');?>') 45% center no-repeat; background-size: cover;">
+		<div class="item" style="background: url('<?php the_field('slide_4_bg');?>') 50% 50% no-repeat; background-size: cover;">
 			
-				<div class="row">
-					<div class="col-lg-12">
 						<blockquote>
 							<?php the_field('slide_4_caption'); ?>
 							<small>
 								<?php the_field('slide_4_name'); ?>
 							</small>
 						</blockquote>
-					</div><!-- end .col-lg-12-->
-				</div><!-- end .row-->
+			
 		</div><!-- end .item -->
-	</div><!-- end .carousel-inner -->
-	<a class="left carousel-control" href="#myCarousel" data-slide="prev">‹</a>
-	<a class="right carousel-control" href="#myCarousel" data-slide="next">›</a>
-</div><!-- end of carousel -->
-</div><!-- end .container -->
 
+</div><!-- end .single-item -->
+
+</section>
+<?php endwhile; endif; ?>
 <section id="description" role="tagline">
 <div class="container">
 		<div class="row">
@@ -89,81 +77,33 @@
 
 <!-- page thumbnails start here -->
 <section id="items" role="promo" class="thumbs">
+
+		<?php if( have_rows('items') ): ?>
 	<div class="container">
-		<div class="row">
-			<div class="col-sm-4">
-				<a href="<?php the_field('page_1_url'); ?>" class="bike">
-					<div class="thumb" style="background: url('<?php the_field('page_1_img');?>') center center no-repeat; background-size: cover;"></div>
-					<div class="thumb-info">
-						<p><?php the_field('page_1_text'); ?></p>
-						<p><?php the_field('page_1_price'); ?></p>
-						<p><?php the_field('page_1_available'); ?></p>
-					</div>
-				</a>
-			</div><!-- end .col-sm-4 -->
-			<div class="col-sm-4">
-				<a href="<?php the_field('page_2_url'); ?>" class="bike">
-					<div class="thumb" style="background: url('<?php the_field('page_2_img');?>') center center no-repeat; background-size: cover;"></div>
-					<div class="thumb-info">
-						<p><?php the_field('page_2_text'); ?></p>
-						<p><?php the_field('page_2_price'); ?></p>
-						<p><?php the_field('page_2_available'); ?></p>
-					</div>
-				</a>
-			</div><!-- end .col-sm-4 -->
-			<div class="col-sm-4">
-				<a href="<?php the_field('page_3_url'); ?>" class="bike">
-					<div class="thumb" style="background: url('<?php the_field('page_3_img');?>') center center no-repeat; background-size: cover;"></div>
-					<div class="thumb-info">
-						<p><?php the_field('page_3_text'); ?></p>
-						<p><?php the_field('page_3_price'); ?></p>
-						<p><?php the_field('page_3_available'); ?></p>
-					</div>
-				</a>
-			</div><!-- end .col-sm-4-->
-		</div><!-- end .row-->
-		<div class="row">
-			<div class="col-sm-4">
-				<a href="<?php the_field('page_4_url'); ?>" class="bike">
-					<div class="thumb" style="background: url('<?php the_field('page_4_img');?>') center center no-repeat; background-size: cover;"></div>
-					<div class="thumb-info">
-						<p><?php the_field('page_4_text'); ?></p>
-						<p><?php the_field('page_4_price'); ?></p>
-						<p><?php the_field('page_4_available'); ?></p>
-					</div>
-				</a>
-			</div><!-- end .col-sm-4 -->
-			<div class="col-sm-4">
-				<a href="<?php the_field('page_5_url'); ?>" class="bike">
-					<div class="thumb" style="background: url('<?php the_field('page_5_img');?>') center center no-repeat; background-size: cover;"></div>
-					<div class="thumb-info">
-						<p><?php the_field('page_5_text'); ?></p>
-						<p><?php the_field('page_5_price'); ?></p>
-						<p><?php the_field('page_5_available'); ?></p>
-					</div>
-				</a>
-			</div><!-- end .col-sm-4 -->
-			<div class="col-sm-4">
-				<a href="<?php the_field('page_6_url'); ?>" class="bike">
-					<div class="thumb" style="background: url('<?php the_field('page_6_img');?>') center center no-repeat; background-size: cover;"></div>
-					<div class="thumb-info">
-						<p><?php the_field('page_6_text'); ?></p>
-						<p><?php the_field('page_6_price'); ?></p>
-						<p><?php the_field('page_6_available'); ?></p>
-					</div>
-				</a>
-			</div><!-- end .col-sm-4 -->
-		</div><!-- end .row -->
-	</div><!-- end .container -->
-</section><!-- end page thumbs -->
 
+		<?php while( have_rows('items') ): the_row(); 
 
-<?php endwhile; endif; ?>
+			// vars
+			$link = get_sub_field('link');
+			$image = get_sub_field('thumb');
+			$text = get_sub_field('text');
+			$price = get_sub_field('price');
+			$available = get_sub_field('available');
+			?>
+			<div class="col-sm-4">
+				<a href="<?php echo $link; ?>" class="bike">
+					<div class="thumb" style="background: url('<?php echo $image; ?>') center center no-repeat; background-size: contain;"></div>
+					<div class="thumb-info">
+						<p><?php echo $text; ?></p>
+						<p class="sub-text"><?php echo $price; ?></p>
+						<p class="sub-text"><?php echo $available; ?></p>
+				</div>
+				</a><!-- .bike -->
+			</div><!-- .items -->
 
-<script>
-	//jQuery(document).ready(function($){
-	//	$('#myCarousel').carousel();
-//	});
-</script>
+			<?php endwhile; ?>
+		</div><!-- end .container -->
+		<?php endif; ?>
+	</section> <!-- end items -->
 
 <?php get_footer(); ?>

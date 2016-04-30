@@ -1,6 +1,7 @@
 //BRAND COLORS
 $lightGrey: #3B3B3B
 $darkGrey: #1A1A1A
+$grey: #353535
 $white: #FFFFFF
 $yellow: #F6DD38
 $black: #000000
@@ -13,6 +14,7 @@ body
 	color: $lightGrey
 	font-family: 'Helvetica Neue', sans-serif
 	font-size: 16px
+	font-weight: normal
 	-webkit-font-smoothing: antialiased
  
 // Header
@@ -75,41 +77,66 @@ body
 			display: inline-block
 			color: $black
 			-webkit-font-smoothing: antialiased
-			padding: 20px 30px
+			padding: 20px 40px
 			font-size: 16px
 			font-weight: bold
 			&:hover
 				background: rgba(0, 0, 0, .1)
-		&.active
-			a
+				color: $black
+			&:focus
+				color: black
 				background: rgba(0, 0, 0, .1)
-				&:hover
-					background: rgba(0, 0, 0, .2)
-		.dropdown-menu
-			margin-top: 22px
-			padding: 0
-			li
-				float: none
-				&:hover
-					background: rgba(0, 0, 0, .1)
-				a
-					float: left
-					color: $black
-					background: rgba(255, 255, 255, .1)
-					-webkit-font-smoothing: antialiased
-					padding: 10px
-					width: 100%
-					text-align: left
-					font-size: 16px
-					font-weight: light !important
+			.dropdown-menu
+				margin-top: 20px
+				padding: 0
+				li
+					float: none
 					&:hover
 						background: rgba(0, 0, 0, .1)
-				&.active
 					a
-						background: rgba(0, 0, 0, .1)
-						&:hover
+						float: left
+						color: $black !important
+						background: rgba(255, 255, 255, .1) 
+						-webkit-font-smoothing: antialiased
+						padding: 10px
+						.active
 							background: rgba(0, 0, 0, .1)
-
+	.active, .open
+		a
+			color: $black
+			background: rgba(0, 0, 0, .1)
+			&:hover
+				background: rgba(0, 0, 0, .1)
+			&:focus
+				background: rgba(0, 0, 0, .1)
+	.dropdown-menu
+		margin-top: 20px
+		padding: 0
+		li
+			float: none
+			&:hover
+				background: rgba(0, 0, 0, .1)
+			&:active
+				background: rgba(0, 0, 0, .1)
+			a
+				float: left
+				color: $black
+				background: rgba(255, 255, 255, .1)
+				-webkit-font-smoothing: antialiased
+				padding: 10px
+				width: 100%
+				text-align: left
+				font-size: 16px
+				font-weight: light !important
+				&:hover
+					background: rgba(0, 0, 0, .1)
+					color: $black
+				&.active
+					background: rgba(0, 0, 0, .1) !important
+					color: $black
+				&:focus
+					background: rgba(0, 0, 0, .1)
+					color: $black
 
 .navbar-inverse
 	background-color: $white
@@ -126,28 +153,256 @@ body
 	padding: 0
 .tag 
 	text-align: center
-	font-size: 2em
-	font-weight: 500
+	font-size: 2.3em
+	font-weight: 300
 	margin: 40px 0 15px 0
-// Carousel
-.carousel
+// Slider 
+.slick-slider 
+	position: relative 
+	display: block 
+	box-sizing: border-box 
+	-moz-box-sizing: border-box 
+	-webkit-touch-callout: none 
+	-webkit-user-select: none 
+	-khtml-user-select: none 
+	-moz-user-select: none 
+	-ms-user-select: none 
+	user-select: none 
+	-ms-touch-action: none 
+	touch-action: none 
+	-ms-touch-action: pan-y
+	touch-action: pan-y
+	-webkit-tap-highlight-color: transparent
+
+
+.slick-list
+	position: relative 
+	overflow: hidden 
+	display: block 
+	margin: 0 
+	padding: 0
+	&focus
+		outline: none
+.slick-loading .slick-list
+	background: white url('ajax-loader.gif') center center no-repeat
+.slick-list.dragging 
+	cursor: pointer
+	cursor: hand
+
+.slick-slider .slick-track,
+.slick-slider .slick-list 
+	-webkit-transform: translate3d(0, 0, 0)
+	-moz-transform: translate3d(0, 0, 0)
+	-ms-transform: translate3d(0, 0, 0)
+	-o-transform: translate3d(0, 0, 0)
+	transform: translate3d(0, 0, 0)
+.slider-nav
+	.slick-list
+		height: 90px
+		.slick-slide
+			padding: 0 3px !important
+
+
+//.slick-slider .slick-list, .slick-track, .slick-slide, .slick-slide img
+//	-webkit-transform: translate3d(0, 0, 0) 
+//	-moz-transform: translate3d(0, 0, 0) 
+//	-ms-transform: translate3d(0, 0, 0) 
+//	-o-transform: translate3d(0, 0, 0) 
+//	transform: translate3d(0, 0, 0)
+
+.slick-track 
+	position: relative
+	left: 0
+	top: 0
+	display: block
+	zoom: 1
+	width: 100%
+
+.slick-track
+	&:before
+		content: ""
+		display: table
+	&:after 
+		content: ""
+		display: table
+.slick-track
+	&:after 
+		clear: both
+
+.slick-loading .slick-track
+	visibility: hidden
+
+.slick-slide 
+	float: left
+	height: 100%
+	min-height: 1px
+	[dir="rtl"] & 
+		float: right    
+	img 
+		display: block    
+	&.slick-loading img 
+		display: none   
+	display: none
+	&.dragging img 
+		pointer-events: none   
+	.slick-initialized & 
+		display: block   
+	.slick-loading & 
+		visibility: hidden 
+	.slick-vertical & 
+		display: block
+		height: auto
+		border: 1px solid transparent
+
+//Icons 
+@font-face 
+	font-family: 'slick'
+	font-weight: normal
+	font-style: normal
+	src: local('slick')
+	src: url('/fonts/slick.eot')
+	src: url('/fonts/slick.eot?#iefix') format("embedded-opentype"),
+	url('/fonts/slick.woff') format("woff"),
+	url('/fonts/slick.ttf') format("truetype"),
+	url('/fonts/slick.svg#slick') format("svg"),
+	
+
+// Arrows 
+.slick-prev, .slick-next
+	position: absolute
+	display: block
+	height: 30px
+	width: 30px
+	font-family: 'slick'
+	line-height: 2em
+	font-size: 1.5em
+	cursor: pointer
+	background: transparent
+	color: transparent
+	top: 50%
+	margin-top: -10px
+	padding: 0
+	border: none
+	outline: none
+	z-index: 100
+
+.slick-prev, .slick-next
+	&:focus
+		outline: none
+.slick-prev.slick-disabled, .slick-next.slick-disabled
+	&:before
+		opacity: 0.75
+
+.slick-prev, .slick-next
+	&:before
+		font-family: 'slick' !important
+		font-size: 2em !important
+		line-height: 1
+		color: white
+		opacity: 0.85
+		-webkit-font-smoothing: antialiased
+		-moz-osx-font-smoothing: grayscale
+
+.slick-prev 
+	left: 80px
+	&:before 
+		content: "\2190"
+
+.slick-next
+	right: 80px
+	&:before
+		content: "\2192"
+
+//Dots 
+.slick-slider 
+	margin-bottom: 30px
+
+.slick-dots 
+	position: absolute
+	bottom: -45px
+	list-style: none
+	display: block
+	text-align: center
+	padding: 0px
+	width: 100%
+
+.slick-dots 
+	li
+		position: relative
+		display: inline-block
+		height: 20px
+		width: 20px
+		margin: 0px 5px
+		padding: 0px
+		cursor: pointer
+
+.slick-dots 
+	li 
+		button 
+			border: 0
+			background: transparent
+			display: block
+			height: 20px
+			width: 20px
+			outline: none
+			line-height: 0
+			font-size: 0
+			color: transparent
+			padding: 5px
+			cursor: pointer
+
+.slick-dots 
+	li 
+		button
+			&:focus
+				outline: none
+.slick-dots 
+	li 
+		button
+			&:before
+				position: absolute
+				top: 0
+				left: 0
+				content: "\2022"
+				width: 20px
+				height: 20px
+				font-family: 'slick' !important
+				font-size: 6px
+				line-height: 20px
+				text-align: center
+				color: black
+				opacity: 0.25
+				-webkit-font-smoothing: antialiased
+				-moz-osx-font-smoothing: grayscale
+.slick-dots 
+	li.slick-active 
+		button
+			&:before 
+				opacity: 0.75
+
+.slides
 	.item
-		height: 640px
+		height: 640px 
+		position: relative
 		blockquote
 			display: inline-block
-			position: relative
+			position: absolute
 			border-left: none
 			padding: 0
-			margin: 30px 0 0 80px
-			font-size: 3.5em
+			top: 470px
+			left: 150px
+			font-size: 2.5em
 			color: white
 			font-family: 'Helvetica Neue', sans-serif
 			font-weight: 200
 			font-style: italic
 			small
-				color: rgba(255, 255, 255, .75)
+				color: rgba(255, 255, 255, .95)
 				font-size: .5em
 				font-style: normal
+				position: absolute
+				left: 0
+				top: 50px
 			&:before
 				content: "“"
 				display: block
@@ -160,7 +415,7 @@ body
 				line-height: 1
 				margin-left: -52px
 				margin-top: -10px
-				color: #ccc
+				color: white
 			&:after
 				content: "”"
 				display: block
@@ -172,8 +427,9 @@ body
 				font-weight: bold
 				line-height: 1
 				margin-right: -38px
-				margin-bottom: 15px
-				color: #ccc
+				margin-bottom: 0
+				color: white
+
 .carousel-control
 	line-height: 600px
 	font-size: 7em
@@ -182,20 +438,8 @@ body
 .carousel-control.left, .carousel-control.right
 	background-image: none
 
-.carousel .item 
-	-webkit-transition: opacity 1s ease-in-out
-	-moz-transition: opacity 1s ease-in-out
-	-ms-transition: opacity 1s ease-in-out 
-	-o-transition: opacity 1s ease-in-out 
-	transition: opacity 1s ease-in-out
-	&.active.left
-		left: 0
-		opacity: 0
-		z-index: 2
-	&.next 
-		left: 0
-		opacity: 1
-		z-index: 1
+.carousel-control.left, .carousel-control.right
+	width: 150px
 //Home page thumbs
 .thumbs
 	margin: 30px 0
@@ -227,50 +471,85 @@ body
 				margin: 0
 			&:hover
 				text-decoration: none
+		.sub-text
+			font-size: 1em !important 
+			color: grey !important
 .thumb
 	img
 		text-align: center
 	
-//Product Page Template
+//Product Page Template, Custom page, contact page
+.page-template
+	.slick-prev 
+		left: 40px
+	.slick-next
+		right: 40px
 #main
-	max-width: 600px
+	width: 600px
 	padding-left: 8.556%
-	padding-right: 0px
+	padding-right: 60px
 .page-header
 	text-align: left
-	margin: 20px 0
+	margin: 0
 	border-bottom: 0
 	padding: 0 0 0 83px
+
+.full-width-header
+	margin-bottom: 40px
 
 .page-title	
 	font-size: 50px
 	font-family: 'Helvetica Neue', sans-serif
 	font-weight: 100
-	margin-bottom: 0
+	margin: 20px 0
 	color: $darkGrey
 
 .entry-content
-	font-size: 1.3em
-	line-height: 1.2em
-	color: $lightGrey
 	overflow: visible
 	p
 		line-height: 1.4em
 		font-size: 16px
+		font-family: 'Helvetica Neue', sans-serif
+		font-weight: regular
+		margin-bottom: 40px
+	h3
+		color: $darkGrey
+		font-size: 26px
+		font-weight: medium !important
+		margin: 0 0 40px 0
+a.phone
+	color: black
+	margin-bottom: 20px !important
+	display: block
+	&:hover
+		color: black
+		text-decoration: none
 
-#wpgmza_map
-	margin-bottom: 1em
+.map
+	h3
+		font-size: 26px
+		font-family: 'Helvetica Neue', sans-serif
+		font-weight: medium !important
+		margin-bottom: 20px !important
+	p
+		font-size: 16px
+		font-family: 'Helvetica Neue', sans-serif
+		margin-bottom: 20px !important
 
 .sidebar-bike
 	float: right
 	overflow: visible
-	padding: 0 90px 0 30px
-
+	padding: 0 90px 0 0
+	h3
+		font-size: 23px
+		font-family: 'Helvetica Neue', sans-serif
+		font-weight: medium !important
+		margin-bottom: 10px !important
+		
 .sidebar
 	float: right !important
 	position: relative
 	
-
 .specs 
 	display: inline-block
 	float: left
@@ -285,7 +564,12 @@ body
 		font-weight: 400
 		margin: 10px 0 0 0 
 	small
-		margin-bottom: 5px
+		margin-bottom: 0
+		line-height: 1px
+		font-size: 88%
+	a
+		color: $black
+		text-decoration: underline
 hr
 	margin-top: 10px
 
@@ -311,10 +595,15 @@ hr
 	li
 		list-style-type: none
 		display: inline
-		margin-right: 27px
+		margin-right: 52px
 		&:last-child
 			margin-right: 0
-
+.mail
+	height: 35px
+	width: 35px
+	background: url('../images/mail.png') center center no-repeat
+	background-size: cover
+	display: inline-block
 .facebook
 	height: 35px
 	width: 35px
@@ -333,13 +622,6 @@ hr
 	background: url('../images/pinterest.png') center center no-repeat
 	background-size: cover
 	display: inline-block
-.rss
-	height: 35px
-	width: 35px
-	background: url('../images/rss.png') center center no-repeat
-	background-size: cover
-	display: inline-block
-
 .twitter
 	height: 35px
 	width: 35px
@@ -352,15 +634,13 @@ hr
 	background: url('../images/yelp-logo.jpg') center center no-repeat
 	background-size: cover
 	display: block
+em
+	color: grey
 
-.frm_submit
-	button, html input[type="button"], input[type="reset"], input[type="submit"] 
-		@extend .btn-primary 
-		padding: 10px 20px
-		width: 150px
+.slideshow-wrapper
+	margin-bottom: 20px !important
 
 
-// Custom Page & Contact Page
 
 #custom-page-content
 	padding: 0 55px
@@ -373,13 +653,6 @@ hr
 		margin-top: 0
 		color: $black
 
-.entry-content
-	h3
-		color: $darkGrey
-		font-size: 26px
-		margin: 0 0 40px 0
-	p
-		margin-bottom: 40px
 .left 
 	margin-right: 50px
 	width: 510px
@@ -388,7 +661,6 @@ hr
 	width: 510px
 
 ul.services
-
 	margin: 20px 0 40px -20px
 	li
 		padding: 15px 0
@@ -396,16 +668,38 @@ ul.services
 		color: $yellow
 	span
 		color: $darkGrey
+.frm_submit
+	button, html input[type="button"], input[type="reset"], input[type="submit"] 
+		@extend .btn-primary 
+		padding: 10px 20px
+		width: 150px
 
 // Footer
 
 .footer 
 	background: $black
+	p
+		display: inline-block
+		color: grey
+		margin: 10px 0 0 0
+		padding: 0 20px
+		a
+			color: grey
+			&:hover
+				color: grey
+				text-decoration: none
+
 
 .source-org
 	display: inline-block
-	color: $lightGrey
+	color: grey
 	margin: 10px 0 0 0
+	padding: 0 20px
+	a
+		color: grey
+		&:hover
+			color: grey
+			text-decoration: none
 
 .footer-nav
 	display: inline-block
@@ -422,29 +716,74 @@ ul.services
 	li
 		a
 			padding-left: 15px
-			color: $lightGrey
+			color: grey
 			-webkit-font-smoothing: antialiased
 			&:hover
-				text-decoration: none
-				color: $lightGrey
+				text-decoration: underline
+				color: white
 
 //Media Queries
 @media screen and (min-width: 900px)
 	.container
 		max-width: 1180px
 
+@media screen and (max-width: 899px)
+	footer
+		text-align: center
+
 @media screen and (min-width: 1025px) and  (max-width: 1199px)
 	#main
-		padding: 0
-		margin: 0
-		margin-right: 0 !important
-		width: 500px
+		float: left
+		width: 600px
+		display: inline-block !important
+
+	.entry-content
+		.visible-lg
+			visibility: visible !important
+			display: block !important
+
+	.thumbs
+		margin: 20px 0 
+		.thumb
+			width: 100%
+			height: 240px
+		.bike
+			.thumb-info
+				text-align: left
+				border-left: 1px solid darkGrey
+				margin: 4px 0 20px 0
+				padding: 5px 0 0 10px
+				p
+					text-align: left
+					color: darkGrey
+					font-size: 1em
+					line-height: 1em
+					padding: 0 0 5px 0
+					margin: 0		
+
+	.sidebar-bike
+		.visible-md
+			visibility: hidden !important
+			display: none !important
 
 	.sidebar-bike
 		float: right
 		overflow: visible
-		width: 500px
-
+		width: 41%
+		padding: 0 40px 0 20px
+		display: inline-block !important
+	
+	.social
+		overflow: visible
+		padding: 0
+		li
+			width: 35px
+			list-style-type: none
+			display: inline-block
+			float: left
+			margin-right: 12.8%
+			&:last-child
+				margin-right: 0
 	.specs.visible-sm.visible-md
 		visibility: hidden
 		display: none
@@ -461,22 +800,67 @@ ul.services
 		display: block !important
 		visibility: visible
 
+	.map.visible-xs.visible-sm
+		visbility: hidden
+		display: none
+	#custom-page-content
+		padding: 0 5% !important
+	.left
+		float: left
+		display: inline-block
+		width: 42.5%
+		margin-right: 50px
+	.right
+		float: none
+		display: inline-block
+		width: 42.5%
+
+	.footer-nav
+		float: right
+
 @media screen and (min-width: 768px) and  (max-width: 1024px)
+
 	.navbar-logo
 		margin-left: 50px
-
+	
+	#custom-page-content
+		padding: 0 5%
 	.page-header 
 		padding: 0
 		text-align: center
+	.sub-head
+		.left
+			width: 100%
 	#main
 		padding: 0
 		margin: 0 auto
+	.slides
+		.item
+			height: 640px 
+			blockquote
+				display: inline-block
+				position: static
+				margin: 500px 0 0 10%
+				border-left: none
+				font-size: 1.8em
+				small
+					color: rgba(255, 255, 255, .95)
+					font-size: .5em
+					font-style: normal
+				&:before
+					font-size: 1.5em
+					margin-left: -30px
+					margin-top: -10px
+				&:after
+					font-size: 1.5em
+					margin-right: -25px
+					margin-bottom: 20px
 
 	.thumbs
-		margin: 25px 0 
+		margin: 20px 0 
 		.thumb
 			width: 100%
-			height: 147px
+			height: 220px
 		.bike
 			.thumb-info
 				text-align: left
@@ -492,19 +876,19 @@ ul.services
 					margin: 0
 
 	.sidebar-bike
-		padding: 0 10px
+		padding: 0
 		width: 600px
 		float: none
 		text-align: center
 		margin: 0 auto
+		display: block
 		.row
-			.visible-sm .visible-md
+			.visible-sm.visible-md
 				display: inline-block
-
 
 	.specs
 		float: left
-		margin: 30px 6% 0
+		margin: 0 6% 30px
 
 	.buy-bkgd
 		width: 400px
@@ -513,88 +897,171 @@ ul.services
 	.yelp
 		margin: 0 auto
 
-@media screen and (max-width: 480px)
+	.page-title
+		font-size: 2em
+		margin: 10px 0 0 0
 
-	.navbar-toggle
-		margin: -5px 10px 0 0
+	.custom-page-header
+		margin: 0 0 15px -17px
 
+	.left
+		width: 46%
+		margin-right: 50px
+		display: inline-block
+		padding-right: 0
+		float: left
+		.visible-lg
+			display: inline-block !important
+			visibility: visible
+
+	.right
+		float: none
+		width: 46%
+		display: inline-block
+		padding-left: 0
+		padding-right: 30px
+		.visible-xs.visible-sm
+			display: none !important
+		.with_frm_style fieldset
+			width: 60% !important
+			display: inline-block
+		.with_frm_style .form-field, .with_frm_style .frm_form_field
+			width: 70% !important
+			display: inline-block
+
+	.footer-nav
+		display: block
+		float: none !important
+		margin: 10px auto
+
+@media screen and (min-width: 481px) and  (max-width: 767px)
 	.site-header
-		height: 150px
-
+		height: 90px
+		.row
+			max-height: 30px
+			position: relative
 	.info
-		margin-top: 5px
+		font-size: .7em
+	
+	#location
+		position: absolute
+		top: 0
+		left: 20px
+		width: 41%
+		text-align: left
+
+	#phone
+		float: none
+		margin-left: auto !important
+		margin-right: auto !important
+		padding: 0
+		text-align: center
+		width: 29%
+	
+	#email
+		position: absolute
+		top: 0
+		right: 20px
+		width: 29%
+		text-align: right
+
+	.brand-container
+		width: 100%
+		height: 50px
+		margin: 0 auto
+		padding: 0
+		postion: relative
+		h1
+			width: 100%
+			margin: 5px auto 0 
+			text-align: center
+			display: block
 
 	.navbar-logo
-		float: left
+		position: absolute
+		top: 30px
+		left: 40px
 		width: 70px
 		height: 50px
 		background-size: 90%
 		margin: 0
 
 	.navbar-inverse .navbar-brand
-		font-size: .8em
+		display: inline-block
+		font-size: .7em
 		font-weight: 200
-		float: left
-		padding-top: 0
+		text-align: center
+		float: none
+
+	.navbar-toggle
+		position: absolute
+		top: 30px
+		right: 35px
+
+	.navbar-nav
+		margin: 0
+
+	.navbar-collapse
+		overflow-y: visible !important
 
 	.navbar-inverse .navbar-nav
+		.container
+			overflow: visible
 		li
 			float: none
 			display: inline
 			margin: 0
 			margin-right: -4px
+			position: relative
 			a
 				float: none
-				display: block
+				display: inline-block
 				color: $black
 				-webkit-font-smoothing: antialiased
-				padding: 20px 30px
-				font-size: 16px
-				font-weight: bold
+				padding: 10px 6.6%
+				font-size: .9em
+				font-weight: 300
+			.dropdown-menu
+				position: absolute
+				top: 50%
+				left: 0
+				background: $white !important
+				li
+					display: block
+					background: $white !important
+					a
+						&.active
+							background: rgba(255, 255, 255, .1) !important
+							color: $black
+						&.focus
+							background: rgba(0, 0, 0, .1) !important
+							color: $black
+						&.hover
+							background: rgba(255, 255, 255, .1) !important
+							color: $black
+		.active, .open
+			a
+				background: rgba(0, 0, 0, .1)
 				&:hover
 					background: rgba(0, 0, 0, .1)
-			&.active
-				a
+				&:focus
 					background: rgba(0, 0, 0, .1)
-					&:hover
-						background: rgba(0, 0, 0, .2)
-			.dropdown-menu
-				margin-top: 22px
-				padding: 0
-				li
-					float: none
-					&:hover
-						background: rgba(0, 0, 0, .1)
-					a
-						float: left
-						color: $black
-						background: rgba(255, 255, 255, .1)
-						-webkit-font-smoothing: antialiased
-						padding: 10px
-						width: 100%
-						text-align: left
-						font-size: 16px
-						font-weight: light !important
-						&:hover
-							background: rgba(0, 0, 0, .1)
-					&.active
-						a
-							background: rgba(0, 0, 0, .1)
-							&:hover
-								background: rgba(0, 0, 0, .1)
-
-	.col-sm-12
-		padding: 0
+				
 	.tag
-		font-size: 1em
+		font-size: 1.5em
 		margin: 10px 0
 
+	.slideshow
+		.container
+			padding-left: 0 !important
+			padding-right: 0 !important
 
-	.carousel
+	.slides
 		.item
-			height: 200px
+			height: 400px
 			blockquote
-				margin: 10px 0 0 10px
+				position: static
+				margin: 320px 0 0 15%
 				font-size: 1em
 				small
 					color: rgba(255, 255, 255, .75)
@@ -620,20 +1087,20 @@ ul.services
 					line-height: 1
 					margin-right: -9px
 					margin-bottom: 20px
-			
+	.carousel-control
+		line-height: 400px
+		font-size: 5em
+		font-weight: normal
 
 	.thumbs
 		margin: 25px 0 
 		.thumb
-			width: 290px
-			height: 190px
+			width: 100%
+			height: 370px
 		.bike
 			a
 				width: 100% 
-				color: black
-				margin: 10px auto 10px auto
 				height: auto
-				width: auto
 				margin-left: 0
 				margin-right: 0
 				margin-bottom: 10px
@@ -646,11 +1113,261 @@ ul.services
 				padding: 5px 0 0 10px
 				p
 					text-align: center
-					color: darkGrey
 					font-size: 1em
 					line-height: 1em
 					padding: 0 0 5px 0
 					margin: 0
+
+	.page-title
+		font-size: 2em
+		margin: 10px 0 0 0
+
+	.custom-page-header
+		margin: 0 0 15px -15px
+	.page-header
+		padding: 0
+
+	#custom-page-content
+		padding: 0 15px
+
+	.entry-content
+		overflow: visible
+		p
+			font-size: 16px
+			margin-bottom: 15px
+		h3
+			font-size: 1.5em
+			margin: 0 0 10px 0
+
+	.left, .right
+		width: 100%
+		padding: 0 15px
+		margin: 0
+
+	#main
+		Width: 100% !important
+		padding: 0 15px
+		overflow: hidden
+
+	.sidebar-bike
+		padding: 0 10px
+		width: 100%
+		float: none
+		text-align: center
+		margin: 0 auto
+		.row
+			padding: 0 5%
+			width: 100%
+			height: 110px
+		.specs.visible-sm.visible-md
+			display: inline-block !important
+			
+		.map.visible-sm.visible-md
+			display: block !important
+			padding: 0 30px
+			width: 100%
+
+		.specs 
+			float: left
+			width: 27%
+			height: 80px
+			padding-top: 0
+			margin: 0 2.3% 30px 2.3%
+			h1
+				font-size: 2.5em 
+				font-weight: 300
+				margin: 5px 0 5px 0
+
+		.row.visible-xs
+			display: none !important
+			visibility: hidden
+			width: 0
+			height: 0
+			margin: 0
+			.specs
+				width: 0
+				height: 0
+				border: 0
+
+	.yelp
+		margin: 0 auto
+	
+	.buy-bkgd
+		width: 400px
+		margin: 0 auto
+
+	.footer 
+		margin-top: 20px
+		padding: 15px 0
+		text-align: center
+		p
+			margin: 0 auto
+			display: block
+
+	.footer-nav
+		float: none
+		display: block
+		li
+			text-align: center
+			display: block
+
+@media screen and (max-width: 568px)
+	.site-header
+		height: 150px
+
+	.info
+		margin-top: 5px
+
+	.brand-container
+		width: 100%
+		height: 50px
+		margin: 0
+		padding: 0
+		position: relative
+		h1
+			width: 57%
+			margin: 5px auto 0 auto
+			text-align: center
+
+	.navbar-logo
+		position: absolute
+		top: 5px
+		left: 0
+		width: 70px
+		height: 40px
+		background-size: 90%
+		margin: 0
+		display: inline-block
+
+		
+	.navbar-inverse .navbar-brand
+		display: block
+		font-size: .8em
+		font-weight: 400
+		text-align: center
+		float: none
+	.navbar-toggle
+		position: absolute
+		top: 5px
+		right: -10px
+
+	.navbar-inverse .navbar-nav
+		li
+			float: none
+			display: block
+			margin: 0
+			margin-right: 0
+			a
+				float: none
+				display: block
+				-webkit-font-smoothing: antialiased
+				padding: 20px 30px
+				font-size: 16px
+				font-weight: bold
+				&:hover
+					background: rgba(0, 0, 0, .1)
+			&.active
+				a
+					background: rgba(0, 0, 0, .1)
+					&:hover
+						background: rgba(0, 0, 0, .2)
+			.dropdown-menu
+				margin-top: 0px
+				padding: 0
+				li
+					float: none
+					display: block
+					a
+						float: none
+						display: block
+						background: rgba(255, 255, 255, .1)
+						-webkit-font-smoothing: antialiased
+						padding: 10px
+						text-align: center
+						font-size: 16px
+						font-weight: light !important
+						&:hover
+							background: rgba(0, 0, 0, .1)
+					&.active
+						a
+							background: rgba(0, 0, 0, .1)
+						.dropdown-toggle
+							&:hover
+								a
+									background: white
+
+	.col-sm-12
+		padding: 0
+	.tag
+		font-size: 1em
+		margin: 10px 0
+
+	.slideshow
+		.container
+			padding-left: 0 !important
+			padding-right: 0 !important
+
+	.slides
+		.item
+			height: 200px
+			blockquote
+				position: static
+				margin: 150px 0 0 8%
+				font-size: .75em
+				small
+					color: rgba(255, 255, 255, .75)
+					font-size: .9em
+					font-weight: medium
+				&:before
+					content: "“"
+					font-size: 1.4em
+					font-family: 'Times New Roman', Georgia, serif
+					font-weight: bold
+					line-height: 1
+					margin-left: -11px
+					margin-top: 0
+				&:after
+					content: "”"
+					display: block
+					position: absolute
+					right: 0
+					bottom: 0
+					font-size: 1.2em
+					font-family: 'Times New Roman', Georgia, serif
+					font-weight: bold
+					line-height: 1
+					margin-right: -9px
+					margin-bottom: 20px
+	.carousel-control
+		line-height: 250px
+		font-size: 5em
+		font-weight: normal
+	.thumbs
+		margin: 25px 0 
+		.thumb
+			width: 100%
+		.bike
+			a
+				width: 100% 
+				height: auto
+				margin-left: 0
+				margin-right: 0
+				margin-bottom: 10px
+			&:hover
+				text-decoration: none
+			.thumb-info
+				text-align: left
+				border-left: 0
+				margin: 4px 0 20px 0
+				padding: 5px 0 0 10px
+				p
+					text-align: center
+					font-size: 1em
+					line-height: 1em
+					padding: 0 0 5px 0
+					margin: 0
+	#full-width
+		padding: 0
 			
 	.page-header, .custom-page-header
 		margin: 10px 0
@@ -658,19 +1375,58 @@ ul.services
 		text-align: center
 	.page-title
 		font-size: 2em
+		margin: 10px 0
+
+	#custom-page-content
+		padding: 0 15px
+
+	.entry-content
+		overflow: visible
+		p
+			font-size: 16px
+			margin-bottom: 15px
+		h3
+			font-size: 1.5em
+			margin: 0 0 10px 0
+
+	.left, .right
+		width: 100%
+		padding: 0
 		margin: 0
+
+	.sidebar-bike
+		float: none
+		padding: 0
+		.row
+			text-align: center
+		h4
+			text-align: center
+
 	.specs 
 		display: inline-block
-		text-align: center
-		width: 130px
+		width: 40%
 		height: 80px
 		padding-top: 0
-		margin: 0 0 15px 15px
-		border: 1px solid $lightGrey
+		margin: 0 0 15px 6%
 		h1
 			font-size: 2.5em 
 			font-weight: 300
-			margin: 5px 0 5px 0
+			margin: 5px 0 5px 
+
+	.buy-bkgd
+		width: 290px
+		margin: 0 auto
+
+	.social
+		width: 290px
+		margin: 0 auto
+		li
+			margin-right: 24px
+			&:last-child
+				margin-right: 0
+	.yelp
+		margin: 0 auto
+
 	#inner-content
 		margin-left: 0 !important
 		margin-right: 0 !important
@@ -679,16 +1435,10 @@ ul.services
 		Width: 100%
 		padding: 0
 		overflow: hidden
+
 	#slideshow-wrappergallery1
 		padding-right: 10px
-	.sidebar-bike
-		padding: 0
-	.social
-		li
-			margin-right: 24px
-			&:last-child
-				margin-right: 0
-
+	
 	.frm_form_fields
 		width: 290px
 	
@@ -700,11 +1450,13 @@ ul.services
 		textarea
 			width: 290px
 
-
 	.footer 
 		margin-top: 20px
 		padding: 15px 0
 		text-align: center
+		p
+			margin: 0 auto
+			display: block
 
 	.footer-nav
 		float: none
@@ -712,4 +1464,3 @@ ul.services
 		li
 			text-align: center
 			display: block
-

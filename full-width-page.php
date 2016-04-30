@@ -10,7 +10,7 @@
 
 		<div class="container">
 
-			<div id="content">
+			<div id="custom-page-content">
 
 				<div id="inner-content" class="wrap clearfix">
 
@@ -18,32 +18,91 @@
 
 							<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
-					        <?php if (function_exists("builder_breadcrumb_lists")) { ?>
-							<?php builder_breadcrumb_lists(); ?>
-							<?php } ?>
+					     
 
 							<article id="post-<?php the_ID(); ?>" <?php post_class( 'clearfix' ); ?> role="article" itemscope itemtype="http://schema.org/BlogPosting">
 
-								<header class="article-header">
+								<header class="custom-page-header">
 
 									<h1 class="page-title" itemprop="headline"><?php the_title(); ?></h1>
-									<p class="byline vcard"><?php
-										printf( __( 'Posted <time class="updated" datetime="%1$s" pubdate>%2$s</time> by <span class="author">%3$s</span>.', 'bonestheme' ), get_the_time( 'Y-m-j' ), get_the_time( __( 'F jS, Y', 'bonestheme' ) ), bones_get_the_author_posts_link());
-									?></p>
+									
+								</header> <!-- end custom-page-header -->
 
-
-								</header> <!-- end article header -->
-
-								<section class="entry-content clearfix" itemprop="articleBody">
+								<section id="items" role="promo" class="thumbs">
 									<?php the_content(); ?>
-							</section> <!-- end article section -->
+									<!-- page thumbnails start here -->
+
+		<div class="row">
+			<div class="col-sm-4">
+				<a href="<?php the_field('page_1_url'); ?>" class="bike">
+					<div class="thumb" style="background: url('<?php the_field('page_1_img');?>') center center no-repeat; background-size: cover;"></div>
+					<div class="thumb-info">
+						<p><?php the_field('page_1_text'); ?></p>
+						<p><?php the_field('page_1_price'); ?></p>
+						<p><?php the_field('page_1_available'); ?></p>
+					</div>
+				</a>
+			</div><!-- end .col-sm-4 -->
+			<div class="col-sm-4">
+				<a href="<?php the_field('page_2_url'); ?>" class="bike">
+					<div class="thumb" style="background: url('<?php the_field('page_2_img');?>') center center no-repeat; background-size: cover;"></div>
+					<div class="thumb-info">
+						<p><?php the_field('page_2_text'); ?></p>
+						<p><?php the_field('page_2_price'); ?></p>
+						<p><?php the_field('page_2_available'); ?></p>
+					</div>
+				</a>
+			</div><!-- end .col-sm-4 -->
+			<div class="col-sm-4">
+				<a href="<?php the_field('page_3_url'); ?>" class="bike">
+					<div class="thumb" style="background: url('<?php the_field('page_3_img');?>') center center no-repeat; background-size: cover;"></div>
+					<div class="thumb-info">
+						<p><?php the_field('page_3_text'); ?></p>
+						<p><?php the_field('page_3_price'); ?></p>
+						<p><?php the_field('page_3_available'); ?></p>
+					</div>
+				</a>
+			</div><!-- end .col-sm-4-->
+		</div><!-- end .row-->
+		<div class="row">
+			<div class="col-sm-4">
+				<a href="<?php the_field('page_4_url'); ?>" class="bike">
+					<div class="thumb" style="background: url('<?php the_field('page_4_img');?>') center center no-repeat; background-size: cover;"></div>
+					<div class="thumb-info">
+						<p><?php the_field('page_4_text'); ?></p>
+						<p><?php the_field('page_4_price'); ?></p>
+						<p><?php the_field('page_4_available'); ?></p>
+					</div>
+				</a>
+			</div><!-- end .col-sm-4 -->
+			<div class="col-sm-4">
+				<a href="<?php the_field('page_5_url'); ?>" class="bike">
+					<div class="thumb" style="background: url('<?php the_field('page_5_img');?>') center center no-repeat; background-size: cover;"></div>
+					<div class="thumb-info">
+						<p><?php the_field('page_5_text'); ?></p>
+						<p><?php the_field('page_5_price'); ?></p>
+						<p><?php the_field('page_5_available'); ?></p>
+					</div>
+				</a>
+			</div><!-- end .col-sm-4 -->
+			<div class="col-sm-4">
+				<a href="<?php the_field('page_6_url'); ?>" class="bike">
+					<div class="thumb" style="background: url('<?php the_field('page_6_img');?>') center center no-repeat; background-size: cover;"></div>
+					<div class="thumb-info">
+						<p><?php the_field('page_6_text'); ?></p>
+						<p><?php the_field('page_6_price'); ?></p>
+						<p><?php the_field('page_6_available'); ?></p>
+					</div>
+				</a>
+			</div><!-- end .col-sm-4 -->
+		</div><!-- end .row -->
+</section><!-- end page thumbs -->
+
 
 								<footer class="article-footer">
 									<?php the_tags( '<span class="tags">' . __( 'Tags:', 'bonestheme' ) . '</span> ', ' ', '' ); ?>
 
 								</footer> <!-- end article footer -->
-
-								<?php comments_template(); ?>
 
 							</article> <!-- end article -->
 

@@ -82,7 +82,10 @@ body
 			font-weight: bold
 			&:hover
 				background: rgba(0, 0, 0, .1)
+<<<<<<< HEAD
 				color: $black
+=======
+>>>>>>> b8e0c97832efa758a567e380e4d11dc4ade2d882
 			&:focus
 				color: black
 				background: rgba(0, 0, 0, .1)
@@ -103,7 +106,10 @@ body
 							background: rgba(0, 0, 0, .1)
 	.active, .open
 		a
+<<<<<<< HEAD
 			color: $black
+=======
+>>>>>>> b8e0c97832efa758a567e380e4d11dc4ade2d882
 			background: rgba(0, 0, 0, .1)
 			&:hover
 				background: rgba(0, 0, 0, .1)
@@ -153,9 +159,16 @@ body
 	padding: 0
 .tag 
 	text-align: center
+<<<<<<< HEAD
 	font-size: 2.3em
 	font-weight: 300
 	margin: 40px 0 15px 0
+=======
+	font-size: 2.5em
+	font-weight: 100
+	margin: 40px 0 15px 0
+// Carousel
+>>>>>>> b8e0c97832efa758a567e380e4d11dc4ade2d882
 // Slider 
 .slick-slider 
 	position: relative 
@@ -170,17 +183,26 @@ body
 	user-select: none 
 	-ms-touch-action: none 
 	touch-action: none 
+<<<<<<< HEAD
 	-ms-touch-action: pan-y
 	touch-action: pan-y
 	-webkit-tap-highlight-color: transparent
 
 
+=======
+	-webkit-tap-highlight-color: transparent
+
+>>>>>>> b8e0c97832efa758a567e380e4d11dc4ade2d882
 .slick-list
 	position: relative 
 	overflow: hidden 
 	display: block 
 	margin: 0 
 	padding: 0
+<<<<<<< HEAD
+=======
+.slick-list
+>>>>>>> b8e0c97832efa758a567e380e4d11dc4ade2d882
 	&focus
 		outline: none
 .slick-loading .slick-list
@@ -189,6 +211,7 @@ body
 	cursor: pointer
 	cursor: hand
 
+<<<<<<< HEAD
 .slick-slider .slick-track,
 .slick-slider .slick-list 
 	-webkit-transform: translate3d(0, 0, 0)
@@ -209,6 +232,14 @@ body
 //	-ms-transform: translate3d(0, 0, 0) 
 //	-o-transform: translate3d(0, 0, 0) 
 //	transform: translate3d(0, 0, 0)
+=======
+.slick-slider .slick-list, .slick-track, .slick-slide, .slick-slide img
+	-webkit-transform: translate3d(0, 0, 0) 
+	-moz-transform: translate3d(0, 0, 0) 
+	-ms-transform: translate3d(0, 0, 0) 
+	-o-transform: translate3d(0, 0, 0) 
+	transform: translate3d(0, 0, 0)
+>>>>>>> b8e0c97832efa758a567e380e4d11dc4ade2d882
 
 .slick-track 
 	position: relative
@@ -236,6 +267,7 @@ body
 	float: left
 	height: 100%
 	min-height: 1px
+<<<<<<< HEAD
 	[dir="rtl"] & 
 		float: right    
 	img 
@@ -253,10 +285,32 @@ body
 		display: block
 		height: auto
 		border: 1px solid transparent
+=======
+	display: none
+.slick-slide 
+	&:img
+		display: block
+.slick-slide .slick-loading 
+	&:img
+		display: none
+.slick-slide.dragging 
+	&:img
+		pointer-events: none
+.slick-initialized .slick-slide
+	display: block
+.slick-loading .slick-slide 
+	visibility: hidden
+.slick-vertical .slick-slide
+	display: block
+	height: auto
+	border: 1px solid transparent
+
+>>>>>>> b8e0c97832efa758a567e380e4d11dc4ade2d882
 
 //Icons 
 @font-face 
 	font-family: 'slick'
+<<<<<<< HEAD
 	font-weight: normal
 	font-style: normal
 	src: local('slick')
@@ -266,16 +320,34 @@ body
 	url('/fonts/slick.ttf') format("truetype"),
 	url('/fonts/slick.svg#slick') format("svg"),
 	
+=======
+	src: local('slick')
+	src: url('../css/fonts/slick.eot')
+	src: url('../css/fonts/slick.eot?#iefix') format('embedded-opentype')
+	scr: url('../css/fonts/slick.woff') format('woff')
+	src: url('../css/fonts/slick.ttf') format('truetype')
+	src: url('../css/fonts/slick.svg#slick') format('svg')
+	font-weight: normal
+	font-style: normal
+>>>>>>> b8e0c97832efa758a567e380e4d11dc4ade2d882
 
 // Arrows 
 .slick-prev, .slick-next
 	position: absolute
 	display: block
+<<<<<<< HEAD
 	height: 30px
 	width: 30px
 	font-family: 'slick'
 	line-height: 2em
 	font-size: 1.5em
+=======
+	height: 40px
+	width: 40px
+	font-family: 'slick'
+	line-height: 0
+	font-size: 0
+>>>>>>> b8e0c97832efa758a567e380e4d11dc4ade2d882
 	cursor: pointer
 	background: transparent
 	color: transparent
@@ -284,19 +356,32 @@ body
 	padding: 0
 	border: none
 	outline: none
+<<<<<<< HEAD
 	z-index: 100
 
 .slick-prev, .slick-next
+=======
+
+.slick-prev:focus, .slick-next
+>>>>>>> b8e0c97832efa758a567e380e4d11dc4ade2d882
 	&:focus
 		outline: none
 .slick-prev.slick-disabled, .slick-next.slick-disabled
 	&:before
+<<<<<<< HEAD
 		opacity: 0.75
+=======
+		opacity: 0.25
+>>>>>>> b8e0c97832efa758a567e380e4d11dc4ade2d882
 
 .slick-prev, .slick-next
 	&:before
 		font-family: 'slick' !important
+<<<<<<< HEAD
 		font-size: 2em !important
+=======
+		font-size: 40px
+>>>>>>> b8e0c97832efa758a567e380e4d11dc4ade2d882
 		line-height: 1
 		color: white
 		opacity: 0.85
@@ -304,15 +389,29 @@ body
 		-moz-osx-font-smoothing: grayscale
 
 .slick-prev 
+<<<<<<< HEAD
 	left: 80px
+=======
+	left: 40px
+.slick-prev
+>>>>>>> b8e0c97832efa758a567e380e4d11dc4ade2d882
 	&:before 
 		content: "\2190"
 
 .slick-next
+<<<<<<< HEAD
 	right: 80px
 	&:before
 		content: "\2192"
 
+=======
+	right: 40px
+.slick-next
+	&:before
+		content: "\2192"
+
+
+>>>>>>> b8e0c97832efa758a567e380e4d11dc4ade2d882
 //Dots 
 .slick-slider 
 	margin-bottom: 30px
@@ -383,7 +482,10 @@ body
 .slides
 	.item
 		height: 640px 
+<<<<<<< HEAD
 		position: relative
+=======
+>>>>>>> b8e0c97832efa758a567e380e4d11dc4ade2d882
 		blockquote
 			display: inline-block
 			position: absolute
@@ -428,7 +530,11 @@ body
 				line-height: 1
 				margin-right: -38px
 				margin-bottom: 0
+<<<<<<< HEAD
 				color: white
+=======
+				color: #ccc
+>>>>>>> b8e0c97832efa758a567e380e4d11dc4ade2d882
 
 .carousel-control
 	line-height: 600px
@@ -440,6 +546,11 @@ body
 
 .carousel-control.left, .carousel-control.right
 	width: 150px
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> b8e0c97832efa758a567e380e4d11dc4ade2d882
 //Home page thumbs
 .thumbs
 	margin: 30px 0
@@ -479,11 +590,14 @@ body
 		text-align: center
 	
 //Product Page Template, Custom page, contact page
+<<<<<<< HEAD
 .page-template
 	.slick-prev 
 		left: 40px
 	.slick-next
 		right: 40px
+=======
+>>>>>>> b8e0c97832efa758a567e380e4d11dc4ade2d882
 #main
 	width: 600px
 	padding-left: 8.556%
@@ -900,6 +1014,7 @@ ul.services
 	.page-title
 		font-size: 2em
 		margin: 10px 0 0 0
+<<<<<<< HEAD
 
 	.custom-page-header
 		margin: 0 0 15px -17px
@@ -1214,6 +1329,359 @@ ul.services
 @media screen and (max-width: 568px)
 	.site-header
 		height: 150px
+=======
+
+	.custom-page-header
+		margin: 0 0 15px -17px
+
+	.left
+		width: 46%
+		margin-right: 50px
+		display: inline-block
+		padding-right: 0
+		float: left
+		.visible-lg
+			display: inline-block !important
+			visibility: visible
+
+	.right
+		float: none
+		width: 46%
+		display: inline-block
+		padding-left: 0
+		padding-right: 30px
+		.visible-xs.visible-sm
+			display: none !important
+		.with_frm_style fieldset
+			width: 60% !important
+			display: inline-block
+		.with_frm_style .form-field, .with_frm_style .frm_form_field
+			width: 70% !important
+			display: inline-block
+>>>>>>> b8e0c97832efa758a567e380e4d11dc4ade2d882
+
+	.footer-nav
+		display: block
+		float: none !important
+		margin: 10px auto
+
+@media screen and (min-width: 481px) and  (max-width: 767px)
+	.site-header
+		height: 90px
+		.row
+			max-height: 30px
+			position: relative
+	.info
+		font-size: .7em
+	
+	#location
+		position: absolute
+		top: 0
+		left: 20px
+		width: 41%
+		text-align: left
+
+	#phone
+		float: none
+		margin-left: auto !important
+		margin-right: auto !important
+		padding: 0
+		text-align: center
+		width: 29%
+	
+	#email
+		position: absolute
+		top: 0
+		right: 20px
+		width: 29%
+		text-align: right
+
+	.brand-container
+		width: 100%
+		height: 50px
+		margin: 0 auto
+		padding: 0
+		postion: relative
+		h1
+			width: 100%
+			margin: 5px auto 0 
+			text-align: center
+			display: block
+
+	.brand-container
+		width: 100%
+		height: 50px
+		margin: 0
+		padding: 0
+		position: relative
+		h1
+			width: 57%
+			margin: 5px auto 0 auto
+			text-align: center
+
+	.navbar-logo
+		position: absolute
+<<<<<<< HEAD
+		top: 5px
+		left: 0
+=======
+		top: 30px
+		left: 40px
+>>>>>>> b8e0c97832efa758a567e380e4d11dc4ade2d882
+		width: 70px
+		height: 40px
+		background-size: 90%
+		margin: 0
+		display: inline-block
+
+		
+	.navbar-inverse .navbar-brand
+<<<<<<< HEAD
+		display: block
+		font-size: .8em
+		font-weight: 400
+		text-align: center
+		float: none
+	.navbar-toggle
+		position: absolute
+		top: 5px
+		right: -10px
+=======
+		display: inline-block
+		font-size: .7em
+		font-weight: 200
+		text-align: center
+		float: none
+
+	.navbar-toggle
+		position: absolute
+		top: 30px
+		right: 35px
+
+	.navbar-nav
+		margin: 0
+
+	.navbar-collapse
+		overflow-y: visible !important
+>>>>>>> b8e0c97832efa758a567e380e4d11dc4ade2d882
+
+	.navbar-inverse .navbar-nav
+		.container
+			overflow: visible
+		li
+			float: none
+			display: block
+			margin: 0
+<<<<<<< HEAD
+			margin-right: 0
+			a
+				float: none
+				display: block
+=======
+			margin-right: -4px
+			position: relative
+			a
+				float: none
+				display: inline-block
+				color: $black
+>>>>>>> b8e0c97832efa758a567e380e4d11dc4ade2d882
+				-webkit-font-smoothing: antialiased
+				padding: 10px 6.6%
+				font-size: .9em
+				font-weight: 300
+			.dropdown-menu
+				position: absolute
+				top: 50%
+				left: 0
+				background: $white !important
+				li
+					display: block
+					background: $white !important
+					a
+						&.active
+							background: rgba(255, 255, 255, .1) !important
+							color: $black
+						&.focus
+							background: rgba(0, 0, 0, .1) !important
+							color: $black
+						&.hover
+							background: rgba(255, 255, 255, .1) !important
+							color: $black
+		.active, .open
+			a
+				background: rgba(0, 0, 0, .1)
+				&:hover
+					background: rgba(0, 0, 0, .1)
+				&:focus
+					background: rgba(0, 0, 0, .1)
+				
+	.tag
+		font-size: 1.5em
+		margin: 10px 0
+
+	.slideshow
+		.container
+			padding-left: 0 !important
+			padding-right: 0 !important
+
+	.slides
+		.item
+			height: 400px
+			blockquote
+				position: static
+				margin: 320px 0 0 15%
+				font-size: 1em
+				small
+					color: rgba(255, 255, 255, .75)
+					font-size: .9em
+					font-weight: medium
+				&:before
+					content: "“"
+					font-size: 1.4em
+					font-family: 'Times New Roman', Georgia, serif
+					font-weight: bold
+					line-height: 1
+					margin-left: -11px
+					margin-top: 0
+				&:after
+					content: "”"
+					display: block
+					position: absolute
+					right: 0
+					bottom: 0
+					font-size: 1.2em
+					font-family: 'Times New Roman', Georgia, serif
+					font-weight: bold
+					line-height: 1
+					margin-right: -9px
+					margin-bottom: 20px
+	.carousel-control
+		line-height: 400px
+		font-size: 5em
+		font-weight: normal
+
+	.thumbs
+		margin: 25px 0 
+		.thumb
+			width: 100%
+			height: 370px
+		.bike
+			a
+				width: 100% 
+				height: auto
+				margin-left: 0
+				margin-right: 0
+				margin-bottom: 10px
+			&:hover
+				text-decoration: none
+			.thumb-info
+				text-align: left
+				border-left: 0
+				margin: 4px 0 20px 0
+				padding: 5px 0 0 10px
+				p
+					text-align: center
+					font-size: 1em
+					line-height: 1em
+					padding: 0 0 5px 0
+					margin: 0
+
+	.page-title
+		font-size: 2em
+		margin: 10px 0 0 0
+
+	.custom-page-header
+		margin: 0 0 15px -15px
+	.page-header
+		padding: 0
+
+	#custom-page-content
+		padding: 0 15px
+
+	.entry-content
+		overflow: visible
+		p
+			font-size: 16px
+			margin-bottom: 15px
+		h3
+			font-size: 1.5em
+			margin: 0 0 10px 0
+
+	.left, .right
+		width: 100%
+		padding: 0 15px
+		margin: 0
+
+	#main
+		Width: 100% !important
+		padding: 0 15px
+		overflow: hidden
+
+	.sidebar-bike
+		padding: 0 10px
+		width: 100%
+		float: none
+		text-align: center
+		margin: 0 auto
+		.row
+			padding: 0 5%
+			width: 100%
+			height: 110px
+		.specs.visible-sm.visible-md
+			display: inline-block !important
+			
+		.map.visible-sm.visible-md
+			display: block !important
+			padding: 0 30px
+			width: 100%
+
+		.specs 
+			float: left
+			width: 27%
+			height: 80px
+			padding-top: 0
+			margin: 0 2.3% 30px 2.3%
+			h1
+				font-size: 2.5em 
+				font-weight: 300
+				margin: 5px 0 5px 0
+
+		.row.visible-xs
+			display: none !important
+			visibility: hidden
+			width: 0
+			height: 0
+			margin: 0
+			.specs
+				width: 0
+				height: 0
+				border: 0
+
+	.yelp
+		margin: 0 auto
+	
+	.buy-bkgd
+		width: 400px
+		margin: 0 auto
+
+	.footer 
+		margin-top: 20px
+		padding: 15px 0
+		text-align: center
+		p
+			margin: 0 auto
+			display: block
+
+	.footer-nav
+		float: none
+		display: block
+		li
+			text-align: center
+			display: block
+
+@media screen and (max-width: 480px)
+	.site-header
+		height: 150px
 
 	.info
 		margin-top: 5px
@@ -1232,18 +1700,17 @@ ul.services
 	.navbar-logo
 		position: absolute
 		top: 5px
-		left: 0
+		left: -8px
 		width: 70px
 		height: 40px
 		background-size: 90%
 		margin: 0
 		display: inline-block
-
 		
 	.navbar-inverse .navbar-brand
-		display: block
-		font-size: .8em
-		font-weight: 400
+		display: inline-block
+		font-size: .7em
+		font-weight: 200
 		text-align: center
 		float: none
 	.navbar-toggle

@@ -27,7 +27,7 @@ Template Name: Contact Page Template
 						<div class="row">
 							<div class="left col-md-6">
 								<?php the_content(); ?>
-									<div class="visible-md visible-lg"><!-- google map starts here-->
+									<div class="map visible-lg"><!-- google map starts here-->
 										<h2>Find us in Berkeley</h2>
 										<p>(510) 843 - 2453</p>
 										<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3150.1380694641416!2d-122.29379259999999!3d37.8570597!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80857ef2200c0469%3A0xe800db178ed7e187!2s843+Carleton+St!5e0!3m2!1sen!2sus!4v1399783363925" width="100%" height="400" frameborder="0" style="border:0"></iframe>
@@ -37,10 +37,10 @@ Template Name: Contact Page Template
 							<div class="right col-md-6"><!-- right column -->
 								<?php echo FrmFormsController::show_form(2, $key = '', $title=true, $description=true); ?> 
 								<hr>
-								<h4>"Best prices and service in town"</h4>
+								<em><?php the_field('testimonial'); ?></em>
 									<a class="yelp" href="http://www.yelp.com/biz/pacific-e-bike-berkeley" title="yelp" target="_blank"></a>
 
-									<div class="visible-xs visible-sm"><!-- google map starts here -->
+									<div class="map visible-xs visible-sm "><!-- google map starts here -->
 										<h2>Find us in Berkeley</h2>
 										<p>(510) 843 - 2453</p>
 										<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3150.1380694641416!2d-122.29379259999999!3d37.8570597!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80857ef2200c0469%3A0xe800db178ed7e187!2s843+Carleton+St!5e0!3m2!1sen!2sus!4v1399783363925" width="100%" height="300" frameborder="0" style="border:0"></iframe>

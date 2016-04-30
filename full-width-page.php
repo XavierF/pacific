@@ -10,7 +10,11 @@
 
 		<div class="container">
 
+<<<<<<< HEAD
 			<div id="custom-page-content">
+=======
+			<div id="page-content">
+>>>>>>> b8e0c97832efa758a567e380e4d11dc4ade2d882
 
 				<div id="inner-content" class="wrap clearfix">
 
@@ -22,12 +26,17 @@
 
 							<article id="post-<?php the_ID(); ?>" <?php post_class( 'clearfix' ); ?> role="article" itemscope itemtype="http://schema.org/BlogPosting">
 
+<<<<<<< HEAD
 								<header class="custom-page-header">
+=======
+								<header class="full-width-header">
+>>>>>>> b8e0c97832efa758a567e380e4d11dc4ade2d882
 
 									<h1 class="page-title" itemprop="headline"><?php the_title(); ?></h1>
 									
 								</header> <!-- end custom-page-header -->
 
+<<<<<<< HEAD
 								<section id="items" role="promo" class="thumbs">
 									<?php the_content(); ?>
 									<!-- page thumbnails start here -->
@@ -97,6 +106,11 @@
 			</div><!-- end .col-sm-4 -->
 		</div><!-- end .row -->
 </section><!-- end page thumbs -->
+=======
+								<section class="entry-content clearfix" itemprop="articleBody">
+									<?php the_content(); ?>
+									
+>>>>>>> b8e0c97832efa758a567e380e4d11dc4ade2d882
 
 
 								<footer class="article-footer">

@@ -20,7 +20,7 @@ Template Name: Custom Page Template
 						<div class="sub-head row">
 								<div class="left col-md-5">
 										<h3><?php the_field('page_tagline'); ?></h3>
-								</div><!-- end .left col-md-5 <--></-->
+								</div><!-- end .left col-md-5 -->
 						</div><!-- end .row -->
 
 						<div class="row">
@@ -29,7 +29,7 @@ Template Name: Custom Page Template
 								
 								<?php the_content(); ?>
 
-									<div class="visible-md visible-lg"><!-- google map starts here-->
+									<div class="map visible-md visible-lg"><!-- google map starts here-->
 										<h3>Find us in Berkeley</h3>
 										<p>(510) 843 - 2453</p>
 										<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3150.1380694641416!2d-122.29379259999999!3d37.8570597!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80857ef2200c0469%3A0xe800db178ed7e187!2s843+Carleton+St!5e0!3m2!1sen!2sus!4v1399783363925" width="100%" height="400" frameborder="0" style="border:0"></iframe>
@@ -41,10 +41,10 @@ Template Name: Custom Page Template
 							<div class="right col-md-5"><!-- right column --><!-- 480 px width -->
 								<?php the_field('right_column'); ?>
 								<hr>
-								<h3>"Best prices and service in town"</h3>
+								<p><?php the_field('testimonial'); ?></p>
 								<a class="yelp" href="http://www.yelp.com/biz/pacific-e-bike-berkeley" title="yelp" target="_blank"></a>
 
-									<div class="visible-xs visible-sm"><!-- google map starts here -->
+									<div class="map visible-xs visible-sm"><!-- google map starts here -->
 										<h3>Find us in Berkeley</h3>
 										<p>(510) 843 - 2453</p>
 										<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3150.1380694641416!2d-122.29379259999999!3d37.8570597!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80857ef2200c0469%3A0xe800db178ed7e187!2s843+Carleton+St!5e0!3m2!1sen!2sus!4v1399783363925" width="100%" height="300" frameborder="0" style="border:0"></iframe>

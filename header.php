@@ -67,20 +67,19 @@
 									<div id="location" class="info col-sm-4"><p>843 Carleton St | Berkeley CA</p></div>
 									<div id="phone" class="info col-sm-4 phone"><a href="tel:+15108432453">(510) 843 - 2453</a></div>
 									<div id="email" class="info col-sm-4"><p><a href="mailto:info@pacificebike.com">info@pacificebike.com</a></p></div>
+
 							</div><!-- .row -->
 
-							<div class="row">
+							<div class="brand-container clearfix">
 							
 									<a class="navbar-logo" href="<?php bloginfo( 'url' ) ?>/" title="<?php bloginfo( 'name' ) ?>" rel="homepage"></a>
-								
-								
 									<h1><a class="navbar-brand" href="<?php bloginfo( 'url' ) ?>/" title="<?php bloginfo( 'name' ) ?>" rel="homepage"><?php bloginfo( 'name' ) ?></a></h1>
 											<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
 													<span class="icon-bar"></span>
 													<span class="icon-bar"></span>
 													<span class="icon-bar"></span>
 												</button><!-- .navbar-toggle is used as the toggle for collapsed navbar content -->
-							</div><!-- .row -->
+							</div><!-- .brand-container-->
 							</div><!-- .container -->
 
 						</section>

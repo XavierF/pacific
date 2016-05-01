@@ -157,7 +157,7 @@ function bones_scripts_and_styles() {
     wp_enqueue_style( 'child-stylesheet');
     wp_enqueue_style( 'bones-ie-only' );
 
-    
+
     $wp_styles->add_data( 'bones-ie-only', 'conditional', 'lt IE 9' ); // add conditional wrapper around ie stylesheet
 
     /*
@@ -168,7 +168,6 @@ function bones_scripts_and_styles() {
     wp_enqueue_script( 'jquery' );
     wp_enqueue_script( 'bones-js' );
     wp_enqueue_script( 'bones-bootstrap' );
-    wp_enqueue_script( 'slick');
     wp_enqueue_script('googlemaps');
     wp_enqueue_script('slick');
 

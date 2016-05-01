@@ -162,12 +162,6 @@
 						</div><!-- end buy-bkgd-->
 					<hr>
 							<ul class="social clearfix">
-<<<<<<< HEAD
-=======
-								<li>
-										<a class="mail" target=”_blank” href="mailto:?subject=Pacific E-Bike <?php the_title(); ?> &body=<?php the_permalink() ?> "></a>
-								</li>
->>>>>>> b8e0c97832efa758a567e380e4d11dc4ade2d882
 								<li>
 										<a class="mail share" target=”_blank” href="mailto:?subject=Pacific E-Bike <?php the_title(); ?> &body=<?php the_permalink() ?> "></a>
 								</li>
@@ -178,23 +172,15 @@
 									<a class="instagram share" href="#"></a>
 								</li>
 								<li>
-<<<<<<< HEAD
 										<a class="pinterest share" href="#" id="ref_pr" href="http://pinterest.com/pin/create/bookmarklet/?media=<?php echo urlencode($share_image);?>&amp;url=<?php the_permalink() ?>&amp;is_video=false&amp;description=v"onclick="javascript:window.open(this.href, '_blank', 'menubar=no,toolbar=no,resizable=no,scrollbars=no,height=400,width=600');return false;"></a>
 								</li>
 								<li>
 									<a class="twitter share" id="ref_tw" href="http://twitter.com/home?status=<?php wp_title(''); ?>+<?php the_permalink() ?>"  onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=no,scrollbars=no,height=400,width=600');return false;"></a>
-=======
-									<a class="twitter" id="ref_tw" href="http://twitter.com/home?status=<?php wp_title(''); ?>+<?php the_permalink() ?>"  onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=no,scrollbars=no,height=400,width=600');return false;"></a>
->>>>>>> b8e0c97832efa758a567e380e4d11dc4ade2d882
 								</li>
 							</ul>
 				<hr>
 					<em><?php the_field('testimonial'); ?></em>
-<<<<<<< HEAD
 					<a class="yelp" href="http://www.yelp.com/biz/pacific-e-bike-berkeley" title="yelp"></a>
-=======
-					<a class="yelp" href="http://www.yelp.com/biz/pacific-e-bike-berkeley" title="yelp" target="_blank"></a>
->>>>>>> b8e0c97832efa758a567e380e4d11dc4ade2d882
 
 						<div class="map visible-xs visible-sm visible-md"><!-- google map starts here -->
 							<h3>Find us in Berkeley</h3>

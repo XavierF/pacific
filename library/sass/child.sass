@@ -9,1925 +9,1345 @@ $orange: #EF6E31
 
 
 body
-	//padding-top: 295px
-	background-color: $white
-	color: $lightGrey
-	font-family: 'Helvetica Neue', sans-serif
-	font-size: 16px
-	font-weight: normal
-	-webkit-font-smoothing: antialiased
- 
-// Header
+  background-color: #fff
+  color: #3B3B3B
+  font-family: "Helvetica Neue",sans-serif
+  font-size: 16px
+  font-weight: normal
+  -webkit-font-smoothing: antialiased
+
 .site-header
-	background-color: $black
-	height: 130px
+  background-color: #000
+  height: 130px
 
 .info
-	text-align: center
-	color: $white
-	margin: 10px 0 0 0
-	p
-		margin: 0
-	a
-		color: $white
-	a:hover
-		color: $white
-
-.info.col-sm-4.phone
-	a:hover
-		text-decoration: underline
+  text-align: center
+  color: #fff
+  margin: 10px 0 0 0
+  p
+    margin: 0
+  a
+    color: #fff
+    &:hover
+      color: #fff
+  &.col-sm-4.phone a:hover
+    text-decoration: underline
 
 .navbar
-	border-radius: 0
-	margin-bottom: 0
+  border-radius: 0
+  margin-bottom: 0
 
 .navbar-logo
-	display: block
-	width: 150px
-	height: 60px
-	background: url('../images/peb-bike-logo.png') center center no-repeat
-	background-size: 80%
-	float: left
-	margin: 10px 20px 0 250px
+  display: block
+  width: 150px
+  height: 60px
+  background: url("../images/peb-bike-logo.png") center center no-repeat
+  background-size: 80%
+  float: left
+  margin: 10px 20px 0 250px
 
 .navbar-inverse .navbar-brand
-	margin-top: 0
-	color: $yellow
-	font-size: 1.8em
-	font-weight: 200
-	padding: 10px 0 0 0
-	&:hover
-		color: $yellow
+  margin-top: 0
+  color: #F6DD38
+  font-size: 1.8em
+  font-weight: 200
+  padding: 10px 0 0 0
+  &:hover
+    color: #F6DD38
+
 .navbar-collapse
-	text-align: center
+  text-align: center
 
 .navbar-nav
-	margin-left: 0
-	margin-right: 0
-	float: none
-
-.navbar-inverse .navbar-nav
-	li
-		float: none
-		display: inline
-		margin: 0
-		margin-right: -4px
-		a
-			float: none
-			display: inline-block
-			color: $black
-			-webkit-font-smoothing: antialiased
-			padding: 20px 40px
-			font-size: 16px
-			font-weight: bold
-			&:hover
-				background: rgba(0, 0, 0, .1)
-<<<<<<< HEAD
-				color: $black
-=======
->>>>>>> b8e0c97832efa758a567e380e4d11dc4ade2d882
-			&:focus
-				color: black
-				background: rgba(0, 0, 0, .1)
-			.dropdown-menu
-				margin-top: 20px
-				padding: 0
-				li
-					float: none
-					&:hover
-						background: rgba(0, 0, 0, .1)
-					a
-						float: left
-						color: $black !important
-						background: rgba(255, 255, 255, .1) 
-						-webkit-font-smoothing: antialiased
-						padding: 10px
-						.active
-							background: rgba(0, 0, 0, .1)
-	.active, .open
-		a
-<<<<<<< HEAD
-			color: $black
-=======
->>>>>>> b8e0c97832efa758a567e380e4d11dc4ade2d882
-			background: rgba(0, 0, 0, .1)
-			&:hover
-				background: rgba(0, 0, 0, .1)
-			&:focus
-				background: rgba(0, 0, 0, .1)
-	.dropdown-menu
-		margin-top: 20px
-		padding: 0
-		li
-			float: none
-			&:hover
-				background: rgba(0, 0, 0, .1)
-			&:active
-				background: rgba(0, 0, 0, .1)
-			a
-				float: left
-				color: $black
-				background: rgba(255, 255, 255, .1)
-				-webkit-font-smoothing: antialiased
-				padding: 10px
-				width: 100%
-				text-align: left
-				font-size: 16px
-				font-weight: light !important
-				&:hover
-					background: rgba(0, 0, 0, .1)
-					color: $black
-				&.active
-					background: rgba(0, 0, 0, .1) !important
-					color: $black
-				&:focus
-					background: rgba(0, 0, 0, .1)
-					color: $black
+  margin-left: 0
+  margin-right: 0
+  float: none
 
 .navbar-inverse
-	background-color: $white
-	border-left: 0
-	border-right: 0
-	border-bottom: 1px solid $darkGrey
-	.navbar-toggle 
-		.icon-bar 
-			background-color: $yellow
+  .navbar-nav
+    li
+      float: none
+      display: inline
+      margin: 0
+      margin-right: -4px
+      a
+        float: none
+        display: inline-block
+        color: #000
+        -webkit-font-smoothing: antialiased
+        padding: 20px 40px
+        font-size: 16px
+        font-weight: bold
+        &:hover
+          background: rgba(0, 0, 0, 0.1)
+          color: #000
+        &:focus
+          color: #000
+          background: rgba(0, 0, 0, 0.1)
+        .dropdown-menu
+          margin-top: 20px
+          padding: 0
+          li
+            float: none
+            &:hover
+              background: rgba(0, 0, 0, 0.1)
+            a
+              float: left
+              color: #000 !important
+              background: rgba(255, 255, 255, 0.1)
+              -webkit-font-smoothing: antialiased
+              padding: 10px
+              .active
+                background: rgba(0, 0, 0, 0.1)
+    .active a, .open a
+      color: #000
+      background: rgba(0, 0, 0, 0.1)
+    .active a:hover, .open a:hover, .active a:focus, .open a:focus
+      background: rgba(0, 0, 0, 0.1)
+    .dropdown-menu
+      margin-top: 20px
+      padding: 0
+      li
+        float: none
+        &:hover, &:active
+          background: rgba(0, 0, 0, 0.1)
+        a
+          float: left
+          color: #000
+          background: rgba(255, 255, 255, 0.1)
+          -webkit-font-smoothing: antialiased
+          padding: 10px
+          width: 100%
+          text-align: left
+          font-size: 16px
+          font-weight: light !important
+          &:hover
+            background: rgba(0, 0, 0, 0.1)
+            color: #000
+          &.active
+            background: rgba(0, 0, 0, 0.1) !important
+            color: #000
+          &:focus
+            background: rgba(0, 0, 0, 0.1)
+            color: #000
+  background-color: #fff
+  border-left: 0
+  border-right: 0
+  border-bottom: 1px solid #1A1A1A
+  .navbar-toggle .icon-bar
+    background-color: #F6DD38
 
-// Home Page Content
 #banner.home-page
-	margin-top: 0
-	padding: 0
-.tag 
-	text-align: center
-<<<<<<< HEAD
-	font-size: 2.3em
-	font-weight: 300
-	margin: 40px 0 15px 0
-=======
-	font-size: 2.5em
-	font-weight: 100
-	margin: 40px 0 15px 0
-// Carousel
->>>>>>> b8e0c97832efa758a567e380e4d11dc4ade2d882
-// Slider 
-.slick-slider 
-	position: relative 
-	display: block 
-	box-sizing: border-box 
-	-moz-box-sizing: border-box 
-	-webkit-touch-callout: none 
-	-webkit-user-select: none 
-	-khtml-user-select: none 
-	-moz-user-select: none 
-	-ms-user-select: none 
-	user-select: none 
-	-ms-touch-action: none 
-	touch-action: none 
-<<<<<<< HEAD
-	-ms-touch-action: pan-y
-	touch-action: pan-y
-	-webkit-tap-highlight-color: transparent
+  margin-top: 0
+  padding: 0
 
+.tag
+  text-align: center
+  font-size: 2.3em
+  font-weight: 300
+  margin: 40px 0 15px 0
 
-=======
-	-webkit-tap-highlight-color: transparent
+.slick-slider
+  position: relative
+  display: block
+  box-sizing: border-box
+  -moz-box-sizing: border-box
+  -webkit-touch-callout: none
+  -webkit-user-select: none
+  -khtml-user-select: none
+  -moz-user-select: none
+  -ms-user-select: none
+  user-select: none
+  -ms-touch-action: none
+  touch-action: none
+  -ms-touch-action: pan-y
+  touch-action: pan-y
+  -webkit-tap-highlight-color: transparent
 
->>>>>>> b8e0c97832efa758a567e380e4d11dc4ade2d882
 .slick-list
-	position: relative 
-	overflow: hidden 
-	display: block 
-	margin: 0 
-	padding: 0
-<<<<<<< HEAD
-=======
-.slick-list
->>>>>>> b8e0c97832efa758a567e380e4d11dc4ade2d882
-	&focus
-		outline: none
+  position: relative
+  overflow: hidden
+  display: block
+  margin: 0
+  padding: 0
+
+.slick-listfocus
+  outline: none
+
 .slick-loading .slick-list
-	background: white url('ajax-loader.gif') center center no-repeat
-.slick-list.dragging 
-	cursor: pointer
-	cursor: hand
+  background: #fff url("ajax-loader.gif") center center no-repeat
 
-<<<<<<< HEAD
-.slick-slider .slick-track,
-.slick-slider .slick-list 
-	-webkit-transform: translate3d(0, 0, 0)
-	-moz-transform: translate3d(0, 0, 0)
-	-ms-transform: translate3d(0, 0, 0)
-	-o-transform: translate3d(0, 0, 0)
-	transform: translate3d(0, 0, 0)
-.slider-nav
-	.slick-list
-		height: 90px
-		.slick-slide
-			padding: 0 3px !important
+.slick-list.dragging
+  cursor: pointer
+  cursor: hand
 
+.slick-slider
+  .slick-track, .slick-list
+    -webkit-transform: translate3d(0, 0, 0)
+    -moz-transform: translate3d(0, 0, 0)
+    -ms-transform: translate3d(0, 0, 0)
+    -o-transform: translate3d(0, 0, 0)
+    transform: translate3d(0, 0, 0)
 
-//.slick-slider .slick-list, .slick-track, .slick-slide, .slick-slide img
-//	-webkit-transform: translate3d(0, 0, 0) 
-//	-moz-transform: translate3d(0, 0, 0) 
-//	-ms-transform: translate3d(0, 0, 0) 
-//	-o-transform: translate3d(0, 0, 0) 
-//	transform: translate3d(0, 0, 0)
-=======
-.slick-slider .slick-list, .slick-track, .slick-slide, .slick-slide img
-	-webkit-transform: translate3d(0, 0, 0) 
-	-moz-transform: translate3d(0, 0, 0) 
-	-ms-transform: translate3d(0, 0, 0) 
-	-o-transform: translate3d(0, 0, 0) 
-	transform: translate3d(0, 0, 0)
->>>>>>> b8e0c97832efa758a567e380e4d11dc4ade2d882
-
-.slick-track 
-	position: relative
-	left: 0
-	top: 0
-	display: block
-	zoom: 1
-	width: 100%
+.slider-nav .slick-list
+  height: 90px
+  .slick-slide
+    padding: 0 3px !important
 
 .slick-track
-	&:before
-		content: ""
-		display: table
-	&:after 
-		content: ""
-		display: table
-.slick-track
-	&:after 
-		clear: both
+  position: relative
+  left: 0
+  top: 0
+  display: block
+  zoom: 1
+  width: 100%
+  &:before
+    content: ""
+    display: table
+  &:after
+    content: ""
+    display: table
+    clear: both
 
 .slick-loading .slick-track
-	visibility: hidden
+  visibility: hidden
 
-.slick-slide 
-	float: left
-	height: 100%
-	min-height: 1px
-<<<<<<< HEAD
-	[dir="rtl"] & 
-		float: right    
-	img 
-		display: block    
-	&.slick-loading img 
-		display: none   
-	display: none
-	&.dragging img 
-		pointer-events: none   
-	.slick-initialized & 
-		display: block   
-	.slick-loading & 
-		visibility: hidden 
-	.slick-vertical & 
-		display: block
-		height: auto
-		border: 1px solid transparent
-=======
-	display: none
-.slick-slide 
-	&:img
-		display: block
-.slick-slide .slick-loading 
-	&:img
-		display: none
-.slick-slide.dragging 
-	&:img
-		pointer-events: none
+.slick-slide
+  float: left
+  height: 100%
+  min-height: 1px
+  display: none
+
+[dir="rtl"] .slick-slide
+  float: right
+
+.slick-slide
+  img
+    display: block
+  &.slick-loading img
+    display: none
+  &.dragging img
+    pointer-events: none
+
 .slick-initialized .slick-slide
-	display: block
-.slick-loading .slick-slide 
-	visibility: hidden
+  display: block
+
+.slick-loading .slick-slide
+  visibility: hidden
+
 .slick-vertical .slick-slide
-	display: block
-	height: auto
-	border: 1px solid transparent
+  display: block
+  height: auto
+  border: 1px solid transparent
 
->>>>>>> b8e0c97832efa758a567e380e4d11dc4ade2d882
+@font-face
+  font-family: "slick"
+  font-weight: normal
+  font-style: normal
+  src: local("slick")
+  src: url("/fonts/slick.eot")
+  src: url("/fonts/slick.eot?#iefix") format("embedded-opentype")
 
-//Icons 
-@font-face 
-	font-family: 'slick'
-<<<<<<< HEAD
-	font-weight: normal
-	font-style: normal
-	src: local('slick')
-	src: url('/fonts/slick.eot')
-	src: url('/fonts/slick.eot?#iefix') format("embedded-opentype"),
-	url('/fonts/slick.woff') format("woff"),
-	url('/fonts/slick.ttf') format("truetype"),
-	url('/fonts/slick.svg#slick') format("svg"),
-	
-=======
-	src: local('slick')
-	src: url('../css/fonts/slick.eot')
-	src: url('../css/fonts/slick.eot?#iefix') format('embedded-opentype')
-	scr: url('../css/fonts/slick.woff') format('woff')
-	src: url('../css/fonts/slick.ttf') format('truetype')
-	src: url('../css/fonts/slick.svg#slick') format('svg')
-	font-weight: normal
-	font-style: normal
->>>>>>> b8e0c97832efa758a567e380e4d11dc4ade2d882
-
-// Arrows 
-.slick-prev, .slick-next
-	position: absolute
-	display: block
-<<<<<<< HEAD
-	height: 30px
-	width: 30px
-	font-family: 'slick'
-	line-height: 2em
-	font-size: 1.5em
-=======
-	height: 40px
-	width: 40px
-	font-family: 'slick'
-	line-height: 0
-	font-size: 0
->>>>>>> b8e0c97832efa758a567e380e4d11dc4ade2d882
-	cursor: pointer
-	background: transparent
-	color: transparent
-	top: 50%
-	margin-top: -10px
-	padding: 0
-	border: none
-	outline: none
-<<<<<<< HEAD
-	z-index: 100
 
 .slick-prev, .slick-next
-=======
+  position: absolute
+  display: block
+  height: 30px
+  width: 30px
+  font-family: "slick"
+  line-height: 2em
+  font-size: 1.5em
+  cursor: pointer
+  background: transparent
+  color: transparent
+  top: 50%
+  margin-top: -10px
+  padding: 0
+  border: none
+  outline: none
+  z-index: 100
 
-.slick-prev:focus, .slick-next
->>>>>>> b8e0c97832efa758a567e380e4d11dc4ade2d882
-	&:focus
-		outline: none
-.slick-prev.slick-disabled, .slick-next.slick-disabled
-	&:before
-<<<<<<< HEAD
-		opacity: 0.75
-=======
-		opacity: 0.25
->>>>>>> b8e0c97832efa758a567e380e4d11dc4ade2d882
+.slick-prev:focus, .slick-next:focus
+  outline: none
 
-.slick-prev, .slick-next
-	&:before
-		font-family: 'slick' !important
-<<<<<<< HEAD
-		font-size: 2em !important
-=======
-		font-size: 40px
->>>>>>> b8e0c97832efa758a567e380e4d11dc4ade2d882
-		line-height: 1
-		color: white
-		opacity: 0.85
-		-webkit-font-smoothing: antialiased
-		-moz-osx-font-smoothing: grayscale
+.slick-prev.slick-disabled:before, .slick-next.slick-disabled:before
+  opacity: .75
 
-.slick-prev 
-<<<<<<< HEAD
-	left: 80px
-=======
-	left: 40px
+.slick-prev:before, .slick-next:before
+  font-family: "slick" !important
+  font-size: 2em !important
+  line-height: 1
+  color: #fff
+  opacity: .85
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
+
 .slick-prev
->>>>>>> b8e0c97832efa758a567e380e4d11dc4ade2d882
-	&:before 
-		content: "\2190"
+  left: 80px
+  &:before
+    content: "←"
 
 .slick-next
-<<<<<<< HEAD
-	right: 80px
-	&:before
-		content: "\2192"
+  right: 80px
+  &:before
+    content: "→"
 
-=======
-	right: 40px
-.slick-next
-	&:before
-		content: "\2192"
+.slick-slider
+  margin-bottom: 30px
 
+.slick-dots
+  position: absolute
+  bottom: -45px
+  list-style: none
+  display: block
+  text-align: center
+  padding: 0px
+  width: 100%
+  li
+    position: relative
+    display: inline-block
+    height: 20px
+    width: 20px
+    margin: 0px 5px
+    padding: 0px
+    cursor: pointer
+    button
+      border: 0
+      background: transparent
+      display: block
+      height: 20px
+      width: 20px
+      outline: none
+      line-height: 0
+      font-size: 0
+      color: transparent
+      padding: 5px
+      cursor: pointer
+      &:focus
+        outline: none
+      &:before
+        position: absolute
+        top: 0
+        left: 0
+        content: "•"
+        width: 20px
+        height: 20px
+        font-family: "slick" !important
+        font-size: 6px
+        line-height: 20px
+        text-align: center
+        color: #000
+        opacity: .25
+        -webkit-font-smoothing: antialiased
+        -moz-osx-font-smoothing: grayscale
+    &.slick-active button:before
+      opacity: .75
 
->>>>>>> b8e0c97832efa758a567e380e4d11dc4ade2d882
-//Dots 
-.slick-slider 
-	margin-bottom: 30px
-
-.slick-dots 
-	position: absolute
-	bottom: -45px
-	list-style: none
-	display: block
-	text-align: center
-	padding: 0px
-	width: 100%
-
-.slick-dots 
-	li
-		position: relative
-		display: inline-block
-		height: 20px
-		width: 20px
-		margin: 0px 5px
-		padding: 0px
-		cursor: pointer
-
-.slick-dots 
-	li 
-		button 
-			border: 0
-			background: transparent
-			display: block
-			height: 20px
-			width: 20px
-			outline: none
-			line-height: 0
-			font-size: 0
-			color: transparent
-			padding: 5px
-			cursor: pointer
-
-.slick-dots 
-	li 
-		button
-			&:focus
-				outline: none
-.slick-dots 
-	li 
-		button
-			&:before
-				position: absolute
-				top: 0
-				left: 0
-				content: "\2022"
-				width: 20px
-				height: 20px
-				font-family: 'slick' !important
-				font-size: 6px
-				line-height: 20px
-				text-align: center
-				color: black
-				opacity: 0.25
-				-webkit-font-smoothing: antialiased
-				-moz-osx-font-smoothing: grayscale
-.slick-dots 
-	li.slick-active 
-		button
-			&:before 
-				opacity: 0.75
-
-.slides
-	.item
-		height: 640px 
-<<<<<<< HEAD
-		position: relative
-=======
->>>>>>> b8e0c97832efa758a567e380e4d11dc4ade2d882
-		blockquote
-			display: inline-block
-			position: absolute
-			border-left: none
-			padding: 0
-			top: 470px
-			left: 150px
-			font-size: 2.5em
-			color: white
-			font-family: 'Helvetica Neue', sans-serif
-			font-weight: 200
-			font-style: italic
-			small
-				color: rgba(255, 255, 255, .95)
-				font-size: .5em
-				font-style: normal
-				position: absolute
-				left: 0
-				top: 50px
-			&:before
-				content: "“"
-				display: block
-				position: absolute
-				left: 0
-				top: 0
-				font-size: 1.9em
-				font-family: 'Times New Roman', Georgia, serif
-				font-weight: bold
-				line-height: 1
-				margin-left: -52px
-				margin-top: -10px
-				color: white
-			&:after
-				content: "”"
-				display: block
-				position: absolute
-				right: 0
-				bottom: 0
-				font-size: 1.9em
-				font-family: 'Times New Roman', Georgia, serif
-				font-weight: bold
-				line-height: 1
-				margin-right: -38px
-				margin-bottom: 0
-<<<<<<< HEAD
-				color: white
-=======
-				color: #ccc
->>>>>>> b8e0c97832efa758a567e380e4d11dc4ade2d882
+.slides .item
+  height: 640px
+  position: relative
+  blockquote
+    display: inline-block
+    position: absolute
+    border-left: none
+    padding: 0
+    top: 470px
+    left: 150px
+    font-size: 2.5em
+    color: #fff
+    font-family: "Helvetica Neue",sans-serif
+    font-weight: 200
+    font-style: italic
+    small
+      color: rgba(255, 255, 255, 0.95)
+      font-size: .5em
+      font-style: normal
+      position: absolute
+      left: 0
+      top: 50px
+    &:before
+      content: "“"
+      display: block
+      position: absolute
+      left: 0
+      top: 0
+      font-size: 1.9em
+      font-family: "Times New Roman",Georgia,serif
+      font-weight: bold
+      line-height: 1
+      margin-left: -52px
+      margin-top: -10px
+      color: #fff
+    &:after
+      content: "”"
+      display: block
+      position: absolute
+      right: 0
+      bottom: 0
+      font-size: 1.9em
+      font-family: "Times New Roman",Georgia,serif
+      font-weight: bold
+      line-height: 1
+      margin-right: -38px
+      margin-bottom: 0
+      color: #fff
 
 .carousel-control
-	line-height: 600px
-	font-size: 7em
-	font-weight: normal
+  line-height: 600px
+  font-size: 7em
+  font-weight: normal
+  &.left, &.right
+    background-image: none
+  &.left, &.right
+    width: 150px
 
-.carousel-control.left, .carousel-control.right
-	background-image: none
-
-.carousel-control.left, .carousel-control.right
-	width: 150px
-<<<<<<< HEAD
-=======
-
-
->>>>>>> b8e0c97832efa758a567e380e4d11dc4ade2d882
-//Home page thumbs
 .thumbs
-	margin: 30px 0
-	.thumb
-		width: 360px 
-		height: 240px
-	.bike
-		a
-			color: black
-			margin: 10px auto 10px auto
-			height: auto
-			width: auto
-			margin-left: 0
-			margin-right: 0
-			margin-bottom: 10px
-		&:hover
-			text-decoration: none
-		.thumb-info
-			text-align: left
-			border-left: 1px solid darkGrey
-			margin: 4px 0 30px 0
-			padding: 5px 0 0 10px
-			p
-				text-align: left
-				color: darkGrey
-				font-size: 1.5em
-				line-height: 1em
-				padding: 0 0 5px 0
-				margin: 0
-			&:hover
-				text-decoration: none
-		.sub-text
-			font-size: 1em !important 
-			color: grey !important
-.thumb
-	img
-		text-align: center
-	
-//Product Page Template, Custom page, contact page
-<<<<<<< HEAD
+  margin: 30px 0
+  .thumb
+    width: 360px
+    height: 240px
+  .bike
+    a
+      color: #000
+      margin: 10px auto 10px auto
+      height: auto
+      width: auto
+      margin-left: 0
+      margin-right: 0
+      margin-bottom: 10px
+    &:hover
+      text-decoration: none
+    .thumb-info
+      text-align: left
+      border-left: 1px solid #a9a9a9
+      margin: 4px 0 30px 0
+      padding: 5px 0 0 10px
+      p
+        text-align: left
+        color: #a9a9a9
+        font-size: 1.5em
+        line-height: 1em
+        padding: 0 0 5px 0
+        margin: 0
+      &:hover
+        text-decoration: none
+    .sub-text
+      font-size: 1em !important
+      color: grey !important
+
+.thumb img
+  text-align: center
+
 .page-template
-	.slick-prev 
-		left: 40px
-	.slick-next
-		right: 40px
-=======
->>>>>>> b8e0c97832efa758a567e380e4d11dc4ade2d882
+  .slick-prev
+    left: 40px
+  .slick-next
+    right: 40px
+
 #main
-	width: 600px
-	padding-left: 8.556%
-	padding-right: 60px
+  width: 600px
+  padding-left: 8.556%
+  padding-right: 60px
+
 .page-header
-	text-align: left
-	margin: 0
-	border-bottom: 0
-	padding: 0 0 0 83px
+  text-align: left
+  margin: 0
+  border-bottom: 0
+  padding: 0 0 0 83px
 
 .full-width-header
-	margin-bottom: 40px
+  margin-bottom: 40px
 
-.page-title	
-	font-size: 50px
-	font-family: 'Helvetica Neue', sans-serif
-	font-weight: 100
-	margin: 20px 0
-	color: $darkGrey
+.page-title
+  font-size: 50px
+  font-family: "Helvetica Neue",sans-serif
+  font-weight: 100
+  margin: 20px 0
+  color: #1A1A1A
 
 .entry-content
-	overflow: visible
-	p
-		line-height: 1.4em
-		font-size: 16px
-		font-family: 'Helvetica Neue', sans-serif
-		font-weight: regular
-		margin-bottom: 40px
-	h3
-		color: $darkGrey
-		font-size: 26px
-		font-weight: medium !important
-		margin: 0 0 40px 0
+  overflow: visible
+  p
+    line-height: 1.4em
+    font-size: 16px
+    font-family: "Helvetica Neue",sans-serif
+    font-weight: regular
+    margin-bottom: 40px
+  h3
+    color: #1A1A1A
+    font-size: 26px
+    font-weight: medium !important
+    margin: 0 0 40px 0
+
 a.phone
-	color: black
-	margin-bottom: 20px !important
-	display: block
-	&:hover
-		color: black
-		text-decoration: none
+  color: #000
+  margin-bottom: 20px !important
+  display: block
+  &:hover
+    color: #000
+    text-decoration: none
 
 .map
-	h3
-		font-size: 26px
-		font-family: 'Helvetica Neue', sans-serif
-		font-weight: medium !important
-		margin-bottom: 20px !important
-	p
-		font-size: 16px
-		font-family: 'Helvetica Neue', sans-serif
-		margin-bottom: 20px !important
+  h3
+    font-size: 26px
+    font-family: "Helvetica Neue",sans-serif
+    font-weight: medium !important
+    margin-bottom: 20px !important
+  p
+    font-size: 16px
+    font-family: "Helvetica Neue",sans-serif
+    margin-bottom: 20px !important
 
 .sidebar-bike
-	float: right
-	overflow: visible
-	padding: 0 90px 0 0
-	h3
-		font-size: 23px
-		font-family: 'Helvetica Neue', sans-serif
-		font-weight: medium !important
-		margin-bottom: 10px !important
-		
+  float: right
+  overflow: visible
+  padding: 0 90px 0 0
+  h3
+    font-size: 23px
+    font-family: "Helvetica Neue",sans-serif
+    font-weight: medium !important
+    margin-bottom: 10px !important
+
 .sidebar
-	float: right !important
-	position: relative
-	
-.specs 
-	display: inline-block
-	float: left
-	text-align: center
-	width: 120px
-	height: 120px
-	padding-top: 15px
-	margin: 0 0 30px 7.547%
-	border: 1px solid #cccccc
-	h1
-		font-size: 3em 
-		font-weight: 400
-		margin: 10px 0 0 0 
-	small
-		margin-bottom: 0
-		line-height: 1px
-		font-size: 88%
-	a
-		color: $black
-		text-decoration: underline
+  float: right !important
+  position: relative
+
+.specs
+  display: inline-block
+  float: left
+  text-align: center
+  width: 120px
+  height: 120px
+  padding-top: 15px
+  margin: 0 0 30px 7.547%
+  border: 1px solid #ccc
+  h1
+    font-size: 3em
+    font-weight: 400
+    margin: 10px 0 0 0
+  small
+    margin-bottom: 0
+    line-height: 1px
+    font-size: 88%
+  a
+    color: #000
+    text-decoration: underline
+
 hr
-	margin-top: 10px
+  margin-top: 10px
 
 .buy-bkgd
-	display: block
-	background: #f2f2f2
-	padding: 20px
+  display: block
+  background: #f2f2f2
+  padding: 20px
+
 .btn-primary
-	background: $orange
-	border: 0
-	border-radius: 0
-	color: $white 
-	&:hover
-		background: darken($orange, 10%)
+  background: #EF6E31
+  border: 0
+  border-radius: 0
+  color: #fff
+
+.frm_submit
+  button, html input[type="button"]
+    background: #EF6E31
+    border: 0
+    border-radius: 0
+    color: #fff
+  input
+    &[type="reset"], &[type="submit"]
+      background: #EF6E31
+      border: 0
+      border-radius: 0
+      color: #fff
+
+.btn-primary:hover
+  background: #dc5211
+
+.frm_submit
+  button:hover, html input[type="button"]:hover
+    background: #dc5211
+  input
+    &[type="reset"]:hover, &[type="submit"]:hover
+      background: #dc5211
 
 .delivery
-	margin-top: 10px
-	font-size: 1.1em
-	text-align: center
+  margin-top: 10px
+  font-size: 1.1em
+  text-align: center
 
 .social
-	padding: 0
-	li
-		list-style-type: none
-		display: inline
-		margin-right: 52px
-		&:last-child
-			margin-right: 0
+  padding: 0
+  li
+    list-style-type: none
+    display: inline
+    margin-right: 52px
+    &:last-child
+      margin-right: 0
+
 .mail
-	height: 35px
-	width: 35px
-	background: url('../images/mail.png') center center no-repeat
-	background-size: cover
-	display: inline-block
+  height: 35px
+  width: 35px
+  background: url("../images/mail.png") center center no-repeat
+  background-size: cover
+  display: inline-block
+
 .facebook
-	height: 35px
-	width: 35px
-	background: url('../images/facebook.png') center center no-repeat
-	background-size: cover
-	display: inline-block
+  height: 35px
+  width: 35px
+  background: url("../images/facebook.png") center center no-repeat
+  background-size: cover
+  display: inline-block
+
 .instagram
-	height: 35px
-	width: 35px
-	background: url('../images/instagram.png') center center no-repeat
-	background-size: cover
-	display: inline-block
+  height: 35px
+  width: 35px
+  background: url("../images/instagram.png") center center no-repeat
+  background-size: cover
+  display: inline-block
+
 .pinterest
-	height: 35px
-	width: 35px
-	background: url('../images/pinterest.png') center center no-repeat
-	background-size: cover
-	display: inline-block
+  height: 35px
+  width: 35px
+  background: url("../images/pinterest.png") center center no-repeat
+  background-size: cover
+  display: inline-block
+
 .twitter
-	height: 35px
-	width: 35px
-	background: url('../images/tweet.png') center center no-repeat
-	background-size: cover
-	display: inline-block
+  height: 35px
+  width: 35px
+  background: url("../images/tweet.png") center center no-repeat
+  background-size: cover
+  display: inline-block
+
 .yelp
-	height: 77px
-	width: 170px
-	background: url('../images/yelp-logo.jpg') center center no-repeat
-	background-size: cover
-	display: block
+  height: 77px
+  width: 170px
+  background: url("../images/yelp-logo.jpg") center center no-repeat
+  background-size: cover
+  display: block
+
 em
-	color: grey
+  color: grey
 
 .slideshow-wrapper
-	margin-bottom: 20px !important
-
-
+  margin-bottom: 20px !important
 
 #custom-page-content
-	padding: 0 55px
+  padding: 0 55px
 
 .custom-page-header
-	margin: 0 0 40px -20px
+  margin: 0 0 40px -20px
 
-.sub-header
-	h2
-		margin-top: 0
-		color: $black
+.sub-header h2
+  margin-top: 0
+  color: #000
 
-.left 
-	margin-right: 50px
-	width: 510px
+.left
+  margin-right: 50px
+  width: 510px
 
-.right 
-	width: 510px
+.right
+  width: 510px
 
 ul.services
-	margin: 20px 0 40px -20px
-	li
-		padding: 15px 0
-		border-bottom: 1px dotted $lightGrey
-		color: $yellow
-	span
-		color: $darkGrey
+  margin: 20px 0 40px -20px
+  li
+    padding: 15px 0
+    border-bottom: 1px dotted #3B3B3B
+    color: #F6DD38
+  span
+    color: #1A1A1A
+
 .frm_submit
-	button, html input[type="button"], input[type="reset"], input[type="submit"] 
-		@extend .btn-primary 
-		padding: 10px 20px
-		width: 150px
+  button, html input[type="button"]
+    padding: 10px 20px
+    width: 150px
+  input
+    &[type="reset"], &[type="submit"]
+      padding: 10px 20px
+      width: 150px
 
-// Footer
-
-.footer 
-	background: $black
-	p
-		display: inline-block
-		color: grey
-		margin: 10px 0 0 0
-		padding: 0 20px
-		a
-			color: grey
-			&:hover
-				color: grey
-				text-decoration: none
-
+.footer
+  background: #000
+  p
+    display: inline-block
+    color: grey
+    margin: 10px 0 0 0
+    padding: 0 20px
+    a
+      color: grey
+      &:hover
+        color: grey
+        text-decoration: none
 
 .source-org
-	display: inline-block
-	color: grey
-	margin: 10px 0 0 0
-	padding: 0 20px
-	a
-		color: grey
-		&:hover
-			color: grey
-			text-decoration: none
+  display: inline-block
+  color: grey
+  margin: 10px 0 0 0
+  padding: 0 20px
+  a
+    color: grey
+    &:hover
+      color: grey
+      text-decoration: none
 
 .footer-nav
-	display: inline-block
-	float: right
-	margin-bottom: 10px
-	margin-left: 0px
-	margin-right: 0px
+  display: inline-block
+  float: right
+  margin-bottom: 10px
+  margin-left: 0px
+  margin-right: 0px
+  ul
+    margin: 0
+  li a
+    padding-left: 15px
+    color: grey
+    -webkit-font-smoothing: antialiased
+    &:hover
+      text-decoration: underline
+      color: #fff
 
-.footer-nav
-	ul
-		margin: 0
-
-.footer-nav
-	li
-		a
-			padding-left: 15px
-			color: grey
-			-webkit-font-smoothing: antialiased
-			&:hover
-				text-decoration: underline
-				color: white
-
-//Media Queries
 @media screen and (min-width: 900px)
-	.container
-		max-width: 1180px
+  .container
+    max-width: 1180px
 
 @media screen and (max-width: 899px)
-	footer
-		text-align: center
+  footer
+    text-align: center
 
-@media screen and (min-width: 1025px) and  (max-width: 1199px)
-	#main
-		float: left
-		width: 600px
-		display: inline-block !important
+@media screen and (min-width: 1025px) and (max-width: 1199px)
+  #main
+    float: left
+    width: 600px
+    display: inline-block !important
+  .entry-content .visible-lg
+    visibility: visible !important
+    display: block !important
+  .thumbs
+    margin: 20px 0
+    .thumb
+      width: 100%
+      height: 240px
+    .bike .thumb-info
+      text-align: left
+      border-left: 1px solid #a9a9a9
+      margin: 4px 0 20px 0
+      padding: 5px 0 0 10px
+      p
+        text-align: left
+        color: #a9a9a9
+        font-size: 1em
+        line-height: 1em
+        padding: 0 0 5px 0
+        margin: 0
+  .sidebar-bike
+    .visible-md
+      visibility: hidden !important
+      display: none !important
+    float: right
+    overflow: visible
+    width: 41%
+    padding: 0 40px 0 20px
+    display: inline-block !important
+  .social
+    overflow: visible
+    padding: 0
+    li
+      width: 35px
+      list-style-type: none
+      display: inline-block
+      float: left
+      margin-right: 12.8%
+      &:last-child
+        margin-right: 0
+  .specs.visible-sm.visible-md
+    visibility: hidden
+    display: none
+    width: 0
+    height: 0
+    margin: 0
+    border: 0
+    h1, small
+      display: none
+  .row.visible-xs.visible-lg
+    display: block !important
+    visibility: visible
+  .map.visible-xs.visible-sm
+    visbility: hidden
+    display: none
+  #custom-page-content
+    padding: 0 5% !important
+  .left
+    float: left
+    display: inline-block
+    width: 42.5%
+    margin-right: 50px
+  .right
+    float: none
+    display: inline-block
+    width: 42.5%
+  .footer-nav
+    float: right
 
-	.entry-content
-		.visible-lg
-			visibility: visible !important
-			display: block !important
+@media screen and (min-width: 768px) and (max-width: 1024px)
+  .navbar-logo
+    margin-left: 50px
+  #custom-page-content
+    padding: 0 5%
+  .page-header
+    padding: 0
+    text-align: center
+  .sub-head .left
+    width: 100%
+  #main
+    padding: 0
+    margin: 0 auto
+  .slides .item
+    height: 640px
+    blockquote
+      display: inline-block
+      position: static
+      margin: 500px 0 0 10%
+      border-left: none
+      font-size: 1.8em
+      small
+        color: rgba(255, 255, 255, 0.95)
+        font-size: .5em
+        font-style: normal
+      &:before
+        font-size: 1.5em
+        margin-left: -30px
+        margin-top: -10px
+      &:after
+        font-size: 1.5em
+        margin-right: -25px
+        margin-bottom: 20px
+  .thumbs
+    margin: 20px 0
+    .thumb
+      width: 100%
+      height: 220px
+    .bike .thumb-info
+      text-align: left
+      border-left: 1px solid #a9a9a9
+      margin: 4px 0 20px 0
+      padding: 5px 0 0 10px
+      p
+        text-align: left
+        color: #a9a9a9
+        font-size: 1em
+        line-height: 1em
+        padding: 0 0 5px 0
+        margin: 0
+  .sidebar-bike
+    padding: 0
+    width: 600px
+    float: none
+    text-align: center
+    margin: 0 auto
+    display: block
+    .row .visible-sm.visible-md
+      display: inline-block
+  .specs
+    float: left
+    margin: 0 6% 30px
+  .buy-bkgd
+    width: 400px
+    margin: 0 auto
+  .yelp
+    margin: 0 auto
+  .page-title
+    font-size: 2em
+    margin: 10px 0 0 0
+  .custom-page-header
+    margin: 0 0 15px -17px
+  .left
+    width: 46%
+    margin-right: 50px
+    display: inline-block
+    padding-right: 0
+    float: left
+    .visible-lg
+      display: inline-block !important
+      visibility: visible
+  .right
+    float: none
+    width: 46%
+    display: inline-block
+    padding-left: 0
+    padding-right: 30px
+    .visible-xs.visible-sm
+      display: none !important
+    .with_frm_style
+      fieldset
+        width: 60% !important
+        display: inline-block
+      .form-field, .frm_form_field
+        width: 70% !important
+        display: inline-block
+  .footer-nav
+    display: block
+    float: none !important
+    margin: 10px auto
 
-	.thumbs
-		margin: 20px 0 
-		.thumb
-			width: 100%
-			height: 240px
-		.bike
-			.thumb-info
-				text-align: left
-				border-left: 1px solid darkGrey
-				margin: 4px 0 20px 0
-				padding: 5px 0 0 10px
-				p
-					text-align: left
-					color: darkGrey
-					font-size: 1em
-					line-height: 1em
-					padding: 0 0 5px 0
-					margin: 0		
-
-	.sidebar-bike
-		.visible-md
-			visibility: hidden !important
-			display: none !important
-
-	.sidebar-bike
-		float: right
-		overflow: visible
-		width: 41%
-		padding: 0 40px 0 20px
-		display: inline-block !important
-	
-	.social
-		overflow: visible
-		padding: 0
-		li
-			width: 35px
-			list-style-type: none
-			display: inline-block
-			float: left
-			margin-right: 12.8%
-			&:last-child
-				margin-right: 0
-	.specs.visible-sm.visible-md
-		visibility: hidden
-		display: none
-		width: 0
-		height: 0
-		margin: 0
-		border: 0
-		h1
-			display: none
-		small
-			display: none
-
-	.row.visible-xs.visible-lg
-		display: block !important
-		visibility: visible
-
-	.map.visible-xs.visible-sm
-		visbility: hidden
-		display: none
-	#custom-page-content
-		padding: 0 5% !important
-	.left
-		float: left
-		display: inline-block
-		width: 42.5%
-		margin-right: 50px
-	.right
-		float: none
-		display: inline-block
-		width: 42.5%
-
-	.footer-nav
-		float: right
-
-@media screen and (min-width: 768px) and  (max-width: 1024px)
-
-	.navbar-logo
-		margin-left: 50px
-	
-	#custom-page-content
-		padding: 0 5%
-	.page-header 
-		padding: 0
-		text-align: center
-	.sub-head
-		.left
-			width: 100%
-	#main
-		padding: 0
-		margin: 0 auto
-	.slides
-		.item
-			height: 640px 
-			blockquote
-				display: inline-block
-				position: static
-				margin: 500px 0 0 10%
-				border-left: none
-				font-size: 1.8em
-				small
-					color: rgba(255, 255, 255, .95)
-					font-size: .5em
-					font-style: normal
-				&:before
-					font-size: 1.5em
-					margin-left: -30px
-					margin-top: -10px
-				&:after
-					font-size: 1.5em
-					margin-right: -25px
-					margin-bottom: 20px
-
-	.thumbs
-		margin: 20px 0 
-		.thumb
-			width: 100%
-			height: 220px
-		.bike
-			.thumb-info
-				text-align: left
-				border-left: 1px solid darkGrey
-				margin: 4px 0 20px 0
-				padding: 5px 0 0 10px
-				p
-					text-align: left
-					color: darkGrey
-					font-size: 1em
-					line-height: 1em
-					padding: 0 0 5px 0
-					margin: 0
-
-	.sidebar-bike
-		padding: 0
-		width: 600px
-		float: none
-		text-align: center
-		margin: 0 auto
-		display: block
-		.row
-			.visible-sm.visible-md
-				display: inline-block
-
-	.specs
-		float: left
-		margin: 0 6% 30px
-
-	.buy-bkgd
-		width: 400px
-		margin: 0 auto
-
-	.yelp
-		margin: 0 auto
-
-	.page-title
-		font-size: 2em
-		margin: 10px 0 0 0
-<<<<<<< HEAD
-
-	.custom-page-header
-		margin: 0 0 15px -17px
-
-	.left
-		width: 46%
-		margin-right: 50px
-		display: inline-block
-		padding-right: 0
-		float: left
-		.visible-lg
-			display: inline-block !important
-			visibility: visible
-
-	.right
-		float: none
-		width: 46%
-		display: inline-block
-		padding-left: 0
-		padding-right: 30px
-		.visible-xs.visible-sm
-			display: none !important
-		.with_frm_style fieldset
-			width: 60% !important
-			display: inline-block
-		.with_frm_style .form-field, .with_frm_style .frm_form_field
-			width: 70% !important
-			display: inline-block
-
-	.footer-nav
-		display: block
-		float: none !important
-		margin: 10px auto
-
-@media screen and (min-width: 481px) and  (max-width: 767px)
-	.site-header
-		height: 90px
-		.row
-			max-height: 30px
-			position: relative
-	.info
-		font-size: .7em
-	
-	#location
-		position: absolute
-		top: 0
-		left: 20px
-		width: 41%
-		text-align: left
-
-	#phone
-		float: none
-		margin-left: auto !important
-		margin-right: auto !important
-		padding: 0
-		text-align: center
-		width: 29%
-	
-	#email
-		position: absolute
-		top: 0
-		right: 20px
-		width: 29%
-		text-align: right
-
-	.brand-container
-		width: 100%
-		height: 50px
-		margin: 0 auto
-		padding: 0
-		postion: relative
-		h1
-			width: 100%
-			margin: 5px auto 0 
-			text-align: center
-			display: block
-
-	.navbar-logo
-		position: absolute
-		top: 30px
-		left: 40px
-		width: 70px
-		height: 50px
-		background-size: 90%
-		margin: 0
-
-	.navbar-inverse .navbar-brand
-		display: inline-block
-		font-size: .7em
-		font-weight: 200
-		text-align: center
-		float: none
-
-	.navbar-toggle
-		position: absolute
-		top: 30px
-		right: 35px
-
-	.navbar-nav
-		margin: 0
-
-	.navbar-collapse
-		overflow-y: visible !important
-
-	.navbar-inverse .navbar-nav
-		.container
-			overflow: visible
-		li
-			float: none
-			display: inline
-			margin: 0
-			margin-right: -4px
-			position: relative
-			a
-				float: none
-				display: inline-block
-				color: $black
-				-webkit-font-smoothing: antialiased
-				padding: 10px 6.6%
-				font-size: .9em
-				font-weight: 300
-			.dropdown-menu
-				position: absolute
-				top: 50%
-				left: 0
-				background: $white !important
-				li
-					display: block
-					background: $white !important
-					a
-						&.active
-							background: rgba(255, 255, 255, .1) !important
-							color: $black
-						&.focus
-							background: rgba(0, 0, 0, .1) !important
-							color: $black
-						&.hover
-							background: rgba(255, 255, 255, .1) !important
-							color: $black
-		.active, .open
-			a
-				background: rgba(0, 0, 0, .1)
-				&:hover
-					background: rgba(0, 0, 0, .1)
-				&:focus
-					background: rgba(0, 0, 0, .1)
-				
-	.tag
-		font-size: 1.5em
-		margin: 10px 0
-
-	.slideshow
-		.container
-			padding-left: 0 !important
-			padding-right: 0 !important
-
-	.slides
-		.item
-			height: 400px
-			blockquote
-				position: static
-				margin: 320px 0 0 15%
-				font-size: 1em
-				small
-					color: rgba(255, 255, 255, .75)
-					font-size: .9em
-					font-weight: medium
-				&:before
-					content: "“"
-					font-size: 1.4em
-					font-family: 'Times New Roman', Georgia, serif
-					font-weight: bold
-					line-height: 1
-					margin-left: -11px
-					margin-top: 0
-				&:after
-					content: "”"
-					display: block
-					position: absolute
-					right: 0
-					bottom: 0
-					font-size: 1.2em
-					font-family: 'Times New Roman', Georgia, serif
-					font-weight: bold
-					line-height: 1
-					margin-right: -9px
-					margin-bottom: 20px
-	.carousel-control
-		line-height: 400px
-		font-size: 5em
-		font-weight: normal
-
-	.thumbs
-		margin: 25px 0 
-		.thumb
-			width: 100%
-			height: 370px
-		.bike
-			a
-				width: 100% 
-				height: auto
-				margin-left: 0
-				margin-right: 0
-				margin-bottom: 10px
-			&:hover
-				text-decoration: none
-			.thumb-info
-				text-align: left
-				border-left: 0
-				margin: 4px 0 20px 0
-				padding: 5px 0 0 10px
-				p
-					text-align: center
-					font-size: 1em
-					line-height: 1em
-					padding: 0 0 5px 0
-					margin: 0
-
-	.page-title
-		font-size: 2em
-		margin: 10px 0 0 0
-
-	.custom-page-header
-		margin: 0 0 15px -15px
-	.page-header
-		padding: 0
-
-	#custom-page-content
-		padding: 0 15px
-
-	.entry-content
-		overflow: visible
-		p
-			font-size: 16px
-			margin-bottom: 15px
-		h3
-			font-size: 1.5em
-			margin: 0 0 10px 0
-
-	.left, .right
-		width: 100%
-		padding: 0 15px
-		margin: 0
-
-	#main
-		Width: 100% !important
-		padding: 0 15px
-		overflow: hidden
-
-	.sidebar-bike
-		padding: 0 10px
-		width: 100%
-		float: none
-		text-align: center
-		margin: 0 auto
-		.row
-			padding: 0 5%
-			width: 100%
-			height: 110px
-		.specs.visible-sm.visible-md
-			display: inline-block !important
-			
-		.map.visible-sm.visible-md
-			display: block !important
-			padding: 0 30px
-			width: 100%
-
-		.specs 
-			float: left
-			width: 27%
-			height: 80px
-			padding-top: 0
-			margin: 0 2.3% 30px 2.3%
-			h1
-				font-size: 2.5em 
-				font-weight: 300
-				margin: 5px 0 5px 0
-
-		.row.visible-xs
-			display: none !important
-			visibility: hidden
-			width: 0
-			height: 0
-			margin: 0
-			.specs
-				width: 0
-				height: 0
-				border: 0
-
-	.yelp
-		margin: 0 auto
-	
-	.buy-bkgd
-		width: 400px
-		margin: 0 auto
-
-	.footer 
-		margin-top: 20px
-		padding: 15px 0
-		text-align: center
-		p
-			margin: 0 auto
-			display: block
-
-	.footer-nav
-		float: none
-		display: block
-		li
-			text-align: center
-			display: block
+@media screen and (min-width: 481px) and (max-width: 767px)
+  .site-header
+    height: 90px
+    .row
+      max-height: 30px
+      position: relative
+  .info
+    font-size: .7em
+  #location
+    position: absolute
+    top: 0
+    left: 20px
+    width: 41%
+    text-align: left
+  #phone
+    float: none
+    margin-left: auto !important
+    margin-right: auto !important
+    padding: 0
+    text-align: center
+    width: 29%
+  #email
+    position: absolute
+    top: 0
+    right: 20px
+    width: 29%
+    text-align: right
+  .brand-container
+    width: 100%
+    height: 50px
+    margin: 0 auto
+    padding: 0
+    postion: relative
+    h1
+      width: 100%
+      margin: 5px auto 0
+      text-align: center
+      display: block
+  .navbar-logo
+    position: absolute
+    top: 30px
+    left: 40px
+    width: 70px
+    height: 50px
+    background-size: 90%
+    margin: 0
+  .navbar-inverse .navbar-brand
+    display: inline-block
+    font-size: .7em
+    font-weight: 200
+    text-align: center
+    float: none
+  .navbar-toggle
+    position: absolute
+    top: 30px
+    right: 35px
+  .navbar-nav
+    margin: 0
+  .navbar-collapse
+    overflow-y: visible !important
+  .navbar-inverse .navbar-nav
+    .container
+      overflow: visible
+    li
+      float: none
+      display: inline
+      margin: 0
+      margin-right: -4px
+      position: relative
+      a
+        float: none
+        display: inline-block
+        color: #000
+        -webkit-font-smoothing: antialiased
+        padding: 10px 6.6%
+        font-size: .9em
+        font-weight: 300
+      .dropdown-menu
+        position: absolute
+        top: 50%
+        left: 0
+        background: #fff !important
+        li
+          display: block
+          background: #fff !important
+          a
+            &.active
+              background: rgba(255, 255, 255, 0.1) !important
+              color: #000
+            &.focus
+              background: rgba(0, 0, 0, 0.1) !important
+              color: #000
+            &.hover
+              background: rgba(255, 255, 255, 0.1) !important
+              color: #000
+    .active a, .open a, .active a:hover, .open a:hover, .active a:focus, .open a:focus
+      background: rgba(0, 0, 0, 0.1)
+  .tag
+    font-size: 1.5em
+    margin: 10px 0
+  .slideshow .container
+    padding-left: 0 !important
+    padding-right: 0 !important
+  .slides .item
+    height: 400px
+    blockquote
+      position: static
+      margin: 320px 0 0 15%
+      font-size: 1em
+      small
+        color: rgba(255, 255, 255, 0.75)
+        font-size: .9em
+        font-weight: medium
+      &:before
+        content: "“"
+        font-size: 1.4em
+        font-family: "Times New Roman",Georgia,serif
+        font-weight: bold
+        line-height: 1
+        margin-left: -11px
+        margin-top: 0
+      &:after
+        content: "”"
+        display: block
+        position: absolute
+        right: 0
+        bottom: 0
+        font-size: 1.2em
+        font-family: "Times New Roman",Georgia,serif
+        font-weight: bold
+        line-height: 1
+        margin-right: -9px
+        margin-bottom: 20px
+  .carousel-control
+    line-height: 400px
+    font-size: 5em
+    font-weight: normal
+  .thumbs
+    margin: 25px 0
+    .thumb
+      width: 100%
+      height: 370px
+    .bike
+      a
+        width: 100%
+        height: auto
+        margin-left: 0
+        margin-right: 0
+        margin-bottom: 10px
+      &:hover
+        text-decoration: none
+      .thumb-info
+        text-align: left
+        border-left: 0
+        margin: 4px 0 20px 0
+        padding: 5px 0 0 10px
+        p
+          text-align: center
+          font-size: 1em
+          line-height: 1em
+          padding: 0 0 5px 0
+          margin: 0
+  .page-title
+    font-size: 2em
+    margin: 10px 0 0 0
+  .custom-page-header
+    margin: 0 0 15px -15px
+  .page-header
+    padding: 0
+  #custom-page-content
+    padding: 0 15px
+  .entry-content
+    overflow: visible
+    p
+      font-size: 16px
+      margin-bottom: 15px
+    h3
+      font-size: 1.5em
+      margin: 0 0 10px 0
+  .left, .right
+    width: 100%
+    padding: 0 15px
+    margin: 0
+  #main
+    Width: 100% !important
+    padding: 0 15px
+    overflow: hidden
+  .sidebar-bike
+    padding: 0 10px
+    width: 100%
+    float: none
+    text-align: center
+    margin: 0 auto
+    .row
+      padding: 0 5%
+      width: 100%
+      height: 110px
+    .specs.visible-sm.visible-md
+      display: inline-block !important
+    .map.visible-sm.visible-md
+      display: block !important
+      padding: 0 30px
+      width: 100%
+    .specs
+      float: left
+      width: 27%
+      height: 80px
+      padding-top: 0
+      margin: 0 2.3% 30px 2.3%
+      h1
+        font-size: 2.5em
+        font-weight: 300
+        margin: 5px 0 5px 0
+    .row.visible-xs
+      display: none !important
+      visibility: hidden
+      width: 0
+      height: 0
+      margin: 0
+      .specs
+        width: 0
+        height: 0
+        border: 0
+  .yelp
+    margin: 0 auto
+  .buy-bkgd
+    width: 400px
+    margin: 0 auto
+  .footer
+    margin-top: 20px
+    padding: 15px 0
+    text-align: center
+    p
+      margin: 0 auto
+      display: block
+  .footer-nav
+    float: none
+    display: block
+    li
+      text-align: center
+      display: block
 
 @media screen and (max-width: 568px)
-	.site-header
-		height: 150px
-=======
+  .site-header
+    height: 150px
+  .info
+    margin-top: 5px
+  .brand-container
+    width: 100%
+    height: 50px
+    margin: 0
+    padding: 0
+    position: relative
+    h1
+      width: 57%
+      margin: 5px auto 0 auto
+      text-align: center
+  .navbar-logo
+    position: absolute
+    top: 5px
+    left: 0
+    width: 70px
+    height: 40px
+    background-size: 90%
+    margin: 0
+    display: inline-block
+  .navbar-inverse .navbar-brand
+    display: block
+    font-size: .8em
+    font-weight: 400
+    text-align: center
+    float: none
+  .navbar-toggle
+    position: absolute
+    top: 5px
+    right: -10px
+  .navbar-inverse .navbar-nav li
+    float: none
+    display: block
+    margin: 0
+    margin-right: 0
+    a
+      float: none
+      display: block
+      -webkit-font-smoothing: antialiased
+      padding: 20px 30px
+      font-size: 16px
+      font-weight: bold
+      &:hover
+        background: rgba(0, 0, 0, 0.1)
+    &.active a
+      background: rgba(0, 0, 0, 0.1)
+      &:hover
+        background: rgba(0, 0, 0, 0.2)
+    .dropdown-menu
+      margin-top: 0px
+      padding: 0
+      li
+        float: none
+        display: block
+        a
+          float: none
+          display: block
+          background: rgba(255, 255, 255, 0.1)
+          -webkit-font-smoothing: antialiased
+          padding: 10px
+          text-align: center
+          font-size: 16px
+          font-weight: light !important
+          &:hover
+            background: rgba(0, 0, 0, 0.1)
+        &.active
+          a
+            background: rgba(0, 0, 0, 0.1)
+          .dropdown-toggle:hover a
+            background: #fff
+  .col-sm-12
+    padding: 0
+  .tag
+    font-size: 1em
+    margin: 10px 0
+  .slideshow .container
+    padding-left: 0 !important
+    padding-right: 0 !important
+  .slides .item
+    height: 200px
+    blockquote
+      position: static
+      margin: 150px 0 0 8%
+      font-size: .75em
+      small
+        color: rgba(255, 255, 255, 0.75)
+        font-size: .9em
+        font-weight: medium
+      &:before
+        content: "“"
+        font-size: 1.4em
+        font-family: "Times New Roman",Georgia,serif
+        font-weight: bold
+        line-height: 1
+        margin-left: -11px
+        margin-top: 0
+      &:after
+        content: "”"
+        display: block
+        position: absolute
+        right: 0
+        bottom: 0
+        font-size: 1.2em
+        font-family: "Times New Roman",Georgia,serif
+        font-weight: bold
+        line-height: 1
+        margin-right: -9px
+        margin-bottom: 20px
+  .carousel-control
+    line-height: 250px
+    font-size: 5em
+    font-weight: normal
+  .thumbs
+    margin: 25px 0
+    .thumb
+      width: 100%
+    .bike
+      a
+        width: 100%
+        height: auto
+        margin-left: 0
+        margin-right: 0
+        margin-bottom: 10px
+      &:hover
+        text-decoration: none
+      .thumb-info
+        text-align: left
+        border-left: 0
+        margin: 4px 0 20px 0
+        padding: 5px 0 0 10px
+        p
+          text-align: center
+          font-size: 1em
+          line-height: 1em
+          padding: 0 0 5px 0
+          margin: 0
+  #full-width
+    padding: 0
+  .page-header, .custom-page-header
+    margin: 10px 0
+    padding: 0
+    text-align: center
+  .page-title
+    font-size: 2em
+    margin: 10px 0
+  #custom-page-content
+    padding: 0 15px
+  .entry-content
+    overflow: visible
+    p
+      font-size: 16px
+      margin-bottom: 15px
+    h3
+      font-size: 1.5em
+      margin: 0 0 10px 0
+  .left, .right
+    width: 100%
+    padding: 0
+    margin: 0
+  .sidebar-bike
+    float: none
+    padding: 0
+    .row, h4
+      text-align: center
+  .specs
+    display: inline-block
+    width: 40%
+    height: 80px
+    padding-top: 0
+    margin: 0 0 15px 6%
+    h1
+      font-size: 2.5em
+      font-weight: 300
+      margin: 5px 0 5px
+  .buy-bkgd
+    width: 290px
+    margin: 0 auto
+  .social
+    width: 290px
+    margin: 0 auto
+    li
+      margin-right: 24px
+      &:last-child
+        margin-right: 0
+  .yelp
+    margin: 0 auto
+  #inner-content
+    margin-left: 0 !important
+    margin-right: 0 !important
+  #main
+    Width: 100%
+    padding: 0
+    overflow: hidden
+  #slideshow-wrappergallery1
+    padding-right: 10px
+  .frm_form_fields
+    width: 290px
+    .frm_full
+      select, input, textarea
+        width: 290px
+  .footer
+    margin-top: 20px
+    padding: 15px 0
+    text-align: center
+    p
+      margin: 0 auto
+      display: block
+  .footer-nav
+    float: none
+    display: block
+    li
+      text-align: center
+      display: block
 
-	.custom-page-header
-		margin: 0 0 15px -17px
 
-	.left
-		width: 46%
-		margin-right: 50px
-		display: inline-block
-		padding-right: 0
-		float: left
-		.visible-lg
-			display: inline-block !important
-			visibility: visible
-
-	.right
-		float: none
-		width: 46%
-		display: inline-block
-		padding-left: 0
-		padding-right: 30px
-		.visible-xs.visible-sm
-			display: none !important
-		.with_frm_style fieldset
-			width: 60% !important
-			display: inline-block
-		.with_frm_style .form-field, .with_frm_style .frm_form_field
-			width: 70% !important
-			display: inline-block
->>>>>>> b8e0c97832efa758a567e380e4d11dc4ade2d882
-
-	.footer-nav
-		display: block
-		float: none !important
-		margin: 10px auto
-
-@media screen and (min-width: 481px) and  (max-width: 767px)
-	.site-header
-		height: 90px
-		.row
-			max-height: 30px
-			position: relative
-	.info
-		font-size: .7em
-	
-	#location
-		position: absolute
-		top: 0
-		left: 20px
-		width: 41%
-		text-align: left
-
-	#phone
-		float: none
-		margin-left: auto !important
-		margin-right: auto !important
-		padding: 0
-		text-align: center
-		width: 29%
-	
-	#email
-		position: absolute
-		top: 0
-		right: 20px
-		width: 29%
-		text-align: right
-
-	.brand-container
-		width: 100%
-		height: 50px
-		margin: 0 auto
-		padding: 0
-		postion: relative
-		h1
-			width: 100%
-			margin: 5px auto 0 
-			text-align: center
-			display: block
-
-	.brand-container
-		width: 100%
-		height: 50px
-		margin: 0
-		padding: 0
-		position: relative
-		h1
-			width: 57%
-			margin: 5px auto 0 auto
-			text-align: center
-
-	.navbar-logo
-		position: absolute
-<<<<<<< HEAD
-		top: 5px
-		left: 0
-=======
-		top: 30px
-		left: 40px
->>>>>>> b8e0c97832efa758a567e380e4d11dc4ade2d882
-		width: 70px
-		height: 40px
-		background-size: 90%
-		margin: 0
-		display: inline-block
-
-		
-	.navbar-inverse .navbar-brand
-<<<<<<< HEAD
-		display: block
-		font-size: .8em
-		font-weight: 400
-		text-align: center
-		float: none
-	.navbar-toggle
-		position: absolute
-		top: 5px
-		right: -10px
-=======
-		display: inline-block
-		font-size: .7em
-		font-weight: 200
-		text-align: center
-		float: none
-
-	.navbar-toggle
-		position: absolute
-		top: 30px
-		right: 35px
-
-	.navbar-nav
-		margin: 0
-
-	.navbar-collapse
-		overflow-y: visible !important
->>>>>>> b8e0c97832efa758a567e380e4d11dc4ade2d882
-
-	.navbar-inverse .navbar-nav
-		.container
-			overflow: visible
-		li
-			float: none
-			display: block
-			margin: 0
-<<<<<<< HEAD
-			margin-right: 0
-			a
-				float: none
-				display: block
-=======
-			margin-right: -4px
-			position: relative
-			a
-				float: none
-				display: inline-block
-				color: $black
->>>>>>> b8e0c97832efa758a567e380e4d11dc4ade2d882
-				-webkit-font-smoothing: antialiased
-				padding: 10px 6.6%
-				font-size: .9em
-				font-weight: 300
-			.dropdown-menu
-				position: absolute
-				top: 50%
-				left: 0
-				background: $white !important
-				li
-					display: block
-					background: $white !important
-					a
-						&.active
-							background: rgba(255, 255, 255, .1) !important
-							color: $black
-						&.focus
-							background: rgba(0, 0, 0, .1) !important
-							color: $black
-						&.hover
-							background: rgba(255, 255, 255, .1) !important
-							color: $black
-		.active, .open
-			a
-				background: rgba(0, 0, 0, .1)
-				&:hover
-					background: rgba(0, 0, 0, .1)
-				&:focus
-					background: rgba(0, 0, 0, .1)
-				
-	.tag
-		font-size: 1.5em
-		margin: 10px 0
-
-	.slideshow
-		.container
-			padding-left: 0 !important
-			padding-right: 0 !important
-
-	.slides
-		.item
-			height: 400px
-			blockquote
-				position: static
-				margin: 320px 0 0 15%
-				font-size: 1em
-				small
-					color: rgba(255, 255, 255, .75)
-					font-size: .9em
-					font-weight: medium
-				&:before
-					content: "“"
-					font-size: 1.4em
-					font-family: 'Times New Roman', Georgia, serif
-					font-weight: bold
-					line-height: 1
-					margin-left: -11px
-					margin-top: 0
-				&:after
-					content: "”"
-					display: block
-					position: absolute
-					right: 0
-					bottom: 0
-					font-size: 1.2em
-					font-family: 'Times New Roman', Georgia, serif
-					font-weight: bold
-					line-height: 1
-					margin-right: -9px
-					margin-bottom: 20px
-	.carousel-control
-		line-height: 400px
-		font-size: 5em
-		font-weight: normal
-
-	.thumbs
-		margin: 25px 0 
-		.thumb
-			width: 100%
-			height: 370px
-		.bike
-			a
-				width: 100% 
-				height: auto
-				margin-left: 0
-				margin-right: 0
-				margin-bottom: 10px
-			&:hover
-				text-decoration: none
-			.thumb-info
-				text-align: left
-				border-left: 0
-				margin: 4px 0 20px 0
-				padding: 5px 0 0 10px
-				p
-					text-align: center
-					font-size: 1em
-					line-height: 1em
-					padding: 0 0 5px 0
-					margin: 0
-
-	.page-title
-		font-size: 2em
-		margin: 10px 0 0 0
-
-	.custom-page-header
-		margin: 0 0 15px -15px
-	.page-header
-		padding: 0
-
-	#custom-page-content
-		padding: 0 15px
-
-	.entry-content
-		overflow: visible
-		p
-			font-size: 16px
-			margin-bottom: 15px
-		h3
-			font-size: 1.5em
-			margin: 0 0 10px 0
-
-	.left, .right
-		width: 100%
-		padding: 0 15px
-		margin: 0
-
-	#main
-		Width: 100% !important
-		padding: 0 15px
-		overflow: hidden
-
-	.sidebar-bike
-		padding: 0 10px
-		width: 100%
-		float: none
-		text-align: center
-		margin: 0 auto
-		.row
-			padding: 0 5%
-			width: 100%
-			height: 110px
-		.specs.visible-sm.visible-md
-			display: inline-block !important
-			
-		.map.visible-sm.visible-md
-			display: block !important
-			padding: 0 30px
-			width: 100%
-
-		.specs 
-			float: left
-			width: 27%
-			height: 80px
-			padding-top: 0
-			margin: 0 2.3% 30px 2.3%
-			h1
-				font-size: 2.5em 
-				font-weight: 300
-				margin: 5px 0 5px 0
-
-		.row.visible-xs
-			display: none !important
-			visibility: hidden
-			width: 0
-			height: 0
-			margin: 0
-			.specs
-				width: 0
-				height: 0
-				border: 0
-
-	.yelp
-		margin: 0 auto
-	
-	.buy-bkgd
-		width: 400px
-		margin: 0 auto
-
-	.footer 
-		margin-top: 20px
-		padding: 15px 0
-		text-align: center
-		p
-			margin: 0 auto
-			display: block
-
-	.footer-nav
-		float: none
-		display: block
-		li
-			text-align: center
-			display: block
-
-@media screen and (max-width: 480px)
-	.site-header
-		height: 150px
-
-	.info
-		margin-top: 5px
-
-	.brand-container
-		width: 100%
-		height: 50px
-		margin: 0
-		padding: 0
-		position: relative
-		h1
-			width: 57%
-			margin: 5px auto 0 auto
-			text-align: center
-
-	.navbar-logo
-		position: absolute
-		top: 5px
-		left: -8px
-		width: 70px
-		height: 40px
-		background-size: 90%
-		margin: 0
-		display: inline-block
-		
-	.navbar-inverse .navbar-brand
-		display: inline-block
-		font-size: .7em
-		font-weight: 200
-		text-align: center
-		float: none
-	.navbar-toggle
-		position: absolute
-		top: 5px
-		right: -10px
-
-	.navbar-inverse .navbar-nav
-		li
-			float: none
-			display: block
-			margin: 0
-			margin-right: 0
-			a
-				float: none
-				display: block
-				-webkit-font-smoothing: antialiased
-				padding: 20px 30px
-				font-size: 16px
-				font-weight: bold
-				&:hover
-					background: rgba(0, 0, 0, .1)
-			&.active
-				a
-					background: rgba(0, 0, 0, .1)
-					&:hover
-						background: rgba(0, 0, 0, .2)
-			.dropdown-menu
-				margin-top: 0px
-				padding: 0
-				li
-					float: none
-					display: block
-					a
-						float: none
-						display: block
-						background: rgba(255, 255, 255, .1)
-						-webkit-font-smoothing: antialiased
-						padding: 10px
-						text-align: center
-						font-size: 16px
-						font-weight: light !important
-						&:hover
-							background: rgba(0, 0, 0, .1)
-					&.active
-						a
-							background: rgba(0, 0, 0, .1)
-						.dropdown-toggle
-							&:hover
-								a
-									background: white
-
-	.col-sm-12
-		padding: 0
-	.tag
-		font-size: 1em
-		margin: 10px 0
-
-	.slideshow
-		.container
-			padding-left: 0 !important
-			padding-right: 0 !important
-
-	.slides
-		.item
-			height: 200px
-			blockquote
-				position: static
-				margin: 150px 0 0 8%
-				font-size: .75em
-				small
-					color: rgba(255, 255, 255, .75)
-					font-size: .9em
-					font-weight: medium
-				&:before
-					content: "“"
-					font-size: 1.4em
-					font-family: 'Times New Roman', Georgia, serif
-					font-weight: bold
-					line-height: 1
-					margin-left: -11px
-					margin-top: 0
-				&:after
-					content: "”"
-					display: block
-					position: absolute
-					right: 0
-					bottom: 0
-					font-size: 1.2em
-					font-family: 'Times New Roman', Georgia, serif
-					font-weight: bold
-					line-height: 1
-					margin-right: -9px
-					margin-bottom: 20px
-	.carousel-control
-		line-height: 250px
-		font-size: 5em
-		font-weight: normal
-	.thumbs
-		margin: 25px 0 
-		.thumb
-			width: 100%
-		.bike
-			a
-				width: 100% 
-				height: auto
-				margin-left: 0
-				margin-right: 0
-				margin-bottom: 10px
-			&:hover
-				text-decoration: none
-			.thumb-info
-				text-align: left
-				border-left: 0
-				margin: 4px 0 20px 0
-				padding: 5px 0 0 10px
-				p
-					text-align: center
-					font-size: 1em
-					line-height: 1em
-					padding: 0 0 5px 0
-					margin: 0
-	#full-width
-		padding: 0
-			
-	.page-header, .custom-page-header
-		margin: 10px 0
-		padding: 0
-		text-align: center
-	.page-title
-		font-size: 2em
-		margin: 10px 0
-
-	#custom-page-content
-		padding: 0 15px
-
-	.entry-content
-		overflow: visible
-		p
-			font-size: 16px
-			margin-bottom: 15px
-		h3
-			font-size: 1.5em
-			margin: 0 0 10px 0
-
-	.left, .right
-		width: 100%
-		padding: 0
-		margin: 0
-
-	.sidebar-bike
-		float: none
-		padding: 0
-		.row
-			text-align: center
-		h4
-			text-align: center
-
-	.specs 
-		display: inline-block
-		width: 40%
-		height: 80px
-		padding-top: 0
-		margin: 0 0 15px 6%
-		h1
-			font-size: 2.5em 
-			font-weight: 300
-			margin: 5px 0 5px 
-
-	.buy-bkgd
-		width: 290px
-		margin: 0 auto
-
-	.social
-		width: 290px
-		margin: 0 auto
-		li
-			margin-right: 24px
-			&:last-child
-				margin-right: 0
-	.yelp
-		margin: 0 auto
-
-	#inner-content
-		margin-left: 0 !important
-		margin-right: 0 !important
-
-	#main
-		Width: 100%
-		padding: 0
-		overflow: hidden
-
-	#slideshow-wrappergallery1
-		padding-right: 10px
-	
-	.frm_form_fields
-		width: 290px
-	
-	.frm_form_fields .frm_full 
-		select
-			width: 290px
-		input
-			width: 290px
-		textarea
-			width: 290px
-
-	.footer 
-		margin-top: 20px
-		padding: 15px 0
-		text-align: center
-		p
-			margin: 0 auto
-			display: block
-
-	.footer-nav
-		float: none
-		display: block
-		li
-			text-align: center
-			display: block

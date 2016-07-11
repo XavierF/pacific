@@ -24,10 +24,7 @@
 				</header> <!-- end page header -->
 
 				<div id="inner-content" class="wrap clearfix">
-
-						<div id="main" class="clearfix" role="main">
-
-							<!-- slider starts here... -->
+						<!-- slider starts here... -->
 							<section id="slides" class="product-image">
 
 										<?php if( have_rows('slider-image') ): ?>
@@ -41,7 +38,7 @@
 
 										    	?>
 
-												<div >
+												<div>
 													<img src="<?php echo $image; ?>" class="img-responsive" />
 												</div>
   											<?php  endwhile; ?>
@@ -65,6 +62,10 @@
 								</section> <!-- end slides-->
 
 							<!-- end of slider -->
+
+						<div id="main" class="clearfix" role="main">
+
+						
 
 							<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 

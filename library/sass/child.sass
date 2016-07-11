@@ -57,6 +57,7 @@ body
 
 .navbar-collapse
   text-align: center
+  padding: 0
 
 .navbar-nav
   margin-left: 0
@@ -190,9 +191,9 @@ body
     transform: translate3d(0, 0, 0)
 
 .slider-nav .slick-list
-  height: 90px
+  height: 120px
   .slick-slide
-    padding: 0 3px !important
+    padding: 0 25px !important
 
 .slick-track
   position: relative
@@ -392,6 +393,10 @@ body
       margin-bottom: 0
       color: #fff
 
+.product-image
+  padding: 0 200px 0 100px
+  text-align: center
+
 .carousel-control
   line-height: 600px
   font-size: 7em
@@ -403,6 +408,8 @@ body
 
 .thumbs
   margin: 30px 0
+  .col-sm-4
+    height: 375px
   .thumb
     width: 360px
     height: 240px
@@ -461,7 +468,7 @@ body
 .page-title
   font-size: 50px
   font-family: "Helvetica Neue",sans-serif
-  font-weight: 100
+  font-weight: 300
   margin: 20px 0
   color: #1A1A1A
 
@@ -1134,7 +1141,7 @@ ul.services
 
 @media screen and (max-width: 568px)
   .site-header
-    height: 150px
+    height: 250px
   .info
     margin-top: 5px
   .brand-container
@@ -1180,10 +1187,10 @@ ul.services
       font-weight: bold
       &:hover
         background: rgba(0, 0, 0, 0.1)
-    &.active a
-      background: rgba(0, 0, 0, 0.1)
-      &:hover
-        background: rgba(0, 0, 0, 0.2)
+      &.active a
+        background: rgba(0, 0, 0, 0.1)
+        &:hover
+          background: rgba(0, 0, 0, 0.2)
     .dropdown-menu
       margin-top: 0px
       padding: 0
@@ -1196,16 +1203,18 @@ ul.services
           background: rgba(255, 255, 255, 0.1)
           -webkit-font-smoothing: antialiased
           padding: 10px
+          color: black !important
           text-align: center
           font-size: 16px
           font-weight: light !important
           &:hover
             background: rgba(0, 0, 0, 0.1)
-        &.active
+        &.active, &:visited
           a
             background: rgba(0, 0, 0, 0.1)
-          .dropdown-toggle:hover a
-            background: #fff
+        .dropdown-toggle:hover a
+          background: #fff
+
   .col-sm-12
     padding: 0
   .tag
@@ -1217,7 +1226,7 @@ ul.services
   .slides .item
     height: 200px
     blockquote
-      position: static
+      position: relative
       margin: 150px 0 0 8%
       font-size: .75em
       small
@@ -1259,8 +1268,8 @@ ul.services
         margin-left: 0
         margin-right: 0
         margin-bottom: 10px
-      &:hover
-        text-decoration: none
+        &:hover
+          text-decoration: none
       .thumb-info
         text-align: left
         border-left: 0

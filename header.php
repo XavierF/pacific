@@ -84,16 +84,18 @@
 
 						</section>
 
-							<div class="container">
+							
 								
 								<div class="navbar-header">
 									
 								</div><!-- navbar-header -->
 
 								<div class="navbar-collapse collapse navbar-responsive-collapse">
-									<?php bones_main_nav(); ?>
+								
+										<?php bones_main_nav(); ?>
+							
 								</div><!-- navbar-collapse -->
-							</div><!-- .container -->
+							
 						</div> <!-- navbar-fixed-top -->
 						
 					</nav>

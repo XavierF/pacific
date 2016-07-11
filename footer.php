@@ -42,7 +42,7 @@
   		swipe: true	
 				});
 			$('.slider-for').slick({
-				autoplay: true,
+				autoplay: false,
 				fade: false,
 				speed: 4000,
 				dots: false,

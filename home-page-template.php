@@ -92,14 +92,14 @@
 			?>
 			<div class="col-sm-4">
 				<a href="<?php echo $link; ?>" class="bike">
-					<div class="thumb" style="background: url('<?php echo $image; ?>') center center no-repeat; background-size: contain;"></div>
+					<div class="thumb" style="background: url('<?php echo $image; ?>') top center no-repeat; background-size: contain;"></div>
 					<div class="thumb-info">
 						<p><?php echo $text; ?></p>
 						<p class="sub-text"><?php echo $price; ?></p>
 						<p class="sub-text"><?php echo $available; ?></p>
-				</div>
+					</div>
 				</a><!-- .bike -->
-			</div><!-- .items -->
+			</div><!-- .col-sm-4 -->
 
 			<?php endwhile; ?>
 		</div><!-- end .container -->
